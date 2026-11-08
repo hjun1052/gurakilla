@@ -1,3 +1,5 @@
+<img src="Design/logo.png" width="160" alt="GuraKilla logo">
+
 # GuraKilla (구라킬라)
 
 A native macOS utility for finding, inspecting, quitting, disabling and removing

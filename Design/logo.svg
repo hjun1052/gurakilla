@@ -1,0 +1,121 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#eaf5ff"/>
+      <stop offset="1" stop-color="#9fcdf6"/>
+    </linearGradient>
+    <linearGradient id="can" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#0f4fae"/>
+      <stop offset="0.28" stop-color="#3f97f0"/>
+      <stop offset="0.45" stop-color="#7cc0ff"/>
+      <stop offset="0.7" stop-color="#2a7ee0"/>
+      <stop offset="1" stop-color="#0c3f92"/>
+    </linearGradient>
+    <linearGradient id="label" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#7cc6f5"/>
+      <stop offset="0.45" stop-color="#d4eeff"/>
+      <stop offset="1" stop-color="#6db8ec"/>
+    </linearGradient>
+    <linearGradient id="cap" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#0a2a66"/>
+      <stop offset="0.4" stop-color="#2459b8"/>
+      <stop offset="1" stop-color="#081f4f"/>
+    </linearGradient>
+    <linearGradient id="mist" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.95"/>
+      <stop offset="0.6" stop-color="#ffffff" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0.15"/>
+    </linearGradient>
+    <linearGradient id="shield" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ff6b5e"/>
+      <stop offset="1" stop-color="#c41f2c"/>
+    </linearGradient>
+    <linearGradient id="shieldRim" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f4f6fa"/>
+      <stop offset="1" stop-color="#a9b3c2"/>
+    </linearGradient>
+    <filter id="soft" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6"/>
+    </filter>
+    <filter id="drop" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="14" stdDeviation="14" flood-color="#0a2a5c" flood-opacity="0.35"/>
+    </filter>
+    <clipPath id="tile">
+      <rect x="100" y="100" width="824" height="824" rx="185"/>
+    </clipPath>
+  </defs>
+
+  <!-- macOS icon tile -->
+  <g filter="url(#drop)">
+    <rect x="100" y="100" width="824" height="824" rx="185" fill="url(#bg)"/>
+  </g>
+
+  <g clip-path="url(#tile)">
+    <!-- soft floor glow -->
+    <ellipse cx="512" cy="930" rx="420" ry="90" fill="#6fb2ee" opacity="0.45"/>
+
+    <!-- shield, knocked back -->
+    <g transform="rotate(12 715 560)" filter="url(#drop)">
+      <path d="M715 360 L875 418 V560 C875 690 800 772 715 812 C630 772 555 690 555 560 V418 Z"
+            fill="url(#shieldRim)"/>
+      <path d="M715 392 L847 440 V562 C847 670 785 740 715 776 C645 740 583 670 583 562 V440 Z"
+            fill="url(#shield)"/>
+      <!-- keyhole -->
+      <circle cx="715" cy="550" r="40" fill="#fff"/>
+      <path d="M697 570 L733 570 L746 668 L684 668 Z" fill="#fff"/>
+      <!-- cracks -->
+      <path d="M600 470 L648 505 L630 540 L676 566" fill="none" stroke="#3a0b10" stroke-width="9"
+            stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M648 505 L690 488" fill="none" stroke="#3a0b10" stroke-width="7" stroke-linecap="round"/>
+      <path d="M592 600 L630 616 L622 650" fill="none" stroke="#3a0b10" stroke-width="7"
+            stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+
+    <!-- spray mist: from nozzle (362,262) onto the shield -->
+    <path d="M362 256 C480 230 640 250 820 320 C860 420 820 560 700 640 C560 470 450 330 362 272 Z"
+          fill="url(#mist)" filter="url(#soft)"/>
+    <path d="M362 258 C470 250 600 300 740 380 C720 430 660 440 362 268 Z" fill="#fff" opacity="0.85"
+          filter="url(#soft)"/>
+    <g stroke="#fff" stroke-linecap="round" fill="none" opacity="0.9">
+      <path d="M372 260 L700 300" stroke-width="7"/>
+      <path d="M372 264 L690 420" stroke-width="6"/>
+      <path d="M372 266 L640 520" stroke-width="5"/>
+    </g>
+    <!-- splash on the shield -->
+    <g fill="#fff">
+      <circle cx="640" cy="250" r="8"/>
+      <circle cx="760" cy="290" r="11"/>
+      <circle cx="850" cy="360" r="9"/>
+      <circle cx="880" cy="450" r="7"/>
+      <circle cx="560" cy="420" r="6"/>
+      <circle cx="590" cy="560" r="8"/>
+      <circle cx="845" cy="560" r="6"/>
+      <circle cx="530" cy="330" r="5"/>
+    </g>
+    <!-- spray can, slight tilt -->
+    <g transform="rotate(-8 330 600)">
+      <!-- actuator / cap -->
+      <rect x="262" y="228" width="136" height="82" rx="18" fill="url(#cap)"/>
+      <rect x="380" y="256" width="26" height="22" rx="6" fill="#081f4f"/>
+      <rect x="276" y="240" width="18" height="58" rx="9" fill="#6f9de8" opacity="0.6"/>
+      <!-- shoulder -->
+      <path d="M232 380 C232 330 270 306 330 306 C390 306 428 330 428 380 Z" fill="url(#can)"/>
+      <rect x="226" y="372" width="208" height="16" rx="8" fill="#cfd8e6"/>
+      <!-- body -->
+      <rect x="222" y="384" width="216" height="500" rx="22" fill="url(#can)"/>
+      <!-- label panel -->
+      <rect x="236" y="470" width="188" height="330" rx="14" fill="url(#label)"/>
+      <!-- lightning bolt -->
+      <path d="M360 560 L292 690 L338 690 L306 800 L396 660 L350 660 L384 560 Z"
+            fill="#ffd400" stroke="#111" stroke-width="10" stroke-linejoin="round"/>
+      <!-- brand: 구라킬라, Apple SD Gothic Neo Heavy 46pt, outlined -->
+      <g>
+        <path d="M273.7 538.8L273.7 522.9L289.0 522.9L289.0 517.3L283.7 517.3C284.4 514.0 285.1 508.4 285.1 502.3L285.1 499.7L255.7 499.7L255.7 505.4L278.0 505.4C278.0 506.0 278.1 506.6 278.1 507.2C278.1 511.2 277.7 514.7 277.1 517.3L251.6 517.3L251.6 522.9L266.5 522.9L266.5 538.8ZM314.7 522.5C309.9 523.5 304.4 523.7 300.3 523.6L300.3 517.1L312.3 517.1L312.3 500.7L293.1 500.7L293.1 506.3L305.1 506.3L305.1 511.5L293.1 511.5L293.1 529.5C294.2 529.6 295.5 529.7 296.8 529.7C303.0 529.7 311.6 529.2 315.4 528.2ZM329.4 518.5L329.4 512.6L324.2 512.6L324.2 497.4L317.1 497.4L317.1 538.8L324.2 538.8L324.2 518.5ZM366.5 538.2L366.5 532.7L345.3 532.7L345.3 531.1L365.8 531.1L365.8 519.9L338.1 519.9L338.1 525.1L358.6 525.1L358.6 526.6L338.0 526.6L338.0 538.2ZM353.1 499.0L334.0 499.0L334.0 504.8L345.4 504.8L345.1 506.2L331.9 506.5L332.9 512.0C335.8 511.8 338.7 511.5 341.7 511.3C339.1 513.2 335.4 514.2 331.5 514.8L334.3 520.5C345.8 517.8 352.9 512.0 353.1 499.0ZM365.9 518.3L365.9 497.4L358.7 497.4L358.7 518.3ZM394.3 522.5C389.5 523.5 384.0 523.7 379.9 523.6L379.9 517.1L391.9 517.1L391.9 500.7L372.6 500.7L372.6 506.3L384.6 506.3L384.6 511.5L372.6 511.5L372.6 529.5C373.8 529.6 375.1 529.7 376.4 529.7C382.6 529.7 391.2 529.2 395.0 528.2ZM408.9 518.5L408.9 512.6L403.8 512.6L403.8 497.4L396.7 497.4L396.7 538.8L403.8 538.8L403.8 518.5Z" fill="#111" stroke="#111" stroke-width="10" stroke-linejoin="round"/>
+        <path d="M273.7 538.8L273.7 522.9L289.0 522.9L289.0 517.3L283.7 517.3C284.4 514.0 285.1 508.4 285.1 502.3L285.1 499.7L255.7 499.7L255.7 505.4L278.0 505.4C278.0 506.0 278.1 506.6 278.1 507.2C278.1 511.2 277.7 514.7 277.1 517.3L251.6 517.3L251.6 522.9L266.5 522.9L266.5 538.8ZM314.7 522.5C309.9 523.5 304.4 523.7 300.3 523.6L300.3 517.1L312.3 517.1L312.3 500.7L293.1 500.7L293.1 506.3L305.1 506.3L305.1 511.5L293.1 511.5L293.1 529.5C294.2 529.6 295.5 529.7 296.8 529.7C303.0 529.7 311.6 529.2 315.4 528.2ZM329.4 518.5L329.4 512.6L324.2 512.6L324.2 497.4L317.1 497.4L317.1 538.8L324.2 538.8L324.2 518.5ZM366.5 538.2L366.5 532.7L345.3 532.7L345.3 531.1L365.8 531.1L365.8 519.9L338.1 519.9L338.1 525.1L358.6 525.1L358.6 526.6L338.0 526.6L338.0 538.2ZM353.1 499.0L334.0 499.0L334.0 504.8L345.4 504.8L345.1 506.2L331.9 506.5L332.9 512.0C335.8 511.8 338.7 511.5 341.7 511.3C339.1 513.2 335.4 514.2 331.5 514.8L334.3 520.5C345.8 517.8 352.9 512.0 353.1 499.0ZM365.9 518.3L365.9 497.4L358.7 497.4L358.7 518.3ZM394.3 522.5C389.5 523.5 384.0 523.7 379.9 523.6L379.9 517.1L391.9 517.1L391.9 500.7L372.6 500.7L372.6 506.3L384.6 506.3L384.6 511.5L372.6 511.5L372.6 529.5C373.8 529.6 375.1 529.7 376.4 529.7C382.6 529.7 391.2 529.2 395.0 528.2ZM408.9 518.5L408.9 512.6L403.8 512.6L403.8 497.4L396.7 497.4L396.7 538.8L403.8 538.8L403.8 518.5Z" fill="#ffd400"/>
+      </g>
+      <!-- body highlight -->
+      <rect x="292" y="392" width="16" height="480" rx="8" fill="#ffffff" opacity="0.28"/>
+      <rect x="222" y="860" width="216" height="24" rx="10" fill="#0a2f6e"/>
+    </g>
+  </g>
+</svg>
