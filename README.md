@@ -7,6 +7,12 @@ MagicLine4NX, nProtect, AnySign4PC, and their leftovers) on your own Mac.
 
 Swift + SwiftUI, macOS 26, Apple silicon and Intel. No dependencies.
 
+## Download
+
+Get the latest `.dmg` from [Releases](https://github.com/hjun1052/gurakilla/releases/latest). Requires macOS 26 or later
+(universal). The app is ad-hoc signed and not notarized: open it the first time with right-click → Open, or
+System Settings → Privacy & Security → Open Anyway.
+
 ## Build
 
 ```sh
