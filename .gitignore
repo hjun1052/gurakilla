@@ -4,3 +4,11 @@ build/
 research/downloads/
 research/expanded/
 research/vm-test/out/
+
+# Local-only research data: this Mac's inventory and copies of bank web pages (not redistributed)
+research/raw/
+research/baseline.json
+research/post-research.json
+research/processes.json
+research/launchd.json
+research/installers.json

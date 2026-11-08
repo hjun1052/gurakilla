@@ -8,20 +8,24 @@ or **Unverified** (needs more testing).
 
 | File | What it is |
 |---|---|
-| `baseline.json` | Full read-only inventory before any work: processes + Team IDs, launchd jobs and state, overrides, receipts, bundles, system/kernel extensions, vendor folders, browser native-messaging hosts, certificates + trust, GuraKilla's scan |
-| `post-research.json` | Same inventory after the research (for comparison) |
+| `baseline.json` * | Full read-only inventory before any work: processes + Team IDs, launchd jobs and state, overrides, receipts, bundles, system/kernel extensions, vendor folders, browser native-messaging hosts, certificates + trust, GuraKilla's scan |
+| `post-research.json` * | Same inventory after the research (for comparison) |
 | `products.json` | Per-product facts: versions, official download URLs + SHA-256, signer, notarization, supported macOS, which banks use it |
-| `processes.json` | Vendor processes with real executable path, argv[0], Team ID, root or not, managing launchd job |
-| `launchd.json` | Vendor launchd jobs: plist, domain, program, RunAtLoad/KeepAlive, overrides, live state |
-| `installers.json` | Static inspection of each downloaded installer: signature, packages, payload, script actions |
+| `processes.json` * | Vendor processes with real executable path, argv[0], Team ID, root or not, managing launchd job |
+| `launchd.json` * | Vendor launchd jobs: plist, domain, program, RunAtLoad/KeepAlive, overrides, live state |
+| `installers.json` * | Static inspection of each downloaded installer: signature, packages, payload, script actions |
 | `installations.md` | What each installer does; behaviour of installed copies (auto-start, restarts, root, extensions) |
 | `uninstallation.md` | Vendor uninstallers, what they remove, gaps, and the expected end state per product |
 | `cleanup-verification.md` | Before/after diff of this run, leftovers from earlier uninstalls, recovery plan, procedure for a real test |
 | `compatibility-matrix.md` | Products × facts and banks × products |
 | `vm-test/` | Install → GuraKilla removal of 6 products in throwaway macOS VMs: per-step inventories, diffs, logs, scripts |
-| `raw/` | Bank pages and JavaScript as fetched (evidence for every Documented URL) |
+| `raw/` * | Bank pages and JavaScript as fetched (evidence for every Documented URL) |
 | `downloads/` | Official installers (git-ignored; hashes in `downloads/manifest.json`) |
 | `tools/` | Scripts to reproduce everything |
+
+\* Not in the public repository: the inventories describe the author's own Mac, and `raw/` holds copies of
+banks' web pages and scripts, which are not ours to redistribute. Recreate them with the commands below.
+The findings that came from them are written up in the Markdown files here.
 
 ## Reproduce
 

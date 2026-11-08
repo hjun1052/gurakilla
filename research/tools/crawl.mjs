@@ -2,6 +2,7 @@
 // Crawls a bank's security-install pages and the JS they load, saving raw
 // copies and printing every line that references a macOS package or version.
 const fs = await import("node:fs/promises");
+// ego-browser's runtime has no process.env: set this to your checkout before running.
 const RAW = "/path/to/gurakilla/research/raw/";
 const UA = { "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140 Safari/537.36", "accept-language": "ko-KR,ko;q=0.9" };
 const BANKS = JSON.parse(await fs.readFile(RAW + "../tools/banks.json", "utf8"));
