@@ -1,0 +1,5 @@
+2026-11-08T04:25:43Z  REMOVAL_START       Delfino: 6 item(s) [cli]
+2026-11-08T04:25:43Z  UNLOAD              gui/501/com.wizvera.delfino
+2026-11-08T04:25:43Z  MOVE_TO_TRASH       /Applications/Delfino -> /Users/admin/.Trash/GuraKilla 20261108-042543/Applications/Delfino
+2026-11-08T04:25:43Z  MOVE_TO_TRASH       /Library/Application Support/wizvera/delfino -> /Users/admin/.Trash/GuraKilla 20261108-042543/Library/Application Support/wizvera/delfino
+2026-11-08T04:26:44Z  REMOVAL_END         Delfino: /bin/sh: line 7:  1070 Terminated: 15          ( /usr/bin/security remove-trusted-cert -d '/Users/admin/Library/Application Support/GuraKilla/certificate-backups/A4796AC9DEB8B26E80A8FC739381027FE7779ADB49A6350618C86D2158EFD717.pem' )

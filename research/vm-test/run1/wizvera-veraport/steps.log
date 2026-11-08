@@ -1,0 +1,8 @@
+[04:21:13] snapshot before
+[04:21:17] install /Volumes/My Shared Files/repo/research/downloads/kb-veraport-g3/veraport-g3.pkg
+[04:21:31] installer exit 0
+[04:22:01] snapshot installed
+[04:22:07] remove via GuraKilla
+[04:23:15] remove exit 1
+[04:23:30] snapshot removed
+[04:23:33] done

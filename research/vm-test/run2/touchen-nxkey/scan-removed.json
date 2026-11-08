@@ -1,0 +1,39 @@
+{
+  "products" : [
+    {
+      "bundles" : [
+
+      ],
+      "certificates" : [
+
+      ],
+      "extraPaths" : [
+
+      ],
+      "id" : "touchen-nxkey",
+      "installPaths" : [
+
+      ],
+      "kernelExtensions" : [
+        "\/Library\/Extensions\/TKVHD.kext"
+      ],
+      "launchJobs" : [
+
+      ],
+      "name" : "TouchEn nxKey",
+      "processes" : [
+
+      ],
+      "publisher" : "RaonSecure",
+      "receipts" : [
+
+      ],
+      "systemExtensions" : [
+
+      ],
+      "uninstallers" : [
+
+      ]
+    }
+  ]
+}

@@ -1,0 +1,488 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		04E38057E85F00EECA35ADC4 /* ProductDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68CE3550098B7C5E1558629F /* ProductDetailView.swift */; };
+		059F6FE6D58A10E6071871F2 /* CertificateInspector.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6CDB131F0DCFF13212F39E0 /* CertificateInspector.swift */; };
+		15D448E20093000C356A1786 /* AuditLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FAAE437DDDB15E5862DEC26 /* AuditLog.swift */; };
+		265957AE67600E1014E14C6C /* GuraKillaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36542EA12FC71637743505B1 /* GuraKillaApp.swift */; };
+		26C765A92BE192F4CF6A2414 /* ProcessInspector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E9D17E2F70CA8B6B30002F6 /* ProcessInspector.swift */; };
+		2BF7839D062F1B2978CE9ECA /* ScanReport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D49C735F47A10B0BCDED834 /* ScanReport.swift */; };
+		4DE850523F2534411DE3E5F2 /* ProcessController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 787CAE6250C5592F28B81845 /* ProcessController.swift */; };
+		5C807CF32B8A57DCB7777F8F /* LaunchdInspector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B7655AC5FDE84EBB443DD7C /* LaunchdInspector.swift */; };
+		624845A8A325B4DB8D7AAEDC /* Uninstaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA6ABE02EA4D5AC6F52074D /* Uninstaller.swift */; };
+		8148D37866EFC492094CA652 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2622D27F172907F2561E233A /* ContentView.swift */; };
+		83057E7627422B48C6431AD1 /* Sheets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CADE3AC1C75C828D3230A6C /* Sheets.swift */; };
+		8B4A615F35D8F3EEFE734F79 /* Detector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1571BEC672FA879695612037 /* Detector.swift */; };
+		95B3F1232D23E060B65C24F1 /* EngineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B4917B3451BA06399DB5519 /* EngineTests.swift */; };
+		C16F53B3B8FA00067552E45E /* Registry.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0DE2B1D71D93DC5FB319F5A /* Registry.swift */; };
+		CAD98809683577722B6F878D /* AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 909C16E3D28371F74747244B /* AppModel.swift */; };
+		E22CD9197E10E674FFAF46C8 /* ProductRegressionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED32380474500400D70625B0 /* ProductRegressionTests.swift */; };
+		F5A53B2071B38E160D962C57 /* Shell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98CEDB3DF31D4A9A2DE40299 /* Shell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		70238625528056D051A69808 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 780111EB96D4D0DD9EB2110C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FF9169B743F0B25263B522E4;
+			remoteInfo = GuraKilla;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0B7655AC5FDE84EBB443DD7C /* LaunchdInspector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchdInspector.swift; sourceTree = "<group>"; };
+		0E9D17E2F70CA8B6B30002F6 /* ProcessInspector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcessInspector.swift; sourceTree = "<group>"; };
+		1571BEC672FA879695612037 /* Detector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Detector.swift; sourceTree = "<group>"; };
+		2622D27F172907F2561E233A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		2CADE3AC1C75C828D3230A6C /* Sheets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sheets.swift; sourceTree = "<group>"; };
+		36542EA12FC71637743505B1 /* GuraKillaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuraKillaApp.swift; sourceTree = "<group>"; };
+		4D49C735F47A10B0BCDED834 /* ScanReport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanReport.swift; sourceTree = "<group>"; };
+		5B4917B3451BA06399DB5519 /* EngineTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EngineTests.swift; sourceTree = "<group>"; };
+		5FAAE437DDDB15E5862DEC26 /* AuditLog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuditLog.swift; sourceTree = "<group>"; };
+		68CE3550098B7C5E1558629F /* ProductDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailView.swift; sourceTree = "<group>"; };
+		698792F91EF5F6586436D569 /* GuraKilla.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GuraKilla.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A511340F4B1132CE81EF327 /* GuraKillaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GuraKillaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		787CAE6250C5592F28B81845 /* ProcessController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcessController.swift; sourceTree = "<group>"; };
+		909C16E3D28371F74747244B /* AppModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppModel.swift; sourceTree = "<group>"; };
+		98CEDB3DF31D4A9A2DE40299 /* Shell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shell.swift; sourceTree = "<group>"; };
+		D0DE2B1D71D93DC5FB319F5A /* Registry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Registry.swift; sourceTree = "<group>"; };
+		ED32380474500400D70625B0 /* ProductRegressionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductRegressionTests.swift; sourceTree = "<group>"; };
+		EEA6ABE02EA4D5AC6F52074D /* Uninstaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Uninstaller.swift; sourceTree = "<group>"; };
+		F6CDB131F0DCFF13212F39E0 /* CertificateInspector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CertificateInspector.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		002BE032EFA93110F7283248 /* GuraKilla */ = {
+			isa = PBXGroup;
+			children = (
+				FF088C97A3630407BEAA4136 /* App */,
+				F08310E8ECC1E6DF8E7ABBD7 /* Engine */,
+				5695FEB6FBAB86F256BBB71A /* UI */,
+			);
+			path = GuraKilla;
+			sourceTree = "<group>";
+		};
+		0C7EE5BC8B46B38156FF40EA /* GuraKillaTests */ = {
+			isa = PBXGroup;
+			children = (
+				5B4917B3451BA06399DB5519 /* EngineTests.swift */,
+				ED32380474500400D70625B0 /* ProductRegressionTests.swift */,
+			);
+			path = GuraKillaTests;
+			sourceTree = "<group>";
+		};
+		5695FEB6FBAB86F256BBB71A /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				909C16E3D28371F74747244B /* AppModel.swift */,
+				2622D27F172907F2561E233A /* ContentView.swift */,
+				68CE3550098B7C5E1558629F /* ProductDetailView.swift */,
+				2CADE3AC1C75C828D3230A6C /* Sheets.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		9DD66EB33E5FF22D84251169 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				698792F91EF5F6586436D569 /* GuraKilla.app */,
+				6A511340F4B1132CE81EF327 /* GuraKillaTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BCFD5332636B1428AFDB5973 = {
+			isa = PBXGroup;
+			children = (
+				002BE032EFA93110F7283248 /* GuraKilla */,
+				0C7EE5BC8B46B38156FF40EA /* GuraKillaTests */,
+				9DD66EB33E5FF22D84251169 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F08310E8ECC1E6DF8E7ABBD7 /* Engine */ = {
+			isa = PBXGroup;
+			children = (
+				5FAAE437DDDB15E5862DEC26 /* AuditLog.swift */,
+				F6CDB131F0DCFF13212F39E0 /* CertificateInspector.swift */,
+				1571BEC672FA879695612037 /* Detector.swift */,
+				0B7655AC5FDE84EBB443DD7C /* LaunchdInspector.swift */,
+				787CAE6250C5592F28B81845 /* ProcessController.swift */,
+				0E9D17E2F70CA8B6B30002F6 /* ProcessInspector.swift */,
+				D0DE2B1D71D93DC5FB319F5A /* Registry.swift */,
+				4D49C735F47A10B0BCDED834 /* ScanReport.swift */,
+				98CEDB3DF31D4A9A2DE40299 /* Shell.swift */,
+				EEA6ABE02EA4D5AC6F52074D /* Uninstaller.swift */,
+			);
+			path = Engine;
+			sourceTree = "<group>";
+		};
+		FF088C97A3630407BEAA4136 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				36542EA12FC71637743505B1 /* GuraKillaApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2FD1AB9C416697249C532E38 /* GuraKillaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B2FB2ACA60421A7ED5B94140 /* Build configuration list for PBXNativeTarget "GuraKillaTests" */;
+			buildPhases = (
+				DE34376E227C3107072A2F4E /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D5F3B1D16DE47777884E7296 /* PBXTargetDependency */,
+			);
+			name = GuraKillaTests;
+			packageProductDependencies = (
+			);
+			productName = GuraKillaTests;
+			productReference = 6A511340F4B1132CE81EF327 /* GuraKillaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FF9169B743F0B25263B522E4 /* GuraKilla */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 994999A8E7DFAABDFDCC6E20 /* Build configuration list for PBXNativeTarget "GuraKilla" */;
+			buildPhases = (
+				07E7D72D518CBC11CC3DBA5E /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GuraKilla;
+			packageProductDependencies = (
+			);
+			productName = GuraKilla;
+			productReference = 698792F91EF5F6586436D569 /* GuraKilla.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		780111EB96D4D0DD9EB2110C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					2FD1AB9C416697249C532E38 = {
+						ProvisioningStyle = Manual;
+					};
+					FF9169B743F0B25263B522E4 = {
+						ProvisioningStyle = Manual;
+					};
+				};
+			};
+			buildConfigurationList = 3EB69200F9B1D5C05FE58D7E /* Build configuration list for PBXProject "GuraKilla" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = BCFD5332636B1428AFDB5973;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 9DD66EB33E5FF22D84251169 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FF9169B743F0B25263B522E4 /* GuraKilla */,
+				2FD1AB9C416697249C532E38 /* GuraKillaTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		07E7D72D518CBC11CC3DBA5E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CAD98809683577722B6F878D /* AppModel.swift in Sources */,
+				15D448E20093000C356A1786 /* AuditLog.swift in Sources */,
+				059F6FE6D58A10E6071871F2 /* CertificateInspector.swift in Sources */,
+				8148D37866EFC492094CA652 /* ContentView.swift in Sources */,
+				8B4A615F35D8F3EEFE734F79 /* Detector.swift in Sources */,
+				265957AE67600E1014E14C6C /* GuraKillaApp.swift in Sources */,
+				5C807CF32B8A57DCB7777F8F /* LaunchdInspector.swift in Sources */,
+				4DE850523F2534411DE3E5F2 /* ProcessController.swift in Sources */,
+				26C765A92BE192F4CF6A2414 /* ProcessInspector.swift in Sources */,
+				04E38057E85F00EECA35ADC4 /* ProductDetailView.swift in Sources */,
+				C16F53B3B8FA00067552E45E /* Registry.swift in Sources */,
+				2BF7839D062F1B2978CE9ECA /* ScanReport.swift in Sources */,
+				83057E7627422B48C6431AD1 /* Sheets.swift in Sources */,
+				F5A53B2071B38E160D962C57 /* Shell.swift in Sources */,
+				624845A8A325B4DB8D7AAEDC /* Uninstaller.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE34376E227C3107072A2F4E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95B3F1232D23E060B65C24F1 /* EngineTests.swift in Sources */,
+				E22CD9197E10E674FFAF46C8 /* ProductRegressionTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D5F3B1D16DE47777884E7296 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FF9169B743F0B25263B522E4 /* GuraKilla */;
+			targetProxy = 70238625528056D051A69808 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		05301340E9E5760B6BED9CCD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APP_SANDBOX = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = GuraKilla;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "GuraKilla — local system management utility";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.hjun.GuraKilla;
+				PRODUCT_NAME = GuraKilla;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		2F620961E3993D64BE865427 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 26.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		4DF53573AD5EBE6929736E3B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dev.hjun.GuraKillaTests;
+				SDKROOT = macosx;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GuraKilla.app/Contents/MacOS/GuraKilla";
+			};
+			name = Debug;
+		};
+		4FED4CF1D6B33766DA56BA4A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APP_SANDBOX = NO;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = GuraKilla;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "GuraKilla — local system management utility";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.hjun.GuraKilla;
+				PRODUCT_NAME = GuraKilla;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		BE442E5A8E75C6744DB61C55 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dev.hjun.GuraKillaTests;
+				SDKROOT = macosx;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GuraKilla.app/Contents/MacOS/GuraKilla";
+			};
+			name = Release;
+		};
+		E9A96DE92088F1A0DCE9ABB1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 26.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3EB69200F9B1D5C05FE58D7E /* Build configuration list for PBXProject "GuraKilla" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2F620961E3993D64BE865427 /* Debug */,
+				E9A96DE92088F1A0DCE9ABB1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		994999A8E7DFAABDFDCC6E20 /* Build configuration list for PBXNativeTarget "GuraKilla" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				05301340E9E5760B6BED9CCD /* Debug */,
+				4FED4CF1D6B33766DA56BA4A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		B2FB2ACA60421A7ED5B94140 /* Build configuration list for PBXNativeTarget "GuraKillaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4DF53573AD5EBE6929736E3B /* Debug */,
+				BE442E5A8E75C6744DB61C55 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 780111EB96D4D0DD9EB2110C /* Project object */;
+}

@@ -1,0 +1,21 @@
+Removal plan for TouchEn nxKey:
+  [x] Install location: /Applications/TouchEn nxKey
+  [x] Install location: /Library/Application Support/raonsecure/TouchEn nxKey  (admin)
+  [x] Installed file: /Library/Internet Plug-Ins/npraontouchenex.plugin  (admin)
+  [x] Launchd plist: /Library/LaunchAgents/com.raon.agent.touchen.nxkey.plist  (admin)
+  [x] Launchd plist: /Library/LaunchAgents/com.raon.touchen.UserAgent.plist  (admin)
+  [x] Launchd plist: /Library/LaunchDaemons/com.raon.touchen.nxkey.plist  (admin)
+  [x] Package receipt: com.raonsecure.pkg.nxkey  (admin)
+  [-] not touched: /Library/Extensions/TKVHD.kext (Kernel extension — use the vendor uninstaller. GuraKilla never removes kernel extensions.)
+Moved to Trash: /Applications/TouchEn nxKey
+Administrator steps:
+  '/bin/launchctl' 'bootout' 'system/com.raon.touchen.nxkey'
+  if /bin/ps -p 1102 -o lstart= | /usr/bin/grep -qF 'Sun Nov  8 04:52:13 2026'; then /bin/kill -TERM 1102; fi
+  /bin/mkdir -p '/Users/admin/.Trash/GuraKilla 20261108-045257/Library/Application Support/raonsecure' && /bin/mv '/Library/Application Support/raonsecure/TouchEn nxKey' '/Users/admin/.Trash/GuraKilla 20261108-045257/Library/Application Support/raonsecure/TouchEn nxKey'
+  /bin/mkdir -p '/Users/admin/.Trash/GuraKilla 20261108-045257/Library/Internet Plug-Ins' && /bin/mv '/Library/Internet Plug-Ins/npraontouchenex.plugin' '/Users/admin/.Trash/GuraKilla 20261108-045257/Library/Internet Plug-Ins/npraontouchenex.plugin'
+  /bin/mkdir -p '/Users/admin/.Trash/GuraKilla 20261108-045257/Library/LaunchAgents' && /bin/mv '/Library/LaunchAgents/com.raon.agent.touchen.nxkey.plist' '/Users/admin/.Trash/GuraKilla 20261108-045257/Library/LaunchAgents/com.raon.agent.touchen.nxkey.plist'
+  /bin/mkdir -p '/Users/admin/.Trash/GuraKilla 20261108-045257/Library/LaunchAgents' && /bin/mv '/Library/LaunchAgents/com.raon.touchen.UserAgent.plist' '/Users/admin/.Trash/GuraKilla 20261108-045257/Library/LaunchAgents/com.raon.touchen.UserAgent.plist'
+  /bin/mkdir -p '/Users/admin/.Trash/GuraKilla 20261108-045257/Library/LaunchDaemons' && /bin/mv '/Library/LaunchDaemons/com.raon.touchen.nxkey.plist' '/Users/admin/.Trash/GuraKilla 20261108-045257/Library/LaunchDaemons/com.raon.touchen.nxkey.plist'
+  /usr/sbin/chown -R 501:20 '/Users/admin/.Trash/GuraKilla 20261108-045257'
+  /usr/sbin/pkgutil --forget 'com.raonsecure.pkg.nxkey'
+Removed. Restore from the app's Restore Settings.

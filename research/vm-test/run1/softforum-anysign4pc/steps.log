@@ -1,0 +1,8 @@
+[04:34:29] snapshot before
+[04:34:47] install /Volumes/My Shared Files/repo/research/downloads/softforum-anysign4pc/anysign4pc_mac_universal.pkg
+[04:34:52] installer exit 0
+[04:35:22] snapshot installed
+[04:35:29] remove via GuraKilla
+[04:36:33] remove exit 1
+[04:36:48] snapshot removed
+[04:36:51] done

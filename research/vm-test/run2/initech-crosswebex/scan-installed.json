@@ -1,0 +1,123 @@
+{
+  "products" : [
+    {
+      "bundles" : [
+        {
+          "bundleID" : "com.initech.INISAFECrossWebEXSvc",
+          "path" : "\/Applications\/CrossWebEX\/INISAFECrossWebEXSvc.app",
+          "signing" : "Team BN4D26VM76",
+          "version" : "1.0.1"
+        },
+        {
+          "bundleID" : "com.yourcompany.UnInstallCrossEX",
+          "path" : "\/Applications\/CrossWebEX\/UnInstallCrossEX.app",
+          "signing" : "Team BN4D26VM76",
+          "version" : "1.0.5"
+        }
+      ],
+      "certificates" : [
+        {
+          "adminTrusted" : true,
+          "commonName" : "Initech Root Authority - CrossWeb EX",
+          "issuer" : "CN=Initech Root Authority - CrossWeb EX,OU=PKI_DEV,O=INITECH,C=kr",
+          "keychain" : "\/Library\/Keychains\/System.keychain",
+          "sha256" : "7A4FF4772CC80961D4EC746DD84D0A8E63DB7C51A09D1E01188E18E9466520B2",
+          "subject" : "CN=Initech Root Authority - CrossWeb EX,OU=PKI_DEV,O=INITECH,C=kr",
+          "userTrusted" : false
+        },
+        {
+          "adminTrusted" : true,
+          "commonName" : "localhost",
+          "issuer" : "CN=Initech Root Authority - CrossWeb EX,OU=PKI_DEV,O=INITECH,C=kr",
+          "keychain" : "\/Library\/Keychains\/System.keychain",
+          "sha256" : "886EA25B317972B261A6DEE1B71AFC8A70C62BAEC33A928AEFD70D6FDA5AF8C2",
+          "subject" : "CN=localhost,OU=PKI_DEV,O=INITECH,C=kr",
+          "userTrusted" : false
+        }
+      ],
+      "extraPaths" : [
+        "\/Library\/Application Support\/iniLINE\/CrossEX\/crosswebex"
+      ],
+      "id" : "initech-crosswebex",
+      "installPaths" : [
+        "\/Applications\/CrossWebEX",
+        "\/Library\/Application Support\/iniLINE\/CrossWebEX",
+        "\/Library\/Frameworks\/CrossWebEXFramework.framework"
+      ],
+      "kernelExtensions" : [
+
+      ],
+      "launchJobs" : [
+        {
+          "autoStarts" : true,
+          "disabled" : false,
+          "keepAlive" : true,
+          "loaded" : true,
+          "pid" : 885,
+          "plist" : "\/Library\/LaunchAgents\/com.initech.INISAFECrossWebEXSvc.plist",
+          "target" : "gui\/501\/com.initech.INISAFECrossWebEXSvc"
+        }
+      ],
+      "name" : "INISAFE CrossWeb EX",
+      "processes" : [
+        {
+          "cpu" : 0,
+          "owner" : "admin",
+          "path" : "\/Applications\/CrossWebEX\/INISAFECrossWebEXSvc.app\/Contents\/MacOS\/INISAFECrossWebEXSvc",
+          "pid" : 885,
+          "rssKB" : 20652
+        }
+      ],
+      "publisher" : "Initech",
+      "receipts" : [
+        "kr.co.initech.pkg.CrossWebEX"
+      ],
+      "systemExtensions" : [
+
+      ],
+      "uninstallers" : [
+        "\/Applications\/CrossWebEX\/UnInstallCrossEX.app"
+      ]
+    },
+    {
+      "bundles" : [
+        {
+          "bundleID" : "iniLine.CrossExChrome",
+          "path" : "\/Library\/Application Support\/iniLINE\/CrossEX\/crosswebex\/CrossExChrome.app",
+          "signing" : "Team W77CBPNBYQ",
+          "version" : "1.0.1.1392"
+        }
+      ],
+      "certificates" : [
+
+      ],
+      "extraPaths" : [
+
+      ],
+      "id" : "iniline-crossex",
+      "installPaths" : [
+        "\/Library\/Application Support\/iniLINE\/CrossEX"
+      ],
+      "kernelExtensions" : [
+
+      ],
+      "launchJobs" : [
+
+      ],
+      "name" : "CrossEX Service",
+      "processes" : [
+
+      ],
+      "publisher" : "iniLINE",
+      "receipts" : [
+
+      ],
+      "systemExtensions" : [
+
+      ],
+      "uninstallers" : [
+
+      ]
+    }
+  ]
+}

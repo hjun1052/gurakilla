@@ -1,0 +1,29 @@
+Removal plan for INISAFE CrossWeb EX:
+  [x] Install location: /Applications/CrossWebEX
+  [x] Package file: /Library/Application Support/Mozilla/NativeMessagingHosts/kr.co.iniline.crosswebex.firefox.json  (admin)
+  [x] Install location: /Library/Application Support/iniLINE/CrossWebEX
+  [x] Install location: /Library/Frameworks/CrossWebEXFramework.framework  (admin)
+  [x] Package file: /Library/Google/Chrome/NativeMessagingHosts/kr.co.iniline.crosswebex.json  (admin)
+  [x] Package file: /Library/Internet Plug-Ins/npCrossWebEXPlugin.plugin  (admin)
+  [x] Package file: /Library/Internet Plug-Ins/npinilinecrosswebex.plugin  (admin)
+  [x] Launchd plist: /Library/LaunchAgents/com.initech.INISAFECrossWebEXSvc.plist  (admin)
+  [x] Package receipt: kr.co.initech.pkg.CrossWebEX  (admin)
+  [x] Trusted certificate: Initech Root Authority - CrossWeb EX — System keychain, trusted system-wide  (admin)
+  [x] Trusted certificate: localhost — System keychain, trusted system-wide  (admin)
+Unloaded gui/501/com.initech.INISAFECrossWebEXSvc
+Moved to Trash: /Applications/CrossWebEX
+Moved to Trash: /Library/Application Support/iniLINE/CrossWebEX
+Administrator steps:
+  /bin/mkdir -p '/Users/admin/.Trash/GuraKilla 20261108-043158/Library/Application Support/Mozilla/NativeMessagingHosts' && /bin/mv '/Library/Application Support/Mozilla/NativeMessagingHosts/kr.co.iniline.crosswebex.firefox.json' '/Users/admin/.Trash/GuraKilla 20261108-043158/Library/Application Support/Mozilla/NativeMessagingHosts/kr.co.iniline.crosswebex.firefox.json'
+  /bin/mkdir -p '/Users/admin/.Trash/GuraKilla 20261108-043158/Library/Frameworks' && /bin/mv '/Library/Frameworks/CrossWebEXFramework.framework' '/Users/admin/.Trash/GuraKilla 20261108-043158/Library/Frameworks/CrossWebEXFramework.framework'
+  /bin/mkdir -p '/Users/admin/.Trash/GuraKilla 20261108-043158/Library/Google/Chrome/NativeMessagingHosts' && /bin/mv '/Library/Google/Chrome/NativeMessagingHosts/kr.co.iniline.crosswebex.json' '/Users/admin/.Trash/GuraKilla 20261108-043158/Library/Google/Chrome/NativeMessagingHosts/kr.co.iniline.crosswebex.json'
+  /bin/mkdir -p '/Users/admin/.Trash/GuraKilla 20261108-043158/Library/Internet Plug-Ins' && /bin/mv '/Library/Internet Plug-Ins/npCrossWebEXPlugin.plugin' '/Users/admin/.Trash/GuraKilla 20261108-043158/Library/Internet Plug-Ins/npCrossWebEXPlugin.plugin'
+  /bin/mkdir -p '/Users/admin/.Trash/GuraKilla 20261108-043158/Library/Internet Plug-Ins' && /bin/mv '/Library/Internet Plug-Ins/npinilinecrosswebex.plugin' '/Users/admin/.Trash/GuraKilla 20261108-043158/Library/Internet Plug-Ins/npinilinecrosswebex.plugin'
+  /bin/mkdir -p '/Users/admin/.Trash/GuraKilla 20261108-043158/Library/LaunchAgents' && /bin/mv '/Library/LaunchAgents/com.initech.INISAFECrossWebEXSvc.plist' '/Users/admin/.Trash/GuraKilla 20261108-043158/Library/LaunchAgents/com.initech.INISAFECrossWebEXSvc.plist'
+  /usr/sbin/chown -R 501:20 '/Users/admin/.Trash/GuraKilla 20261108-043158'
+  /usr/bin/security delete-certificate -Z ECEC36A169C46A7B7D26E8006F1AAC9C00EA36E1 '/Library/Keychains/System.keychain'
+  /usr/bin/security remove-trusted-cert -d '/Users/admin/Library/Application Support/GuraKilla/certificate-backups/93439AC181898FCA552B8EDC192105B3AC94813B2A190A1BC3DD538FBD7F075F.pem'
+  /usr/bin/security delete-certificate -Z E4BAA36151BF7168D0DD54E15EB4E52830E2CF79 '/Library/Keychains/System.keychain'
+  /usr/bin/security remove-trusted-cert -d '/Users/admin/Library/Application Support/GuraKilla/certificate-backups/172158D8484F2439E6BF4CD865388B80919CA1358D606C2D4053F0652F51E7C7.pem'
+  /usr/sbin/pkgutil --forget 'kr.co.initech.pkg.CrossWebEX'
+Partly removed: /bin/sh: line 12:  1090 Terminated: 15          ( /usr/bin/security remove-trusted-cert -d '/Users/admin/Library/Application Support/GuraKilla/certificate-backups/172158D8484F2439E6BF4CD865388B80919CA1358D606C2D4053F0652F51E7C7.pem' )

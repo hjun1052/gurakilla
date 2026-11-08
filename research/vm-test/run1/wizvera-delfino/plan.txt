@@ -1,0 +1,8 @@
+Removal plan for Delfino:
+  [x] Install location: /Applications/Delfino
+  [x] Install location: /Library/Application Support/wizvera/delfino
+  [x] Launchd plist: /Library/LaunchAgents/com.wizvera.delfino.plist  (admin)
+  [x] Package receipt: com.wizvera.delfino  (admin)
+  [x] Trusted certificate: DELFINO-CA — System keychain, trusted system-wide  (admin)
+  [x] Trusted certificate: 127.0.0.1 — System keychain, trusted system-wide  (admin)
+Dry run. Add --yes to remove the checked items.

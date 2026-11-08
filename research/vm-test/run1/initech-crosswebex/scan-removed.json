@@ -1,0 +1,44 @@
+{
+  "products" : [
+    {
+      "bundles" : [
+        {
+          "bundleID" : "iniLine.CrossExChrome",
+          "path" : "\/Library\/Application Support\/iniLINE\/CrossEX\/crosswebex\/CrossExChrome.app",
+          "signing" : "Team W77CBPNBYQ",
+          "version" : "1.0.1.1392"
+        }
+      ],
+      "certificates" : [
+
+      ],
+      "extraPaths" : [
+
+      ],
+      "id" : "iniline-crossex",
+      "installPaths" : [
+        "\/Library\/Application Support\/iniLINE\/CrossEX"
+      ],
+      "kernelExtensions" : [
+
+      ],
+      "launchJobs" : [
+
+      ],
+      "name" : "CrossEX Service",
+      "processes" : [
+
+      ],
+      "publisher" : "iniLINE",
+      "receipts" : [
+
+      ],
+      "systemExtensions" : [
+
+      ],
+      "uninstallers" : [
+
+      ]
+    }
+  ]
+}

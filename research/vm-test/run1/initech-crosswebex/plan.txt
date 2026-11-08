@@ -1,0 +1,13 @@
+Removal plan for INISAFE CrossWeb EX:
+  [x] Install location: /Applications/CrossWebEX
+  [x] Package file: /Library/Application Support/Mozilla/NativeMessagingHosts/kr.co.iniline.crosswebex.firefox.json  (admin)
+  [x] Install location: /Library/Application Support/iniLINE/CrossWebEX
+  [x] Install location: /Library/Frameworks/CrossWebEXFramework.framework  (admin)
+  [x] Package file: /Library/Google/Chrome/NativeMessagingHosts/kr.co.iniline.crosswebex.json  (admin)
+  [x] Package file: /Library/Internet Plug-Ins/npCrossWebEXPlugin.plugin  (admin)
+  [x] Package file: /Library/Internet Plug-Ins/npinilinecrosswebex.plugin  (admin)
+  [x] Launchd plist: /Library/LaunchAgents/com.initech.INISAFECrossWebEXSvc.plist  (admin)
+  [x] Package receipt: kr.co.initech.pkg.CrossWebEX  (admin)
+  [x] Trusted certificate: Initech Root Authority - CrossWeb EX — System keychain, trusted system-wide  (admin)
+  [x] Trusted certificate: localhost — System keychain, trusted system-wide  (admin)
+Dry run. Add --yes to remove the checked items.

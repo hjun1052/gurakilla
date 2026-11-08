@@ -1,0 +1,102 @@
+{
+  "products" : [
+    {
+      "bundles" : [
+        {
+          "bundleID" : "com.ahnlab.safetransaction.astxUninstaller",
+          "path" : "\/Applications\/AhnLab\/ASTx\/Uninstaller.app",
+          "signing" : "Team G99MLRF664",
+          "version" : "152.0.36"
+        },
+        {
+          "bundleID" : "com.ahnlab.safetransaction.Agent",
+          "path" : "\/Applications\/AhnLab\/ASTx\/astxAgent.app",
+          "signing" : "Team G99MLRF664",
+          "version" : "152.0.39"
+        },
+        {
+          "bundleID" : "com.ahnlab.safetransaction.Status",
+          "path" : "\/Applications\/AhnLab\/ASTx\/astxStatus.app",
+          "signing" : "Team G99MLRF664",
+          "version" : "152.0.43"
+        },
+        {
+          "bundleID" : "com.ahnlab.ahnreport",
+          "path" : "\/Applications\/AhnLab\/ASTx\/system\/AhnReport.app",
+          "signing" : "Team G99MLRF664",
+          "version" : "9.19.4"
+        }
+      ],
+      "certificates" : [
+        {
+          "adminTrusted" : true,
+          "commonName" : "ASTxRoot2",
+          "issuer" : "O=ASTxRoot2",
+          "keychain" : "\/Library\/Keychains\/System.keychain",
+          "sha256" : "8A81891C6200605F963355A7D7B379221D4A14F2BC55C969353C04214A7C5685",
+          "subject" : "O=ASTxRoot2",
+          "userTrusted" : false
+        }
+      ],
+      "extraPaths" : [
+        "\/Library\/Application Support\/ahnlab\/.{0D02314D-EC55-4D53-95FD-41183118B518}"
+      ],
+      "id" : "ahnlab-astx",
+      "installPaths" : [
+        "\/Applications\/AhnLab\/ASTx"
+      ],
+      "kernelExtensions" : [
+
+      ],
+      "launchJobs" : [
+        {
+          "autoStarts" : true,
+          "disabled" : false,
+          "keepAlive" : false,
+          "loaded" : false,
+          "pid" : null,
+          "plist" : "\/Library\/LaunchAgents\/com.ahnlab.astxagent.plist",
+          "target" : "gui\/501\/com.astx.firewall.Agent"
+        },
+        {
+          "autoStarts" : true,
+          "disabled" : false,
+          "keepAlive" : false,
+          "loaded" : true,
+          "pid" : 843,
+          "plist" : "\/Library\/LaunchDaemons\/com.ahnlab.astxd.plist",
+          "target" : "system\/com.astx.firewall.Daemon"
+        }
+      ],
+      "name" : "AhnLab Safe Transaction",
+      "processes" : [
+        {
+          "cpu" : 0,
+          "owner" : "root",
+          "path" : "\/Applications\/AhnLab\/ASTx\/astxd",
+          "pid" : 843,
+          "rssKB" : 48912
+        },
+        {
+          "cpu" : 0,
+          "owner" : "root",
+          "path" : "\/Applications\/AhnLab\/ASTx\/astxAgent.app\/Contents\/MacOS\/astxAgent",
+          "pid" : 846,
+          "rssKB" : 106240
+        }
+      ],
+      "publisher" : "AhnLab",
+      "receipts" : [
+        "com.ahnlab.astxagent.pkg",
+        "com.ahnlab.astx.AhnLab.pkg",
+        "com.ahnlab.astxd.pkg"
+      ],
+      "systemExtensions" : [
+
+      ],
+      "uninstallers" : [
+        "\/Applications\/AhnLab\/ASTx\/Uninstaller.app"
+      ]
+    }
+  ]
+}

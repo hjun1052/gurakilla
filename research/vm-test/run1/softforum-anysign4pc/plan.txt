@@ -1,0 +1,6 @@
+Removal plan for AnySign4PC:
+  [x] Install location: /Applications/SoftForum/AnySign4PC.app  (admin)
+  [x] Launchd plist: /Library/LaunchDaemons/com.softforum.anysign.plist  (admin)
+  [x] Package receipt: com.softforum.anysign4pc  (admin)
+  [x] Trusted certificate: Hancom With Root Authority — System keychain, trusted system-wide  (admin)
+Dry run. Add --yes to remove the checked items.

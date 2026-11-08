@@ -1,0 +1,82 @@
+{
+  "products" : [
+    {
+      "bundles" : [
+        {
+          "bundleID" : "com.wizvera.uninstaller.DelfinoUninstaller",
+          "path" : "\/Applications\/Delfino\/DelfinoUninstaller.app",
+          "signing" : "Team C86MGS2A3T",
+          "version" : "1.0"
+        },
+        {
+          "bundleID" : "com.wizvera.delfino",
+          "path" : "\/Applications\/Delfino\/delfino.app",
+          "signing" : "Team C86MGS2A3T",
+          "version" : "5.0.0.3"
+        }
+      ],
+      "certificates" : [
+        {
+          "adminTrusted" : true,
+          "commonName" : "DELFINO-CA",
+          "issuer" : "CN=DELFINO-CA,O=WIZVERA,C=KR",
+          "keychain" : "\/Library\/Keychains\/System.keychain",
+          "sha256" : "2C708E9823409E33036BA3C62C66EAAF4B8190CDDF63FC06037AC52C490151A6",
+          "subject" : "CN=DELFINO-CA,O=WIZVERA,C=KR",
+          "userTrusted" : false
+        },
+        {
+          "adminTrusted" : true,
+          "commonName" : "127.0.0.1",
+          "issuer" : "CN=DELFINO-CA,O=WIZVERA,C=KR",
+          "keychain" : "\/Library\/Keychains\/System.keychain",
+          "sha256" : "A4796AC9DEB8B26E80A8FC739381027FE7779ADB49A6350618C86D2158EFD717",
+          "subject" : "CN=127.0.0.1,O=WIZVERA,C=KR",
+          "userTrusted" : false
+        }
+      ],
+      "extraPaths" : [
+
+      ],
+      "id" : "wizvera-delfino",
+      "installPaths" : [
+        "\/Applications\/Delfino",
+        "\/Library\/Application Support\/wizvera\/delfino"
+      ],
+      "kernelExtensions" : [
+
+      ],
+      "launchJobs" : [
+        {
+          "autoStarts" : true,
+          "disabled" : false,
+          "keepAlive" : true,
+          "loaded" : true,
+          "pid" : 854,
+          "plist" : "\/Library\/LaunchAgents\/com.wizvera.delfino.plist",
+          "target" : "gui\/501\/com.wizvera.delfino"
+        }
+      ],
+      "name" : "Delfino",
+      "processes" : [
+        {
+          "cpu" : 0.29999999999999999,
+          "owner" : "admin",
+          "path" : "\/Applications\/Delfino\/delfino.app\/Contents\/MacOS\/delfino",
+          "pid" : 854,
+          "rssKB" : 53352
+        }
+      ],
+      "publisher" : "Wizvera",
+      "receipts" : [
+        "com.wizvera.delfino"
+      ],
+      "systemExtensions" : [
+
+      ],
+      "uninstallers" : [
+        "\/Applications\/Delfino\/DelfinoUninstaller.app"
+      ]
+    }
+  ]
+}

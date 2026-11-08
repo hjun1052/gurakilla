@@ -1,0 +1,4540 @@
+{
+  "label": "ahnlab-astx-0-before",
+  "capturedAt": "2026-11-08T04:41:43+0000",
+  "host": {
+    "macOS": "26.6.2",
+    "build": "25G83",
+    "arch": "arm64",
+    "sip": "System Integrity Protection status: disabled."
+  },
+  "processes": [
+    {
+      "pid": 1,
+      "ppid": 0,
+      "uid": 0,
+      "cpu": 25.5,
+      "rssKB": 26656,
+      "start": "Sun Nov 8 04:40:57 2026",
+      "path": "/sbin/launchd",
+      "user": "root"
+    },
+    {
+      "pid": 86,
+      "ppid": 1,
+      "uid": 0,
+      "cpu": 2.0,
+      "rssKB": 32432,
+      "start": "Sun Nov 8 04:41:00 2026",
+      "path": "/usr/libexec/logd",
+      "user": "root"
+    },
+    {
+      "pid": 87,
+      "ppid": 1,
+      "uid": 0,
+      "cpu": 0.0,
+      "rssKB": 8240,
+      "start": "Sun Nov 8 04:41:00 2026",
+      "path": "/usr/libexec/smd",
+      "user": "root"
+    },
+    {
+      "pid": 88,
+      "ppid": 1,
+      "uid": 0,
+      "cpu": 0.0,
+      "rssKB": 29888,
+      "start": "Sun Nov 8 04:41:00 2026",
+      "path": "/usr/libexec/UserEventAgent",
+      "user": "root"
+    },
+    {
+      "pid": 89,
+      "ppid": 1,
+      "uid": 0,
+      "cpu": 0.0,
+      "rssKB": 8976,
+      "start": "Sun Nov 8 04:41:00 2026",
+      "path": "/usr/libexec/wifiFirmwareLoader",
+      "user": "root"
+    },
+    {
+      "pid": 90,
+      "ppid": 1,
+      "uid": 0,
+      "cpu": 0.6,
+      "rssKB": 12816,
+      "start": "Sun Nov 8 04:41:00 2026",
+      "path": "/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/FSEvents.framework/Versions/A/Support/fseventsd",
+      "user": "root"
+    },
+    {
+      "pid": 91,
+      "ppid": 1,
+      "uid": 0,
+      "cpu": 0.0,
+      "rssKB": 25728,
+      "start": "Sun Nov 8 04:41:00 2026",
+      "path": "/System/Library/PrivateFrameworks/MediaRemote.framework/Support/mediaremoted",
+      "user": "root"
+    },
+    {
+      "pid": 92,
+      "ppid": 1,
+      "uid": 0,
+      "cpu": 0.0,
+      "rssKB": 160,
+      "start": "Sun Nov 8 04:41:00 2026",
+      "path": "/Library/Apple/System/Library/CoreServices/XProtect.app/Contents/MacOS/XProtect",
+      "user": "root"
+    },
+    {
+      "pid": 93,
+      "ppid": 1,
+      "uid": 0,
+      "cpu": 0.0,
+      "rssKB": 7072,
+      "start": "Sun Nov 8 04:41:00 2026",
+      "path": "/usr/sbin/systemstats",
+      "user": "root"
+    },
+    {
+      "pid": 95,
+      "ppid": 1,
+      "uid": 278,
+      "cpu": 0.0,
+      "rssKB": 10448,
+      "start": "Sun Nov 8 04:41:00 2026",
+      "path": "/System/Library/PrivateFrameworks/MobileAccessoryUpdater.framework/Support/accessoryupdaterd",
+      "user": "_accessoryupdater"
+    },
+    {
+      "pid": 96,
+      "ppid": 1,
+      "uid": 278,
+      "cpu": 0.0,
+      "rssKB": 11632,
+      "start": "Sun Nov 8 04:41:00 2026",
+      "path": "/usr/libexec/uarpassetmanagerd",
+      "user": "_accessoryupdater"
+    },
+    {
+      "pid": 97,
+      "ppid": 1,
+      "uid": 0,
+      "cpu": 1.7,
+      "rssKB": 18192,
+      "start": "Sun Nov 8 04:41:00 2026",
+      "path": "/usr/libexec/configd",
+      "user": "root"
+    },
+    {
+      "pid": 98,
+      "ppid": 1,
+      "uid": 0,
+      "cpu": 0.0,
+      "rssKB": 9072,
+      "start": "Sun Nov 8 04:41:00 2026",
+      "path": "endpointsecurityd",
+      "user": "root"
+    },
+    {
+      "pid": 99,
+      "ppid": 1,
+      "uid": 0,
+      "cpu": 0.8,
+      "rssKB": 14688,
+      "start": "Sun Nov 8 04:41:00 2026",
+      "path": "/System/Library/CoreServices/powerd.bundle/powerd",
+      "user": "root"
+    },
+    {
+      "pid": 100,
+      "ppid": 1,
+      "uid": 0,
+      "cpu": 0.0,
+      "rssKB": 7552,
+      "start": "Sun Nov 8 04:41:00 2026",
+      "path": "/usr/libexec/IOMFB_bics_daemon",
+      "user": "root"
+    },
+    {
+      "pid": 102,
+      "ppid": 1,
+      "uid": 0,
+      "cpu": 0.1,
+      "rssKB": 11664,
+      "start": "Sun Nov 8 04:41:00 2026",
+      "path": "/usr/libexec/amfid",
+      "user": "root"
+    },
+    {
+      "pid": 104,
+      "ppid": 1,
+      "uid": 0,
+      "cpu": 0.0,
+      "rssKB": 12032,
+      "start": "Sun Nov 8 04:41:00 2026",
+      "path": "/usr/libexec/remoted",
+      "user": "root"
+    },
+    {
+      "pid": 106,
+      "ppid": 1,
+      "uid": 0,
+      "cpu": 0.0,
+      "rssKB": 7424,
+      "start": "Sun Nov 8 04:41:00 2026",
+      "path": "/usr/libexec/keybagd",
+      "user": "root"
+    },
+    {
+      "pid": 107,
+      "ppid": 1,
+      "uid": 200,
+      "cpu": 0.0,
+      "rssKB": 23184,
+      "start": "Sun Nov 8 04:41:00 2026",
+      "path": "/System/Library/PrivateFrameworks/MobileSoftwareUpdate.framework/Support/softwareupdated",
+      "user": "_softwareupdate"
+    },
+    {
+      "pid": 108,
+      "ppid": 1,
+      "uid": 306,
+      "cpu": 0.0,
+      "rssKB": 9856,
+      "start": "Sun Nov 8 04:41:00 2026",
+      "path": "/System/Library/PrivateFrameworks/CoreSpeech.framework/corespeechd_system",
+      "user": "_corespeechd"
+    },
+    {
+      "pid": 113,
+      "ppid": 1,
+      "uid": 0,
+      "cpu": 0.0,
+      "rssKB": 10592,
+      "start": "Sun Nov 8 04:41:00 2026",
+      "path": "/usr/libexec/warmd",
+      "user": "root"
+    },
+    {
+      "pid": 114,
+      "ppid": 1,
+      "uid": 0,
+      "cpu": 0.7,
+      "rssKB": 46368,
+      "start": "Sun Nov 8 04:41:00 2026",
+      "path": "/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/Metadata.framework/Versions/A/Support/mds",
+      "user": "root"
+    },
+    {
+      "pid": 115,
+      "ppid": 1,
+      "uid": 240,
+      "cpu": 0.0,
+      "rssKB": 15728,
+      "start": "Sun Nov 8 04:41:00 2026",
+      "path": "/System/Library/CoreServices/iconservicesd",
+      "user": "_iconservices"
+    },
+    {
+      "pid": 116,
+      "ppid": 1,
+      "uid": 0,
+      "cpu": 0.0,
+      "rssKB": 29296,
+      "start": "Sun Nov 8 04:41:00 2026",
+      "path": "/usr/libexec/kernelmanagerd",
+      "user": "root"
+    },
+    {
+      "pid": 117,
+      "ppid": 1,
+      "uid": 0,
+      "cpu": 0.0,
+      "rssKB": 11744,
+      "start": "Sun Nov 8 04:41:00 2026",
+      "path": "/usr/libexec/diskarbitrationd",
+      "user": "root"
+    },
+    {
+      "pid": 120,
+      "ppid": 1,
+      "uid": 0,
+      "cpu": 0.3,
+      "rssKB": 34256,
+      "start": "Sun Nov 8 04:41:00 2026",
+      "path": "/usr/libexec/coreduetd",
+      "user": "root"
+    },
+    {
+      "pid": 121,
+      "ppid": 1,
+      "uid": 0,
+      "cpu": 0.1,
+      "rssKB": 2752,
+      "start": "Sun Nov 8 04:41:00 2026",
+      "path": "/usr/sbin/syslogd",
+      "user": "root"
+    },
+    {
+      "pid": 123,
+      "ppid": 1,
+      "uid": 0,
+      "cpu": 0.0,
+      "rssKB": 12448,
+      "start": "Sun Nov 8 04:41:00 2026",
+      "path": "/usr/libexec/thermalmonitord",
+      "user": "root"
+    },
+    {
+      "pid": 124,
+      "ppid": 1,
+      "uid": 0,
+      "cpu": 0.0,
+      "rssKB": 26336,
+      "start": "Sun Nov 8 04:41:00 2026",
+      "path": "/System/Library/PrivateFrameworks/CoreDuetContext.framework/Resources/contextstored",
+      "user": "root"
+    },
+    {
+      "pid": 125,
+      "ppid": 1,
+      "uid": 0,
+      "cpu": 0.0,
+      "rssKB": 11440,
+      "start": "Sun Nov 8 04:41:00 2026",
+      "path": "/usr/libexec/xprotectd",
+      "user": "root"
+    },
+    {
+      "pid": 126,
+      "ppid": 1,
+      "uid": 0,
+      "cpu": 3.6,
+      "rssKB": 34448,
+      "start": "Sun Nov 8 04:41:00 2026",
+      "path": "/usr/libexec/opendirectoryd",
+      "user": "root"
+    },
+    {
+      "pid": 127,
+      "ppid": 1,
+      "uid": 0,
+      "cpu": 8.4,
+      "rssKB": 66080,
+      "start": "Sun Nov 8 04:41:00 2026",
+      "path": "/System/Library/PrivateFrameworks/ApplePushService.framework/apsd",
+      "user": "root"
+    },
+    {
+      "pid": 128,
+      "ppid": 1,
+      "uid": 0,
+      "cpu": 0.2,
+      "rssKB": 14080,
+      "start": "Sun Nov 8 04:41:00 2026",
+      "path": "/System/Library/CoreServices/launchservicesd",
+      "user": "root"
+    },
+    {
+      "pid": 129,
+      "ppid": 1,
+      "uid": 266,
+      "cpu": 0.0,
+      "rssKB": 11216,
+      "start": "Sun Nov 8 04:41:00 2026",
+      "path": "/usr/libexec/timed",
+      "user": "_timed"
+    },
+    {
+      "pid": 130,
+      "ppid": 1,
+      "uid": 213,
+      "cpu": 0.0,
+      "rssKB": 13136,
+      "start": "Sun Nov 8 04:41:00 2026",
+      "path": "/System/Library/PrivateFrameworks/MobileDevice.framework/Versions/A/Resources/usbmuxd",
+      "user": "_usbmuxd"
+    },
+    {
+      "pid": 131,
+      "ppid": 1,
+      "uid": 0,
+      "cpu": 1.0,
+      "rssKB": 15440,
+      "start": "Sun Nov 8 04:41:00 2026",
+      "path": "/usr/sbin/securityd",
+      "user": "root"
+    },
+    {
+      "pid": 133,
+      "ppid": 1,
+      "uid": 205,
+      "cpu": 1.4,
+      "rssKB": 38736,
+      "start": "Sun Nov 8 04:41:00 2026",
+      "path": "/usr/libexec/locationd",
+      "user": "_locationd"
+    },
+    {
+      "pid": 134,
+      "ppid": 1,
+      "uid": 0,
+      "cpu": 0.0,
+      "rssKB": 18048,
+      "start": "Sun Nov 8 04:41:00 2026",
+      "path": "/usr/libexec/nesessionmanager",
+      "user": "root"
+    },
+    {
+      "pid": 135,
+      "ppid": 1,
+      "uid": 0,
+      "cpu": 0.0,
+      "rssKB": 7024,
+      "start": "Sun Nov 8 04:41:00 2026",
+      "path": "autofsd",
+      "user": "root"
+    },
+    {
+      "pid": 136,
+      "ppid": 1,
+      "uid": 0,
+      "cpu": 1.0,
+      "rssKB": 34240,
+      "start": "Sun Nov 8 04:41:00 2026",
+      "path": "/usr/libexec/dasd",
+      "user": "root"
+    },
+    {
+      "pid": 137,
+      "ppid": 1,
+      "uid": 0,
+      "cpu": 0.0,
+      "rssKB": 21840,
+      "start": "Sun Nov 8 04:41:00 2026",
+      "path": "/System/Library/PrivateFrameworks/Heimdal.framework/Helpers/kdc",
+      "user": "root"
+    },
+    {
+      "pid": 138,
+      "ppid": 1,
+      "uid": 0,
+      "cpu": 0.0,
+      "rssKB": 10224,
+      "start": "Sun Nov 8 04:41:00 2026",
+      "path": "/usr/libexec/corerepaird",
+      "user": "root"
+    },
+    {
+      "pid": 140,
+      "ppid": 1,
+      "uid": 241,
+      "cpu": 0.2,
+      "rssKB": 10000,
+      "start": "Sun Nov 8 04:41:00 2026",
+      "path": "/usr/sbin/distnoted",
+      "user": "_distnote"
+    },
+    {
+      "pid": 141,
+      "ppid": 1,
+      "uid": 0,
+      "cpu": 0.0,
+      "rssKB": 8416,
+      "start": "Sun Nov 8 04:41:00 2026",
+      "path": "/System/Library/PrivateFrameworks/AppleCredentialManager.framework/AppleCredentialManagerDaemon",
+      "user": "root"
+    },
+    {
+      "pid": 142,
+      "ppid": 1,
+      "uid": 0,
+      "cpu": 0.1,
+      "rssKB": 26352,
+      "start": "Sun Nov 8 04:41:00 2026",
+      "path": "/usr/libexec/PerfPowerServices",
+      "user": "root"
+    },
+    {
+      "pid": 143,
+      "ppid": 1,
+      "uid": 0,
+      "cpu": 0.0,
+      "rssKB": 1840,
+      "start": "Sun Nov 8 04:41:00 2026",
+      "path": "/usr/libexec/dirhelper",
+      "user": "root"
+    },
+    {
+      "pid": 144,
+      "ppid": 1,
+      "uid": 0,
+      "cpu": 0.1,
+      "rssKB": 10592,
+      "start": "Sun Nov 8 04:41:00 2026",
+      "path": "/System/Library/CoreServices/logind",
+      "user": "root"
+    },
+    {
+      "pid": 145,
+      "ppid": 1,
+      "uid": 0,
+      "cpu": 0.0,
+      "rssKB": 9424,
+      "start": "Sun Nov 8 04:41:00 2026",
+      "path": "/System/Library/PrivateFrameworks/GenerationalStorage.framework/Versions/A/Support/revisiond",
+      "user": "root"
+    },
+    {
+      "pid": 146,
+      "ppid": 1,
+      "uid": 0,
+      "cpu": 0.0,
+      "rssKB": 5872,
+      "start": "Sun Nov 8 04:41:00 2026",
+      "path": "/usr/sbin/KernelEventAgent",
+      "user": "root"
+    },
+    {
+      "pid": 148,
+      "ppid": 1,
+      "uid": 0,
+      "cpu": 1.0,
+      "rssKB": 10368,
+      "start": "Sun Nov 8 04:41:00 2026",
+      "path": "/usr/libexec/usermanagerd",
+      "user": "root"
+    },
+    {
+      "pid": 150,
+      "ppid": 1,
+      "uid": 0,
+      "cpu": 0.9,
+      "rssKB": 34512,
+      "start": "Sun Nov 8 04:41:00 2026",
+      "path": "/usr/sbin/bluetoothd",
+      "user": "root"
+    },
+    {
+      "pid": 151,
+      "ppid": 1,
+      "uid": 0,
+      "cpu": 2.0,
+      "rssKB": 7328,
+      "start": "Sun Nov 8 04:41:00 2026",
+      "path": "/usr/sbin/notifyd",
+      "user": "root"
+    },
+    {
+      "pid": 152,
+      "ppid": 1,
+      "uid": 0,
+      "cpu": 0.0,
+      "rssKB": 9312,
+      "start": "Sun Nov 8 04:41:00 2026",
+      "path": "/usr/libexec/sandboxd",
+      "user": "root"
+    },
+    {
+      "pid": 153,
+      "ppid": 1,
+      "uid": 0,
+      "cpu": 0.0,
+      "rssKB": 24432,
+      "start": "Sun Nov 8 04:41:00 2026",
+      "path": "/usr/libexec/corebrightnessd",
+      "user": "root"
+    },
+    {
+      "pid": 154,
+      "ppid": 1,
+      "uid": 0,
+      "cpu": 0.0,
+      "rssKB": 19424,
+      "start": "Sun Nov 8 04:41:00 2026",
+      "path": "/usr/libexec/AirPlayXPCHelper",
+      "user": "root"
+    },
+    {
+      "pid": 155,
+      "ppid": 1,
+      "uid": 0,
+      "cpu": 0.0,
+      "rssKB": 37568,
+      "start": "Sun Nov 8 04:41:00 2026",
+      "path": "/System/Library/Frameworks/CoreMediaIO.framework/Versions/A/Resources/com.apple.cmio.registerassistantservice",
+      "user": "root"
+    },
+    {
+      "pid": 156,
+      "ppid": 1,
+      "uid": 0,
+      "cpu": 0.0,
+      "rssKB": 1392,
+      "start": "Sun Nov 8 04:41:01 2026",
+      "path": "aslmanager",
+      "user": "root"
+    },
+    {
+      "pid": 157,
+      "ppid": 1,
+      "uid": 0,
+      "cpu": 5.2,
+      "rssKB": 28032,
+      "start": "Sun Nov 8 04:41:01 2026",
+      "path": "/System/Library/PrivateFrameworks/TCC.framework/Support/tccd",
+      "user": "root"
+    },
+    {
+      "pid": 158,
+      "ppid": 1,
+      "uid": 0,
+      "cpu": 1.4,
+      "rssKB": 12512,
+      "start": "Sun Nov 8 04:41:01 2026",
+      "path": "/usr/sbin/cfprefsd",
+      "user": "root"
+    },
+    {
+      "pid": 159,
+      "ppid": 1,
+      "uid": 501,
+      "cpu": 0.1,
+      "rssKB": 45456,
+      "start": "Sun Nov 8 04:41:01 2026",
+      "path": "/System/Library/CoreServices/loginwindow.app/Contents/MacOS/loginwindow",
+      "user": "admin"
+    },
+    {
+      "pid": 160,
+      "ppid": 1,
+      "uid": 0,
+      "cpu": 0.0,
+      "rssKB": 12816,
+      "start": "Sun Nov 8 04:41:01 2026",
+      "path": "/usr/libexec/powerexperienced",
+      "user": "root"
+    },
+    {
+      "pid": 161,
+      "ppid": 1,
+      "uid": 0,
+      "cpu": 0.0,
+      "rssKB": 17088,
+      "start": "Sun Nov 8 04:41:01 2026",
+      "path": "/System/Library/CoreServices/coreservicesd",
+      "user": "root"
+    },
+    {
+      "pid": 162,
+      "ppid": 1,
+      "uid": 0,
+      "cpu": 0.0,
+      "rssKB": 15168,
+      "start": "Sun Nov 8 04:41:01 2026",
+      "path": "/usr/libexec/securityd_system",
+      "user": "root"
+    },
+    {
+      "pid": 164,
+      "ppid": 1,
+      "uid": 263,
+      "cpu": 0.0,
+      "rssKB": 38784,
+      "start": "Sun Nov 8 04:41:01 2026",
+      "path": "/System/Library/PrivateFrameworks/CoreAnalytics.framework/Support/analyticsd",
+      "user": "_analyticsd"
+    },
+    {
+      "pid": 165,
+      "ppid": 1,
+      "uid": 0,
+      "cpu": 0.0,
+      "rssKB": 21728,
+      "start": "Sun Nov 8 04:41:01 2026",
+      "path": "/usr/libexec/fskitd",
+      "user": "root"
+    },
+    {
+      "pid": 167,
+      "ppid": 1,
+      "uid": 0,
+      "cpu": 0.0,
+      "rssKB": 23792,
+      "start": "Sun Nov 8 04:41:01 2026",
+      "path": "/usr/libexec/lsd",
+      "user": "root"
+    },
+    {
+      "pid": 168,
+      "ppid": 1,
+      "uid": 282,
+      "cpu": 2.7,
+      "rssKB": 23568,
+      "start": "Sun Nov 8 04:41:01 2026",
+      "path": "/usr/libexec/trustd",
+      "user": "_trustd"
+    },
+    {
+      "pid": 172,
+      "ppid": 1,
+      "uid": 0,
+      "cpu": 6.3,
+      "rssKB": 26048,
+      "start": "Sun Nov 8 04:41:01 2026",
+      "path": "/usr/libexec/runningboardd",
+      "user": "root"
+    },
+    {
+      "pid": 173,
+      "ppid": 1,
+      "uid": 0,
+      "cpu": 0.0,
+      "rssKB": 5664,
+      "start": "Sun Nov 8 04:41:01 2026",
+      "path": "/usr/sbin/systemkeychain",
+      "user": "root"
+    },
+    {
+      "pid": 176,
+      "ppid": 1,
+      "uid": 0,
+      "cpu": 0.0,
+      "rssKB": 12256,
+      "start": "Sun Nov 8 04:41:01 2026",
+      "path": "/usr/libexec/PowerUIAgent",
+      "user": "root"
+    },
+    {
+      "pid": 177,
+      "ppid": 1,
+      "uid": 88,
+      "cpu": 6.2,
+      "rssKB": 108528,
+      "start": "Sun Nov 8 04:41:01 2026",
+      "path": "/System/Library/PrivateFrameworks/SkyLight.framework/Resources/WindowServer",
+      "user": "_windowserver"
+    },
+    {
+      "pid": 181,
+      "ppid": 1,
+      "uid": 0,
+      "cpu": 0.0,
+      "rssKB": 12768,
+      "start": "Sun Nov 8 04:41:01 2026",
+      "path": "/usr/libexec/containermanagerd_system",
+      "user": "root"
+    },
+    {
+      "pid": 188,
+      "ppid": 1,
+      "uid": 0,
+      "cpu": 5.7,
+      "rssKB": 34640,
+      "start": "Sun Nov 8 04:41:01 2026",
+      "path": "/usr/libexec/airportd",
+      "user": "root"
+    },
+    {
+      "pid": 194,
+      "ppid": 1,
+      "uid": 0,
+      "cpu": 0.0,
+      "rssKB": 11712,
+      "start": "Sun Nov 8 04:41:01 2026",
+      "path": "/usr/libexec/trustdFileHelper",
+      "user": "root"
+    },
+    {
+      "pid": 195,
+      "ppid": 1,
+      "uid": 0,
+      "cpu": 0.0,
+      "rssKB": 13152,
+      "start": "Sun Nov 8 04:41:01 2026",
+      "path": "/System/Library/PrivateFrameworks/SystemStatusServer.framework/Support/systemstatusd",
+      "user": "root"
+    },
+    {
+      "pid": 196,
+      "ppid": 1,
+      "uid": 0,
+      "cpu": 0.0,
+      "rssKB": 21328,
+      "start": "Sun Nov 8 04:41:02 2026",
+      "path": "/System/Library/PrivateFrameworks/Heimdal.framework/Helpers/digest-service",
+      "user": "root"
+    },
+    {
+      "pid": 197,
+      "ppid": 1,
+      "uid": 0,
+      "cpu": 0.0,
+      "rssKB": 20256,
+      "start": "Sun Nov 8 04:41:02 2026",
+      "path": "/usr/libexec/eligibilityd",
+      "user": "root"
+    },
+    {
+      "pid": 198,
+      "ppid": 1,
+      "uid": 261,
+      "cpu": 0.0,
+      "rssKB": 7216,
+      "start": "Sun Nov 8 04:41:02 2026",
+      "path": "/usr/libexec/hidd",
+      "user": "_hidd"
+    },
+    {
+      "pid": 201,
+      "ppid": 1,
+      "uid": 0,
+      "cpu": 0.1,
+      "rssKB": 19840,
+      "start": "Sun Nov 8 04:41:02 2026",
+      "path": "/System/Library/Frameworks/Security.framework/Versions/A/XPCServices/authd.xpc/Contents/MacOS/authd",
+      "user": "root"
+    },
+    {
+      "pid": 202,
+      "ppid": 1,
+      "uid": 0,
+      "cpu": 0.0,
+      "rssKB": 8656,
+      "start": "Sun Nov 8 04:41:02 2026",
+      "path": "/usr/sbin/distnoted",
+      "user": "root"
+    },
+    {
+      "pid": 206,
+      "ppid": 1,
+      "uid": 0,
+      "cpu": 0.0,
+      "rssKB": 14992,
+      "start": "Sun Nov 8 04:41:02 2026",
+      "path": "/System/Library/CoreServices/ManagedClient.app/Contents/MacOS/ManagedClient",
+      "user": "root"
+    },
+    {
+      "pid": 209,
+      "ppid": 1,
+      "uid": 0,
+      "cpu": 0.2,
+      "rssKB": 65584,
+      "start": "Sun Nov 8 04:41:02 2026",
+      "path": "/usr/libexec/mobileassetd",
+      "user": "root"
+    },
+    {
+      "pid": 215,
+      "ppid": 1,
+      "uid": 0,
+      "cpu": 0.0,
+      "rssKB": 58320,
+      "start": "Sun Nov 8 04:41:02 2026",
+      "path": "/usr/libexec/syspolicyd",
+      "user": "root"
+    },
+    {
+      "pid": 216,
+      "ppid": 1,
+      "uid": 65,
+      "cpu": 1.0,
+      "rssKB": 25888,
+      "start": "Sun Nov 8 04:41:02 2026",
+      "path": "/usr/sbin/mDNSResponder",
+      "user": "_mdnsresponder"
+    },
+    {
+      "pid": 217,
+      "ppid": 1,
+      "uid": 0,
+      "cpu": 0.0,
+      "rssKB": 11440,
+      "start": "Sun Nov 8 04:41:02 2026",
+      "path": "/System/Library/CoreServices/TimeMachine/backupd",
+      "user": "root"
+    },
+    {
+      "pid": 218,
+      "ppid": 1,
+      "uid": 0,
+      "cpu": 0.0,
+      "rssKB": 15248,
+      "start": "Sun Nov 8 04:41:02 2026",
+      "path": "/usr/sbin/WirelessRadioManagerd",
+      "user": "root"
+    },
+    {
+      "pid": 219,
+      "ppid": 1,
+      "uid": 0,
+      "cpu": 0.0,
+      "rssKB": 15984,
+      "start": "Sun Nov 8 04:41:02 2026",
+      "path": "/usr/libexec/findmybeaconingd",
+      "user": "root"
+    },
+    {
+      "pid": 220,
+      "ppid": 1,
+      "uid": 88,
+      "cpu": 0.0,
+      "rssKB": 8624,
+      "start": "Sun Nov 8 04:41:02 2026",
+      "path": "/usr/sbin/distnoted",
+      "user": "_windowserver"
+    },
+    {
+      "pid": 221,
+      "ppid": 1,
+      "uid": 0,
+      "cpu": 0.0,
+      "rssKB": 8128,
+      "start": "Sun Nov 8 04:41:02 2026",
+      "path": "/usr/libexec/colorsync.displayservices",
+      "user": "root"
+    },
+    {
+      "pid": 222,
+      "ppid": 1,
+      "uid": 0,
+      "cpu": 0.0,
+      "rssKB": 6480,
+      "start": "Sun Nov 8 04:41:02 2026",
+      "path": "/System/Library/Frameworks/ColorSync.framework/Versions/A/XPCServices/com.apple.ColorSyncXPCAgent.xpc/Contents/MacOS/com.apple.ColorSyncXPCAgent",
+      "user": "root"
+    },
+    {
+      "pid": 223,
+      "ppid": 1,
+      "uid": 0,
+      "cpu": 0.0,
+      "rssKB": 10176,
+      "start": "Sun Nov 8 04:41:02 2026",
+      "path": "/usr/libexec/colorsyncd",
+      "user": "root"
+    },
+    {
+      "pid": 224,
+      "ppid": 1,
+      "uid": 0,
+      "cpu": 0.0,
+      "rssKB": 11696,
+      "start": "Sun Nov 8 04:41:02 2026",
+      "path": "/System/Library/Frameworks/Security.framework/Versions/A/XPCServices/com.apple.CodeSigningHelper.xpc/Contents/MacOS/com.apple.CodeSigningHelper",
+      "user": "root"
+    },
+    {
+      "pid": 225,
+      "ppid": 1,
+      "uid": 0,
+      "cpu": 0.0,
+      "rssKB": 26048,
+      "start": "Sun Nov 8 04:41:02 2026",
+      "path": "/System/Library/PrivateFrameworks/CloudKitDaemon.framework/Support/cloudd",
+      "user": "root"
+    },
+    {
+      "pid": 226,
+      "ppid": 1,
+      "uid": 55,
+      "cpu": 0.0,
+      "rssKB": 13120,
+      "start": "Sun Nov 8 04:41:02 2026",
+      "path": "/System/Library/CoreServices/appleeventsd",
+      "user": "_appleevents"
+    },
+    {
+      "pid": 229,
+      "ppid": 1,
+      "uid": 0,
+      "cpu": 0.0,
+      "rssKB": 29200,
+      "start": "Sun Nov 8 04:41:03 2026",
+      "path": "/usr/libexec/storagekitd",
+      "user": "root"
+    },
+    {
+      "pid": 230,
+      "ppid": 1,
+      "uid": 270,
+      "cpu": 0.0,
+      "rssKB": 3536,
+      "start": "Sun Nov 8 04:41:03 2026",
+      "path": "/System/Library/DriverExtensions/com.apple.DriverKit-IOUserDockChannelSerial.dext/com.apple.DriverKit-IOUserDockChannelSerial",
+      "user": "_driverkit"
+    },
+    {
+      "pid": 232,
+      "ppid": 1,
+      "uid": 270,
+      "cpu": 0.0,
+      "rssKB": 4048,
+      "start": "Sun Nov 8 04:41:03 2026",
+      "path": "/System/Library/DriverExtensions/com.apple.AppleUserHIDDrivers.dext/com.apple.AppleUserHIDDrivers",
+      "user": "_driverkit"
+    },
+    {
+      "pid": 233,
+      "ppid": 1,
+      "uid": 24,
+      "cpu": 0.0,
+      "rssKB": 18576,
+      "start": "Sun Nov 8 04:41:03 2026",
+      "path": "/usr/libexec/symptomsd",
+      "user": "_networkd"
+    },
+    {
+      "pid": 234,
+      "ppid": 1,
+      "uid": 289,
+      "cpu": 0.4,
+      "rssKB": 24624,
+      "start": "Sun Nov 8 04:41:03 2026",
+      "path": "/System/Library/PrivateFrameworks/BiomeStreams.framework/Support/biomed",
+      "user": "_biome"
+    },
+    {
+      "pid": 237,
+      "ppid": 1,
+      "uid": 0,
+      "cpu": 0.0,
+      "rssKB": 17248,
+      "start": "Sun Nov 8 04:41:03 2026",
+      "path": "/usr/libexec/secinitd",
+      "user": "root"
+    },
+    {
+      "pid": 238,
+      "ppid": 1,
+      "uid": 0,
+      "cpu": 0.0,
+      "rssKB": 13744,
+      "start": "Sun Nov 8 04:41:03 2026",
+      "path": "/usr/sbin/mDNSResponderHelper",
+      "user": "root"
+    },
+    {
+      "pid": 240,
+      "ppid": 1,
+      "uid": 0,
+      "cpu": 0.0,
+      "rssKB": 19776,
+      "start": "Sun Nov 8 04:41:03 2026",
+      "path": "/usr/libexec/mobileactivationd",
+      "user": "root"
+    },
+    {
+      "pid": 241,
+      "ppid": 1,
+      "uid": 0,
+      "cpu": 0.0,
+      "rssKB": 10720,
+      "start": "Sun Nov 8 04:41:03 2026",
+      "path": "/System/Library/PrivateFrameworks/SystemAdministration.framework/XPCServices/writeconfig.xpc/Contents/MacOS/writeconfig",
+      "user": "root"
+    },
+    {
+      "pid": 242,
+      "ppid": 1,
+      "uid": 0,
+      "cpu": 0.0,
+      "rssKB": 20416,
+      "start": "Sun Nov 8 04:41:03 2026",
+      "path": "/usr/libexec/symptomsd-diag",
+      "user": "root"
+    },
+    {
+      "pid": 243,
+      "ppid": 1,
+      "uid": 0,
+      "cpu": 0.0,
+      "rssKB": 24208,
+      "start": "Sun Nov 8 04:41:03 2026",
+      "path": "/usr/libexec/triald_system",
+      "user": "root"
+    },
+    {
+      "pid": 244,
+      "ppid": 1,
+      "uid": 0,
+      "cpu": 0.0,
+      "rssKB": 18016,
+      "start": "Sun Nov 8 04:41:03 2026",
+      "path": "/usr/libexec/findmydeviced",
+      "user": "root"
+    },
+    {
+      "pid": 245,
+      "ppid": 1,
+      "uid": 0,
+      "cpu": 0.0,
+      "rssKB": 6800,
+      "start": "Sun Nov 8 04:41:03 2026",
+      "path": "/System/Library/Frameworks/NetFS.framework/Versions/A/XPCServices/PlugInLibraryService.xpc/Contents/MacOS/PlugInLibraryService",
+      "user": "root"
+    },
+    {
+      "pid": 246,
+      "ppid": 1,
+      "uid": 202,
+      "cpu": 0.0,
+      "rssKB": 56096,
+      "start": "Sun Nov 8 04:41:03 2026",
+      "path": "/usr/sbin/coreaudiod",
+      "user": "_coreaudiod"
+    },
+    {
+      "pid": 248,
+      "ppid": 1,
+      "uid": 202,
+      "cpu": 0.0,
+      "rssKB": 8656,
+      "start": "Sun Nov 8 04:41:04 2026",
+      "path": "/usr/sbin/distnoted",
+      "user": "_coreaudiod"
+    },
+    {
+      "pid": 251,
+      "ppid": 1,
+      "uid": 242,
+      "cpu": 0.9,
+      "rssKB": 27568,
+      "start": "Sun Nov 8 04:41:04 2026",
+      "path": "/usr/libexec/nsurlsessiond",
+      "user": "_nsurlsessiond"
+    },
+    {
+      "pid": 254,
+      "ppid": 1,
+      "uid": 202,
+      "cpu": 0.0,
+      "rssKB": 9696,
+      "start": "Sun Nov 8 04:41:04 2026",
+      "path": "Core Audio Driver (ParrotAudioPlugin.driver)",
+      "user": "_coreaudiod"
+    },
+    {
+      "pid": 255,
+      "ppid": 1,
+      "uid": 202,
+      "cpu": 0.0,
+      "rssKB": 7120,
+      "start": "Sun Nov 8 04:41:04 2026",
+      "path": "/System/Library/Frameworks/CoreAudio.framework/Versions/A/XPCServices/com.apple.audio.DriverHelper.xpc/Contents/MacOS/com.apple.audio.DriverHelper",
+      "user": "_coreaudiod"
+    },
+    {
+      "pid": 256,
+      "ppid": 1,
+      "uid": 294,
+      "cpu": 0.0,
+      "rssKB": 23360,
+      "start": "Sun Nov 8 04:41:04 2026",
+      "path": "/usr/libexec/audiomxd",
+      "user": "_audiomxd"
+    },
+    {
+      "pid": 258,
+      "ppid": 1,
+      "uid": 0,
+      "cpu": 0.0,
+      "rssKB": 12624,
+      "start": "Sun Nov 8 04:41:04 2026",
+      "path": "/System/Library/Frameworks/AudioToolbox.framework/AudioComponentRegistrar",
+      "user": "root"
+    },
+    {
+      "pid": 259,
+      "ppid": 1,
+      "uid": 202,
+      "cpu": 0.0,
+      "rssKB": 12640,
+      "start": "Sun Nov 8 04:41:04 2026",
+      "path": "/System/Library/Frameworks/AudioToolbox.framework/XPCServices/com.apple.audio.SandboxHelper.xpc/Contents/MacOS/com.apple.audio.SandboxHelper",
+      "user": "_coreaudiod"
+    },
+    {
+      "pid": 260,
+      "ppid": 1,
+      "uid": 0,
+      "cpu": 0.0,
+      "rssKB": 10336,
+      "start": "Sun Nov 8 04:41:04 2026",
+      "path": "/usr/libexec/audioclocksyncd",
+      "user": "root"
+    },
+    {
+      "pid": 261,
+      "ppid": 1,
+      "uid": 0,
+      "cpu": 1.0,
+      "rssKB": 24608,
+      "start": "Sun Nov 8 04:41:04 2026",
+      "path": "/usr/libexec/nehelper",
+      "user": "root"
+    },
+    {
+      "pid": 263,
+      "ppid": 1,
+      "uid": 262,
+      "cpu": 0.0,
+      "rssKB": 8672,
+      "start": "Sun Nov 8 04:41:04 2026",
+      "path": "/usr/sbin/distnoted",
+      "user": "_cmiodalassistants"
+    },
+    {
+      "pid": 264,
+      "ppid": 1,
+      "uid": 0,
+      "cpu": 0.0,
+      "rssKB": 14208,
+      "start": "Sun Nov 8 04:41:04 2026",
+      "path": "/usr/libexec/bootinstalld",
+      "user": "root"
+    },
+    {
+      "pid": 265,
+      "ppid": 1,
+      "uid": 0,
+      "cpu": 0.0,
+      "rssKB": 16640,
+      "start": "Sun Nov 8 04:41:04 2026",
+      "path": "/System/Library/Frameworks/SystemExtensions.framework/Versions/A/Helpers/sysextd",
+      "user": "root"
+    },
+    {
+      "pid": 267,
+      "ppid": 1,
+      "uid": 294,
+      "cpu": 0.0,
+      "rssKB": 8672,
+      "start": "Sun Nov 8 04:41:04 2026",
+      "path": "/usr/sbin/distnoted",
+      "user": "_audiomxd"
+    },
+    {
+      "pid": 268,
+      "ppid": 1,
+      "uid": 0,
+      "cpu": 0.0,
+      "rssKB": 26000,
+      "start": "Sun Nov 8 04:41:04 2026",
+      "path": "/System/Library/PrivateFrameworks/MobileAssetDaemon.framework/Versions/A/XPCServices/com.apple.MobileAsset.DownloadService.Builtin.xpc/Contents/MacOS/com.apple.MobileAsset.DownloadService.Builtin",
+      "user": "root"
+    },
+    {
+      "pid": 269,
+      "ppid": 1,
+      "uid": 0,
+      "cpu": 0.0,
+      "rssKB": 11488,
+      "start": "Sun Nov 8 04:41:04 2026",
+      "path": "/System/Library/CoreServices/Software Update.app/Contents/Resources/suhelperd",
+      "user": "root"
+    },
+    {
+      "pid": 271,
+      "ppid": 1,
+      "uid": 262,
+      "cpu": 0.0,
+      "rssKB": 12640,
+      "start": "Sun Nov 8 04:41:04 2026",
+      "path": "/usr/libexec/com.apple.cmio.videodriverkithostextension.systemextension/Contents/MacOS/com.apple.cmio.videodriverkithostextension",
+      "user": "_cmiodalassistants"
+    },
+    {
+      "pid": 274,
+      "ppid": 1,
+      "uid": 0,
+      "cpu": 0.0,
+      "rssKB": 17840,
+      "start": "Sun Nov 8 04:41:05 2026",
+      "path": "/System/Library/CoreServices/osanalyticshelper",
+      "user": "root"
+    },
+    {
+      "pid": 276,
+      "ppid": 1,
+      "uid": 0,
+      "cpu": 0.0,
+      "rssKB": 26720,
+      "start": "Sun Nov 8 04:41:05 2026",
+      "path": "/System/Library/PrivateFrameworks/BackgroundTaskManagement.framework/Resources/backgroundtaskmanagementd",
+      "user": "root"
+    },
+    {
+      "pid": 279,
+      "ppid": 1,
+      "uid": 0,
+      "cpu": 0.0,
+      "rssKB": 5552,
+      "start": "Sun Nov 8 04:41:05 2026",
+      "path": "/System/Library/CoreServices/liquiddetectiond.app/liquiddetectiond",
+      "user": "root"
+    },
+    {
+      "pid": 284,
+      "ppid": 1,
+      "uid": 0,
+      "cpu": 0.0,
+      "rssKB": 24128,
+      "start": "Sun Nov 8 04:41:05 2026",
+      "path": "/opt/homebrew/bin/tart-guest-agent",
+      "user": "root",
+      "signing": {
+        "signed": true,
+        "Identifier": "tart-guest-agent",
+        "Authority": "Developer ID Application: Cirrus Labs, Inc. (9M2P8L4D89)",
+        "TeamIdentifier": "9M2P8L4D89",
+        "valid": true
+      }
+    },
+    {
+      "pid": 285,
+      "ppid": 1,
+      "uid": 262,
+      "cpu": 0.0,
+      "rssKB": 16256,
+      "start": "Sun Nov 8 04:41:05 2026",
+      "path": "/System/Library/Frameworks/CoreMediaIO.framework/Versions/A/Resources/UVCAssistant.systemextension/Contents/MacOS/UVCAssistant",
+      "user": "_cmiodalassistants"
+    },
+    {
+      "pid": 286,
+      "ppid": 1,
+      "uid": 0,
+      "cpu": 0.0,
+      "rssKB": 7696,
+      "start": "Sun Nov 8 04:41:05 2026",
+      "path": "/System/Library/CryptoTokenKit/com.apple.ifdreader.slotd/Contents/MacOS/com.apple.ifdreader",
+      "user": "root"
+    },
+    {
+      "pid": 290,
+      "ppid": 1,
+      "uid": 0,
+      "cpu": 0.0,
+      "rssKB": 21552,
+      "start": "Sun Nov 8 04:41:05 2026",
+      "path": "/System/Library/Frameworks/GSS.framework/Helpers/GSSCred",
+      "user": "root"
+    },
+    {
+      "pid": 300,
+      "ppid": 1,
+      "uid": 0,
+      "cpu": 0.0,
+      "rssKB": 11584,
+      "start": "Sun Nov 8 04:41:05 2026",
+      "path": "/usr/libexec/apfsd",
+      "user": "root"
+    },
+    {
+      "pid": 301,
+      "ppid": 1,
+      "uid": 200,
+      "cpu": 0.0,
+      "rssKB": 65376,
+      "start": "Sun Nov 8 04:41:05 2026",
+      "path": "/System/Library/CoreServices/Software Update.app/Contents/Resources/softwareupdated",
+      "user": "_softwareupdate"
+    },
+    {
+      "pid": 302,
+      "ppid": 1,
+      "uid": 0,
+      "cpu": 0.0,
+      "rssKB": 15408,
+      "start": "Sun Nov 8 04:41:05 2026",
+      "path": "/usr/libexec/countryd",
+      "user": "root"
+    },
+    {
+      "pid": 303,
+      "ppid": 1,
+      "uid": 200,
+      "cpu": 0.0,
+      "rssKB": 8640,
+      "start": "Sun Nov 8 04:41:05 2026",
+      "path": "/usr/sbin/distnoted",
+      "user": "_softwareupdate"
+    },
+    {
+      "pid": 307,
+      "ppid": 1,
+      "uid": 0,
+      "cpu": 0.0,
+      "rssKB": 14192,
+      "start": "Sun Nov 8 04:41:05 2026",
+      "path": "/usr/libexec/rtcreportingd",
+      "user": "root"
+    },
+    {
+      "pid": 308,
+      "ppid": 1,
+      "uid": 205,
+      "cpu": 0.0,
+      "rssKB": 8672,
+      "start": "Sun Nov 8 04:41:05 2026",
+      "path": "/usr/sbin/distnoted",
+      "user": "_locationd"
+    },
+    {
+      "pid": 309,
+      "ppid": 1,
+      "uid": 205,
+      "cpu": 0.1,
+      "rssKB": 28432,
+      "start": "Sun Nov 8 04:41:05 2026",
+      "path": "/System/Library/PrivateFrameworks/GeoServices.framework/Versions/A/XPCServices/com.apple.geod.xpc/Contents/MacOS/com.apple.geod",
+      "user": "_locationd"
+    },
+    {
+      "pid": 310,
+      "ppid": 1,
+      "uid": 205,
+      "cpu": 0.0,
+      "rssKB": 16832,
+      "start": "Sun Nov 8 04:41:06 2026",
+      "path": "/usr/libexec/secinitd",
+      "user": "_locationd"
+    },
+    {
+      "pid": 311,
+      "ppid": 1,
+      "uid": 205,
+      "cpu": 0.0,
+      "rssKB": 9776,
+      "start": "Sun Nov 8 04:41:06 2026",
+      "path": "/usr/sbin/cfprefsd",
+      "user": "_locationd"
+    },
+    {
+      "pid": 315,
+      "ppid": 1,
+      "uid": 205,
+      "cpu": 0.0,
+      "rssKB": 18192,
+      "start": "Sun Nov 8 04:41:06 2026",
+      "path": "/usr/libexec/trustd",
+      "user": "_locationd"
+    },
+    {
+      "pid": 316,
+      "ppid": 1,
+      "uid": 0,
+      "cpu": 0.0,
+      "rssKB": 17152,
+      "start": "Sun Nov 8 04:41:06 2026",
+      "path": "/System/Library/PrivateFrameworks/ModelCatalogRuntime.framework/Versions/A/modelcatalogd",
+      "user": "root"
+    },
+    {
+      "pid": 317,
+      "ppid": 1,
+      "uid": 205,
+      "cpu": 0.0,
+      "rssKB": 12368,
+      "start": "Sun Nov 8 04:41:06 2026",
+      "path": "/usr/libexec/containermanagerd",
+      "user": "_locationd"
+    },
+    {
+      "pid": 318,
+      "ppid": 1,
+      "uid": 0,
+      "cpu": 0.0,
+      "rssKB": 8672,
+      "start": "Sun Nov 8 04:41:06 2026",
+      "path": "/System/Library/CoreServices/TimeMachine/backupd-helper",
+      "user": "root"
+    },
+    {
+      "pid": 319,
+      "ppid": 1,
+      "uid": 0,
+      "cpu": 0.0,
+      "rssKB": 6624,
+      "start": "Sun Nov 8 04:41:06 2026",
+      "path": "/usr/libexec/AppleQEMUGuestAgent",
+      "user": "root"
+    },
+    {
+      "pid": 320,
+      "ppid": 1,
+      "uid": 288,
+      "cpu": 0.0,
+      "rssKB": 9776,
+      "start": "Sun Nov 8 04:41:06 2026",
+      "path": "/usr/libexec/AppleVirtualPlatformHIDBridge",
+      "user": "_avphidbridge"
+    },
+    {
+      "pid": 321,
+      "ppid": 1,
+      "uid": 0,
+      "cpu": 0.0,
+      "rssKB": 10176,
+      "start": "Sun Nov 8 04:41:06 2026",
+      "path": "/usr/libexec/cryptexd",
+      "user": "root"
+    },
+    {
+      "pid": 322,
+      "ppid": 1,
+      "uid": 0,
+      "cpu": 0.0,
+      "rssKB": 12512,
+      "start": "Sun Nov 8 04:41:06 2026",
+      "path": "/usr/libexec/ApplicationFirewall/socketfilterfw",
+      "user": "root"
+    },
+    {
+      "pid": 323,
+      "ppid": 1,
+      "uid": 0,
+      "cpu": 0.0,
+      "rssKB": 32576,
+      "start": "Sun Nov 8 04:41:06 2026",
+      "path": "/usr/libexec/searchpartyd",
+      "user": "root"
+    },
+    {
+      "pid": 324,
+      "ppid": 1,
+      "uid": 0,
+      "cpu": 0.0,
+      "rssKB": 9456,
+      "start": "Sun Nov 8 04:41:06 2026",
+      "path": "/System/Library/PrivateFrameworks/PowerLog.framework/Versions/A/XPCServices/PerfPowerTelemetryClientRegistrationService.xpc/Contents/MacOS/PerfPowerTelemetryClientRegistrationService",
+      "user": "root"
+    },
+    {
+      "pid": 326,
+      "ppid": 1,
+      "uid": 0,
+      "cpu": 0.0,
+      "rssKB": 10640,
+      "start": "Sun Nov 8 04:41:06 2026",
+      "path": "/usr/libexec/corecaptured",
+      "user": "root"
+    },
+    {
+      "pid": 328,
+      "ppid": 1,
+      "uid": 0,
+      "cpu": 0.0,
+      "rssKB": 17680,
+      "start": "Sun Nov 8 04:41:06 2026",
+      "path": "/System/Library/Frameworks/LocalAuthentication.framework/Support/coreauthd",
+      "user": "root"
+    },
+    {
+      "pid": 329,
+      "ppid": 1,
+      "uid": 0,
+      "cpu": 0.0,
+      "rssKB": 9536,
+      "start": "Sun Nov 8 04:41:06 2026",
+      "path": "/usr/libexec/applekeystored",
+      "user": "root"
+    },
+    {
+      "pid": 330,
+      "ppid": 1,
+      "uid": 0,
+      "cpu": 0.0,
+      "rssKB": 15856,
+      "start": "Sun Nov 8 04:41:06 2026",
+      "path": "/usr/libexec/biometrickitd",
+      "user": "root"
+    },
+    {
+      "pid": 331,
+      "ppid": 1,
+      "uid": 501,
+      "cpu": 0.9,
+      "rssKB": 10592,
+      "start": "Sun Nov 8 04:41:06 2026",
+      "path": "/usr/sbin/distnoted",
+      "user": "admin"
+    },
+    {
+      "pid": 332,
+      "ppid": 1,
+      "uid": 501,
+      "cpu": 2.4,
+      "rssKB": 12960,
+      "start": "Sun Nov 8 04:41:06 2026",
+      "path": "/usr/sbin/cfprefsd",
+      "user": "admin"
+    },
+    {
+      "pid": 333,
+      "ppid": 1,
+      "uid": 0,
+      "cpu": 0.0,
+      "rssKB": 10944,
+      "start": "Sun Nov 8 04:41:06 2026",
+      "path": "/usr/libexec/rpcsvchost",
+      "user": "root"
+    },
+    {
+      "pid": 334,
+      "ppid": 1,
+      "uid": 501,
+      "cpu": 5.1,
+      "rssKB": 28144,
+      "start": "Sun Nov 8 04:41:07 2026",
+      "path": "/usr/libexec/secd",
+      "user": "admin"
+    },
+    {
+      "pid": 338,
+      "ppid": 1,
+      "uid": 501,
+      "cpu": 0.0,
+      "rssKB": 36400,
+      "start": "Sun Nov 8 04:41:07 2026",
+      "path": "/usr/libexec/UserEventAgent",
+      "user": "admin"
+    },
+    {
+      "pid": 339,
+      "ppid": 1,
+      "uid": 247,
+      "cpu": 0.0,
+      "rssKB": 8592,
+      "start": "Sun Nov 8 04:41:07 2026",
+      "path": "/usr/libexec/gamecontrollerd",
+      "user": "_gamecontrollerd"
+    },
+    {
+      "pid": 340,
+      "ppid": 1,
+      "uid": 0,
+      "cpu": 0.0,
+      "rssKB": 15472,
+      "start": "Sun Nov 8 04:41:07 2026",
+      "path": "/System/Library/PrivateFrameworks/CloudTelemetry.framework/Versions/A/XPCServices/CloudTelemetryService.xpc/Contents/MacOS/CloudTelemetryService",
+      "user": "root"
+    },
+    {
+      "pid": 341,
+      "ppid": 1,
+      "uid": 260,
+      "cpu": 0.0,
+      "rssKB": 7584,
+      "start": "Sun Nov 8 04:41:07 2026",
+      "path": "/usr/libexec/seld",
+      "user": "_applepay"
+    },
+    {
+      "pid": 342,
+      "ppid": 1,
+      "uid": 278,
+      "cpu": 0.0,
+      "rssKB": 17728,
+      "start": "Sun Nov 8 04:41:07 2026",
+      "path": "/usr/libexec/uarpd",
+      "user": "_accessoryupdater"
+    },
+    {
+      "pid": 344,
+      "ppid": 1,
+      "uid": 501,
+      "cpu": 0.0,
+      "rssKB": 45552,
+      "start": "Sun Nov 8 04:41:07 2026",
+      "path": "/System/Library/CoreServices/CoreServicesUIAgent.app/Contents/MacOS/CoreServicesUIAgent",
+      "user": "admin"
+    },
+    {
+      "pid": 345,
+      "ppid": 1,
+      "uid": 501,
+      "cpu": 0.0,
+      "rssKB": 31104,
+      "start": "Sun Nov 8 04:41:07 2026",
+      "path": "/usr/sbin/universalaccessd",
+      "user": "admin"
+    },
+    {
+      "pid": 346,
+      "ppid": 1,
+      "uid": 501,
+      "cpu": 0.5,
+      "rssKB": 43376,
+      "start": "Sun Nov 8 04:41:07 2026",
+      "path": "/usr/libexec/knowledge-agent",
+      "user": "admin"
+    },
+    {
+      "pid": 347,
+      "ppid": 1,
+      "uid": 501,
+      "cpu": 0.4,
+      "rssKB": 672,
+      "start": "Sun Nov 8 04:41:07 2026",
+      "path": "/System/Library/PrivateFrameworks/CloudServices.framework/Helpers/com.apple.sbd",
+      "user": "admin"
+    },
+    {
+      "pid": 348,
+      "ppid": 1,
+      "uid": 501,
+      "cpu": 0.4,
+      "rssKB": 16384,
+      "start": "Sun Nov 8 04:41:07 2026",
+      "path": "/usr/libexec/containermanagerd",
+      "user": "admin"
+    },
+    {
+      "pid": 349,
+      "ppid": 1,
+      "uid": 501,
+      "cpu": 0.0,
+      "rssKB": 40144,
+      "start": "Sun Nov 8 04:41:07 2026",
+      "path": "/System/Library/CoreServices/WindowManager.app/Contents/MacOS/WindowManager",
+      "user": "admin"
+    },
+    {
+      "pid": 350,
+      "ppid": 1,
+      "uid": 501,
+      "cpu": 0.0,
+      "rssKB": 18048,
+      "start": "Sun Nov 8 04:41:07 2026",
+      "path": "/usr/libexec/pboard",
+      "user": "admin"
+    },
+    {
+      "pid": 351,
+      "ppid": 1,
+      "uid": 501,
+      "cpu": 0.9,
+      "rssKB": 30976,
+      "start": "Sun Nov 8 04:41:07 2026",
+      "path": "/System/Library/PrivateFrameworks/BiomeStreams.framework/Support/BiomeAgent",
+      "user": "admin"
+    },
+    {
+      "pid": 352,
+      "ppid": 1,
+      "uid": 501,
+      "cpu": 0.0,
+      "rssKB": 20192,
+      "start": "Sun Nov 8 04:41:07 2026",
+      "path": "/usr/libexec/lsd",
+      "user": "admin"
+    },
+    {
+      "pid": 353,
+      "ppid": 1,
+      "uid": 501,
+      "cpu": 0.0,
+      "rssKB": 29616,
+      "start": "Sun Nov 8 04:41:07 2026",
+      "path": "/System/Library/PrivateFrameworks/BackgroundTaskManagement.framework/Support/BackgroundTaskManagementAgent.app/Contents/MacOS/BackgroundTaskManagementAgent",
+      "user": "admin"
+    },
+    {
+      "pid": 354,
+      "ppid": 1,
+      "uid": 55,
+      "cpu": 0.0,
+      "rssKB": 8656,
+      "start": "Sun Nov 8 04:41:07 2026",
+      "path": "/usr/sbin/distnoted",
+      "user": "_appleevents"
+    },
+    {
+      "pid": 355,
+      "ppid": 1,
+      "uid": 501,
+      "cpu": 0.0,
+      "rssKB": 94528,
+      "start": "Sun Nov 8 04:41:07 2026",
+      "path": "/System/Applications/Utilities/Terminal.app/Contents/MacOS/Terminal",
+      "user": "admin"
+    },
+    {
+      "pid": 356,
+      "ppid": 1,
+      "uid": 501,
+      "cpu": 0.0,
+      "rssKB": 60016,
+      "start": "Sun Nov 8 04:41:07 2026",
+      "path": "/System/Library/PrivateFrameworks/AppSSO.framework/Support/AppSSOAgent.app/Contents/MacOS/AppSSOAgent",
+      "user": "admin"
+    },
+    {
+      "pid": 357,
+      "ppid": 1,
+      "uid": 501,
+      "cpu": 0.0,
+      "rssKB": 8288,
+      "start": "Sun Nov 8 04:41:07 2026",
+      "path": "/System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/HIServices.framework/Versions/A/XPCServices/com.apple.hiservices-xpcservice.xpc/Contents/MacOS/com.apple.hiservices-xpcservice",
+      "user": "admin"
+    },
+    {
+      "pid": 358,
+      "ppid": 1,
+      "uid": 501,
+      "cpu": 0.0,
+      "rssKB": 64304,
+      "start": "Sun Nov 8 04:41:07 2026",
+      "path": "/System/Library/CoreServices/Dock.app/Contents/MacOS/Dock",
+      "user": "admin"
+    },
+    {
+      "pid": 359,
+      "ppid": 1,
+      "uid": 501,
+      "cpu": 0.0,
+      "rssKB": 64592,
+      "start": "Sun Nov 8 04:41:07 2026",
+      "path": "/System/Library/CoreServices/talagentd",
+      "user": "admin"
+    },
+    {
+      "pid": 360,
+      "ppid": 1,
+      "uid": 501,
+      "cpu": 0.2,
+      "rssKB": 92640,
+      "start": "Sun Nov 8 04:41:07 2026",
+      "path": "/System/Library/CoreServices/ControlCenter.app/Contents/MacOS/ControlCenter",
+      "user": "admin"
+    },
+    {
+      "pid": 361,
+      "ppid": 1,
+      "uid": 501,
+      "cpu": 0.0,
+      "rssKB": 26576,
+      "start": "Sun Nov 8 04:41:07 2026",
+      "path": "/usr/libexec/pkd",
+      "user": "admin"
+    },
+    {
+      "pid": 362,
+      "ppid": 1,
+      "uid": 501,
+      "cpu": 0.0,
+      "rssKB": 60768,
+      "start": "Sun Nov 8 04:41:07 2026",
+      "path": "/System/Library/CoreServices/SystemUIServer.app/Contents/MacOS/SystemUIServer",
+      "user": "admin"
+    },
+    {
+      "pid": 363,
+      "ppid": 1,
+      "uid": 501,
+      "cpu": 0.0,
+      "rssKB": 42128,
+      "start": "Sun Nov 8 04:41:07 2026",
+      "path": "/usr/libexec/linkd",
+      "user": "admin"
+    },
+    {
+      "pid": 364,
+      "ppid": 1,
+      "uid": 501,
+      "cpu": 0.1,
+      "rssKB": 74496,
+      "start": "Sun Nov 8 04:41:07 2026",
+      "path": "/System/Library/CoreServices/Finder.app/Contents/MacOS/Finder",
+      "user": "admin"
+    },
+    {
+      "pid": 365,
+      "ppid": 1,
+      "uid": 501,
+      "cpu": 4.8,
+      "rssKB": 37216,
+      "start": "Sun Nov 8 04:41:07 2026",
+      "path": "/usr/libexec/rapportd",
+      "user": "admin"
+    },
+    {
+      "pid": 368,
+      "ppid": 1,
+      "uid": 501,
+      "cpu": 0.0,
+      "rssKB": 7088,
+      "start": "Sun Nov 8 04:41:07 2026",
+      "path": "/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/CarbonCore.framework/Versions/A/XPCServices/csnameddatad.xpc/Contents/MacOS/csnameddatad",
+      "user": "admin"
+    },
+    {
+      "pid": 369,
+      "ppid": 1,
+      "uid": 0,
+      "cpu": 1.4,
+      "rssKB": 20960,
+      "start": "Sun Nov 8 04:41:07 2026",
+      "path": "/usr/libexec/gamepolicyd",
+      "user": "root"
+    },
+    {
+      "pid": 370,
+      "ppid": 1,
+      "uid": 501,
+      "cpu": 0.0,
+      "rssKB": 18064,
+      "start": "Sun Nov 8 04:41:07 2026",
+      "path": "/System/Library/Frameworks/ApplicationServices.framework/Frameworks/ATS.framework/Support/fontd",
+      "user": "admin"
+    },
+    {
+      "pid": 371,
+      "ppid": 1,
+      "uid": 501,
+      "cpu": 2.9,
+      "rssKB": 27840,
+      "start": "Sun Nov 8 04:41:07 2026",
+      "path": "/System/Library/PrivateFrameworks/UserNotificationsCore.framework/Support/usernotificationsd",
+      "user": "admin"
+    },
+    {
+      "pid": 372,
+      "ppid": 1,
+      "uid": 501,
+      "cpu": 0.1,
+      "rssKB": 23040,
+      "start": "Sun Nov 8 04:41:07 2026",
+      "path": "/usr/libexec/dmd",
+      "user": "admin"
+    },
+    {
+      "pid": 373,
+      "ppid": 1,
+      "uid": 501,
+      "cpu": 0.0,
+      "rssKB": 28992,
+      "start": "Sun Nov 8 04:41:08 2026",
+      "path": "/System/Library/Frameworks/QuickLookThumbnailing.framework/Support/com.apple.quicklook.ThumbnailsAgent",
+      "user": "admin"
+    },
+    {
+      "pid": 374,
+      "ppid": 1,
+      "uid": 501,
+      "cpu": 0.0,
+      "rssKB": 31488,
+      "start": "Sun Nov 8 04:41:08 2026",
+      "path": "/System/Library/Frameworks/QuickLookUI.framework/Versions/A/XPCServices/QuickLookUIService.xpc/Contents/MacOS/QuickLookUIService",
+      "user": "admin"
+    },
+    {
+      "pid": 375,
+      "ppid": 1,
+      "uid": 0,
+      "cpu": 0.0,
+      "rssKB": 26352,
+      "start": "Sun Nov 8 04:41:08 2026",
+      "path": "/System/Library/PrivateFrameworks/AppSSO.framework/Support/AppSSODaemon",
+      "user": "root"
+    },
+    {
+      "pid": 376,
+      "ppid": 1,
+      "uid": 501,
+      "cpu": 0.0,
+      "rssKB": 28944,
+      "start": "Sun Nov 8 04:41:08 2026",
+      "path": "/System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/ATS.framework/Versions/A/Support/fontworker",
+      "user": "admin"
+    },
+    {
+      "pid": 377,
+      "ppid": 1,
+      "uid": 0,
+      "cpu": 0.0,
+      "rssKB": 9440,
+      "start": "Sun Nov 8 04:41:08 2026",
+      "path": "automountd",
+      "user": "root"
+    },
+    {
+      "pid": 378,
+      "ppid": 1,
+      "uid": 501,
+      "cpu": 0.0,
+      "rssKB": 53856,
+      "start": "Sun Nov 8 04:41:08 2026",
+      "path": "/System/Library/CoreServices/WallpaperAgent.app/Contents/MacOS/WallpaperAgent",
+      "user": "admin"
+    },
+    {
+      "pid": 379,
+      "ppid": 1,
+      "uid": 501,
+      "cpu": 0.0,
+      "rssKB": 19808,
+      "start": "Sun Nov 8 04:41:08 2026",
+      "path": "/System/Library/CoreServices/sharedfilelistd",
+      "user": "admin"
+    },
+    {
+      "pid": 380,
+      "ppid": 1,
+      "uid": 0,
+      "cpu": 0.0,
+      "rssKB": 18288,
+      "start": "Sun Nov 8 04:41:08 2026",
+      "path": "/usr/sbin/filecoordinationd",
+      "user": "root"
+    },
+    {
+      "pid": 381,
+      "ppid": 1,
+      "uid": 501,
+      "cpu": 0.0,
+      "rssKB": 19152,
+      "start": "Sun Nov 8 04:41:08 2026",
+      "path": "/usr/libexec/secinitd",
+      "user": "admin"
+    },
+    {
+      "pid": 382,
+      "ppid": 1,
+      "uid": 501,
+      "cpu": 0.0,
+      "rssKB": 62192,
+      "start": "Sun Nov 8 04:41:08 2026",
+      "path": "/System/Library/PrivateFrameworks/VoiceShortcuts.framework/Versions/A/Support/siriactionsd",
+      "user": "admin"
+    },
+    {
+      "pid": 383,
+      "ppid": 1,
+      "uid": 501,
+      "cpu": 0.0,
+      "rssKB": 34416,
+      "start": "Sun Nov 8 04:41:08 2026",
+      "path": "/System/Library/PrivateFrameworks/FileProvider.framework/Support/fileproviderd",
+      "user": "admin"
+    },
+    {
+      "pid": 384,
+      "ppid": 1,
+      "uid": 501,
+      "cpu": 0.0,
+      "rssKB": 17168,
+      "start": "Sun Nov 8 04:41:08 2026",
+      "path": "/System/Library/PrivateFrameworks/AMPDevices.framework/Versions/A/Support/AMPDeviceDiscoveryAgent",
+      "user": "admin"
+    },
+    {
+      "pid": 385,
+      "ppid": 1,
+      "uid": 501,
+      "cpu": 2.1,
+      "rssKB": 109088,
+      "start": "Sun Nov 8 04:41:08 2026",
+      "path": "/System/Library/CoreServices/iconservicesagent",
+      "user": "admin"
+    },
+    {
+      "pid": 386,
+      "ppid": 1,
+      "uid": 501,
+      "cpu": 7.8,
+      "rssKB": 25504,
+      "start": "Sun Nov 8 04:41:08 2026",
+      "path": "/usr/libexec/trustd",
+      "user": "admin"
+    },
+    {
+      "pid": 387,
+      "ppid": 1,
+      "uid": 501,
+      "cpu": 0.0,
+      "rssKB": 40048,
+      "start": "Sun Nov 8 04:41:08 2026",
+      "path": "/System/Library/Frameworks/CoreTelephony.framework/Support/CommCenter",
+      "user": "admin"
+    },
+    {
+      "pid": 388,
+      "ppid": 1,
+      "uid": 501,
+      "cpu": 0.1,
+      "rssKB": 59808,
+      "start": "Sun Nov 8 04:41:08 2026",
+      "path": "/System/Library/CoreServices/CoreLocationAgent.app/Contents/MacOS/CoreLocationAgent",
+      "user": "admin"
+    },
+    {
+      "pid": 389,
+      "ppid": 1,
+      "uid": 501,
+      "cpu": 0.0,
+      "rssKB": 25680,
+      "start": "Sun Nov 8 04:41:08 2026",
+      "path": "/System/Library/PrivateFrameworks/SocialLayer.framework/sociallayerd.app/Contents/MacOS/sociallayerd",
+      "user": "admin"
+    },
+    {
+      "pid": 390,
+      "ppid": 1,
+      "uid": 501,
+      "cpu": 1.4,
+      "rssKB": 24976,
+      "start": "Sun Nov 8 04:41:08 2026",
+      "path": "/System/Library/PrivateFrameworks/TCC.framework/Support/tccd",
+      "user": "admin"
+    },
+    {
+      "pid": 391,
+      "ppid": 1,
+      "uid": 501,
+      "cpu": 0.5,
+      "rssKB": 45648,
+      "start": "Sun Nov 8 04:41:08 2026",
+      "path": "/System/Library/PrivateFrameworks/CoreSuggestions.framework/Versions/A/Support/suggestd",
+      "user": "admin"
+    },
+    {
+      "pid": 392,
+      "ppid": 1,
+      "uid": 501,
+      "cpu": 11.3,
+      "rssKB": 39872,
+      "start": "Sun Nov 8 04:41:08 2026",
+      "path": "/System/Library/PrivateFrameworks/CloudKitDaemon.framework/Support/cloudd",
+      "user": "admin"
+    },
+    {
+      "pid": 393,
+      "ppid": 1,
+      "uid": 501,
+      "cpu": 0.0,
+      "rssKB": 39856,
+      "start": "Sun Nov 8 04:41:08 2026",
+      "path": "/System/Library/PrivateFrameworks/CalendarDaemon.framework/Support/calaccessd",
+      "user": "admin"
+    },
+    {
+      "pid": 394,
+      "ppid": 1,
+      "uid": 501,
+      "cpu": 0.0,
+      "rssKB": 25376,
+      "start": "Sun Nov 8 04:41:08 2026",
+      "path": "/System/Library/PrivateFrameworks/iCloudDriveCore.framework/Versions/A/Support/bird",
+      "user": "admin"
+    },
+    {
+      "pid": 395,
+      "ppid": 1,
+      "uid": 501,
+      "cpu": 0.5,
+      "rssKB": 63904,
+      "start": "Sun Nov 8 04:41:08 2026",
+      "path": "/System/Library/PrivateFrameworks/TelephonyUtilities.framework/callservicesd",
+      "user": "admin"
+    },
+    {
+      "pid": 396,
+      "ppid": 1,
+      "uid": 501,
+      "cpu": 0.0,
+      "rssKB": 24992,
+      "start": "Sun Nov 8 04:41:08 2026",
+      "path": "/usr/libexec/ContinuityCaptureAgent",
+      "user": "admin"
+    },
+    {
+      "pid": 397,
+      "ppid": 1,
+      "uid": 501,
+      "cpu": 0.0,
+      "rssKB": 63664,
+      "start": "Sun Nov 8 04:41:08 2026",
+      "path": "/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/Metadata.framework/Versions/A/Support/corespotlightd",
+      "user": "admin"
+    },
+    {
+      "pid": 398,
+      "ppid": 1,
+      "uid": 501,
+      "cpu": 4.3,
+      "rssKB": 24768,
+      "start": "Sun Nov 8 04:41:08 2026",
+      "path": "/usr/libexec/intelligentroutingd",
+      "user": "admin"
+    },
+    {
+      "pid": 399,
+      "ppid": 1,
+      "uid": 501,
+      "cpu": 0.0,
+      "rssKB": 42368,
+      "start": "Sun Nov 8 04:41:08 2026",
+      "path": "/System/Library/CoreServices/audioaccessoryd",
+      "user": "admin"
+    },
+    {
+      "pid": 400,
+      "ppid": 1,
+      "uid": 501,
+      "cpu": 0.0,
+      "rssKB": 22000,
+      "start": "Sun Nov 8 04:41:08 2026",
+      "path": "/System/Library/PrivateFrameworks/MobileTimer.framework/Executables/mobiletimerd",
+      "user": "admin"
+    },
+    {
+      "pid": 401,
+      "ppid": 1,
+      "uid": 501,
+      "cpu": 0.0,
+      "rssKB": 21920,
+      "start": "Sun Nov 8 04:41:08 2026",
+      "path": "/System/Library/PrivateFrameworks/ViewBridge.framework/Versions/A/XPCServices/ViewBridgeAuxiliary.xpc/Contents/MacOS/ViewBridgeAuxiliary",
+      "user": "admin"
+    },
+    {
+      "pid": 402,
+      "ppid": 1,
+      "uid": 501,
+      "cpu": 0.3,
+      "rssKB": 71584,
+      "start": "Sun Nov 8 04:41:08 2026",
+      "path": "/usr/libexec/replayd",
+      "user": "admin"
+    },
+    {
+      "pid": 403,
+      "ppid": 1,
+      "uid": 501,
+      "cpu": 0.0,
+      "rssKB": 19488,
+      "start": "Sun Nov 8 04:41:08 2026",
+      "path": "/System/Library/Frameworks/AudioToolbox.framework/AudioComponentRegistrar",
+      "user": "admin"
+    },
+    {
+      "pid": 405,
+      "ppid": 1,
+      "uid": 501,
+      "cpu": 0.0,
+      "rssKB": 61024,
+      "start": "Sun Nov 8 04:41:08 2026",
+      "path": "/System/Library/PrivateFrameworks/ChronoCore.framework/Support/chronod",
+      "user": "admin"
+    },
+    {
+      "pid": 406,
+      "ppid": 1,
+      "uid": 0,
+      "cpu": 0.0,
+      "rssKB": 9968,
+      "start": "Sun Nov 8 04:41:09 2026",
+      "path": "/usr/libexec/wallpaperexportd",
+      "user": "root"
+    },
+    {
+      "pid": 407,
+      "ppid": 1,
+      "uid": 501,
+      "cpu": 0.0,
+      "rssKB": 15808,
+      "start": "Sun Nov 8 04:41:09 2026",
+      "path": "/System/Library/Frameworks/Accounts.framework/Versions/A/Support/accountsd",
+      "user": "admin"
+    },
+    {
+      "pid": 408,
+      "ppid": 1,
+      "uid": 501,
+      "cpu": 0.0,
+      "rssKB": 16112,
+      "start": "Sun Nov 8 04:41:09 2026",
+      "path": "/System/Library/Frameworks/ExtensionFoundation.framework/Versions/A/XPCServices/extensionkitservice.xpc/Contents/MacOS/extensionkitservice",
+      "user": "admin"
+    },
+    {
+      "pid": 409,
+      "ppid": 1,
+      "uid": 501,
+      "cpu": 0.0,
+      "rssKB": 33216,
+      "start": "Sun Nov 8 04:41:09 2026",
+      "path": "/System/Library/PrivateFrameworks/DoNotDisturbServer.framework/Support/donotdisturbd",
+      "user": "admin"
+    },
+    {
+      "pid": 410,
+      "ppid": 1,
+      "uid": 501,
+      "cpu": 0.0,
+      "rssKB": 24816,
+      "start": "Sun Nov 8 04:41:09 2026",
+      "path": "/System/Library/PrivateFrameworks/CommunicationTrust.framework/Support/communicationtrustd",
+      "user": "admin"
+    },
+    {
+      "pid": 411,
+      "ppid": 1,
+      "uid": 501,
+      "cpu": 5.0,
+      "rssKB": 89072,
+      "start": "Sun Nov 8 04:41:09 2026",
+      "path": "/System/Library/CoreServices/NotificationCenter.app/Contents/MacOS/NotificationCenter",
+      "user": "admin"
+    },
+    {
+      "pid": 412,
+      "ppid": 1,
+      "uid": 501,
+      "cpu": 9.5,
+      "rssKB": 50224,
+      "start": "Sun Nov 8 04:41:09 2026",
+      "path": "/System/Library/PrivateFrameworks/IDS.framework/identityservicesd.app/Contents/MacOS/identityservicesd",
+      "user": "admin"
+    },
+    {
+      "pid": 414,
+      "ppid": 1,
+      "uid": 501,
+      "cpu": 0.0,
+      "rssKB": 43952,
+      "start": "Sun Nov 8 04:41:09 2026",
+      "path": "/System/Library/ExtensionKit/Extensions/WallpaperAerialsExtension.appex/Contents/MacOS/WallpaperAerialsExtension",
+      "user": "admin"
+    },
+    {
+      "pid": 416,
+      "ppid": 1,
+      "uid": 441,
+      "cpu": 0.0,
+      "rssKB": 5936,
+      "start": "Sun Nov 8 04:41:09 2026",
+      "path": "/usr/libexec/rosetta/oahd",
+      "user": "_oahd"
+    },
+    {
+      "pid": 417,
+      "ppid": 1,
+      "uid": 0,
+      "cpu": 0.0,
+      "rssKB": 19440,
+      "start": "Sun Nov 8 04:41:09 2026",
+      "path": "/usr/sbin/systemsoundserverd",
+      "user": "root"
+    },
+    {
+      "pid": 418,
+      "ppid": 1,
+      "uid": 501,
+      "cpu": 0.0,
+      "rssKB": 13392,
+      "start": "Sun Nov 8 04:41:09 2026",
+      "path": "/System/Library/PrivateFrameworks/CommunicationsFilter.framework/CMFSyncAgent",
+      "user": "admin"
+    },
+    {
+      "pid": 419,
+      "ppid": 1,
+      "uid": 501,
+      "cpu": 0.3,
+      "rssKB": 33264,
+      "start": "Sun Nov 8 04:41:10 2026",
+      "path": "/System/Library/PrivateFrameworks/CacheDelete.framework/deleted",
+      "user": "admin"
+    },
+    {
+      "pid": 420,
+      "ppid": 1,
+      "uid": 501,
+      "cpu": 0.0,
+      "rssKB": 25776,
+      "start": "Sun Nov 8 04:41:10 2026",
+      "path": "/System/Library/PrivateFrameworks/SyncedDefaults.framework/Support/syncdefaultsd",
+      "user": "admin"
+    },
+    {
+      "pid": 421,
+      "ppid": 1,
+      "uid": 501,
+      "cpu": 0.0,
+      "rssKB": 25568,
+      "start": "Sun Nov 8 04:41:10 2026",
+      "path": "/usr/libexec/nsurlsessiond",
+      "user": "admin"
+    },
+    {
+      "pid": 422,
+      "ppid": 1,
+      "uid": 501,
+      "cpu": 0.0,
+      "rssKB": 74784,
+      "start": "Sun Nov 8 04:41:10 2026",
+      "path": "/System/Library/CoreServices/AccessibilityUIServer.app/Contents/MacOS/AccessibilityUIServer",
+      "user": "admin"
+    },
+    {
+      "pid": 423,
+      "ppid": 1,
+      "uid": 501,
+      "cpu": 0.0,
+      "rssKB": 10912,
+      "start": "Sun Nov 8 04:41:10 2026",
+      "path": "/System/Library/CoreServices/pbs",
+      "user": "admin"
+    },
+    {
+      "pid": 424,
+      "ppid": 1,
+      "uid": 0,
+      "cpu": 0.9,
+      "rssKB": 304,
+      "start": "Sun Nov 8 04:41:10 2026",
+      "path": "/System/Library/PrivateFrameworks/EcosystemAnalytics.framework/Support/ecosystemanalyticsd",
+      "user": "root"
+    },
+    {
+      "pid": 425,
+      "ppid": 1,
+      "uid": 501,
+      "cpu": 0.0,
+      "rssKB": 29104,
+      "start": "Sun Nov 8 04:41:10 2026",
+      "path": "/System/Library/PrivateFrameworks/ScreenTimeCore.framework/Versions/A/ScreenTimeAgent",
+      "user": "admin"
+    },
+    {
+      "pid": 426,
+      "ppid": 1,
+      "uid": 501,
+      "cpu": 10.5,
+      "rssKB": 32816,
+      "start": "Sun Nov 8 04:41:10 2026",
+      "path": "/usr/sbin/usernoted",
+      "user": "admin"
+    },
+    {
+      "pid": 427,
+      "ppid": 1,
+      "uid": 501,
+      "cpu": 0.0,
+      "rssKB": 18896,
+      "start": "Sun Nov 8 04:41:10 2026",
+      "path": "/System/Library/PrivateFrameworks/IntlPreferences.framework/Support/localizationswitcherd",
+      "user": "admin"
+    },
+    {
+      "pid": 428,
+      "ppid": 1,
+      "uid": 501,
+      "cpu": 0.0,
+      "rssKB": 22128,
+      "start": "Sun Nov 8 04:41:10 2026",
+      "path": "/System/Library/Frameworks/CryptoTokenKit.framework/ctkd",
+      "user": "admin"
+    },
+    {
+      "pid": 429,
+      "ppid": 1,
+      "uid": 501,
+      "cpu": 0.0,
+      "rssKB": 35504,
+      "start": "Sun Nov 8 04:41:10 2026",
+      "path": "/usr/libexec/transparencyd",
+      "user": "admin"
+    },
+    {
+      "pid": 430,
+      "ppid": 1,
+      "uid": 501,
+      "cpu": 0.0,
+      "rssKB": 25872,
+      "start": "Sun Nov 8 04:41:11 2026",
+      "path": "/System/Library/PrivateFrameworks/SessionCore.framework/Support/liveactivitiesd",
+      "user": "admin"
+    },
+    {
+      "pid": 431,
+      "ppid": 1,
+      "uid": 259,
+      "cpu": 0.0,
+      "rssKB": 14320,
+      "start": "Sun Nov 8 04:41:11 2026",
+      "path": "/System/Library/Frameworks/CryptoTokenKit.framework/ctkd",
+      "user": "_ctkd"
+    },
+    {
+      "pid": 432,
+      "ppid": 1,
+      "uid": 501,
+      "cpu": 0.0,
+      "rssKB": 18448,
+      "start": "Sun Nov 8 04:41:11 2026",
+      "path": "/System/Library/Frameworks/LocalAuthentication.framework/Support/coreauthd",
+      "user": "admin"
+    },
+    {
+      "pid": 433,
+      "ppid": 1,
+      "uid": 501,
+      "cpu": 3.8,
+      "rssKB": 31024,
+      "start": "Sun Nov 8 04:41:11 2026",
+      "path": "/System/Library/PrivateFrameworks/ReplicatorCore.framework/Support/replicatord",
+      "user": "admin"
+    },
+    {
+      "pid": 434,
+      "ppid": 1,
+      "uid": 0,
+      "cpu": 0.0,
+      "rssKB": 12688,
+      "start": "Sun Nov 8 04:41:11 2026",
+      "path": "/System/Library/Frameworks/AudioToolbox.framework/XPCServices/com.apple.audio.SandboxHelper.xpc/Contents/MacOS/com.apple.audio.SandboxHelper",
+      "user": "root"
+    },
+    {
+      "pid": 435,
+      "ppid": 1,
+      "uid": 0,
+      "cpu": 0.0,
+      "rssKB": 6384,
+      "start": "Sun Nov 8 04:41:11 2026",
+      "path": "/usr/libexec/tailspind",
+      "user": "root"
+    },
+    {
+      "pid": 436,
+      "ppid": 1,
+      "uid": 0,
+      "cpu": 0.0,
+      "rssKB": 10224,
+      "start": "Sun Nov 8 04:41:11 2026",
+      "path": "/usr/libexec/ospredictiond",
+      "user": "root"
+    },
+    {
+      "pid": 438,
+      "ppid": 1,
+      "uid": 501,
+      "cpu": 0.0,
+      "rssKB": 17968,
+      "start": "Sun Nov 8 04:41:12 2026",
+      "path": "/System/Library/PrivateFrameworks/UserActivity.framework/Agents/useractivityd",
+      "user": "admin"
+    },
+    {
+      "pid": 439,
+      "ppid": 1,
+      "uid": 501,
+      "cpu": 0.0,
+      "rssKB": 46560,
+      "start": "Sun Nov 8 04:41:12 2026",
+      "path": "/usr/libexec/remindd",
+      "user": "admin"
+    },
+    {
+      "pid": 440,
+      "ppid": 1,
+      "uid": 501,
+      "cpu": 0.0,
+      "rssKB": 45840,
+      "start": "Sun Nov 8 04:41:12 2026",
+      "path": "/usr/libexec/duetexpertd",
+      "user": "admin"
+    },
+    {
+      "pid": 441,
+      "ppid": 1,
+      "uid": 501,
+      "cpu": 1.2,
+      "rssKB": 18096,
+      "start": "Sun Nov 8 04:41:12 2026",
+      "path": "/System/Library/PrivateFrameworks/AppleMediaServicesUI.framework/amsengagementd",
+      "user": "admin"
+    },
+    {
+      "pid": 442,
+      "ppid": 1,
+      "uid": 501,
+      "cpu": 3.2,
+      "rssKB": 25424,
+      "start": "Sun Nov 8 04:41:12 2026",
+      "path": "/System/Library/PrivateFrameworks/UsageTracking.framework/Versions/A/UsageTrackingAgent",
+      "user": "admin"
+    },
+    {
+      "pid": 443,
+      "ppid": 1,
+      "uid": 501,
+      "cpu": 0.0,
+      "rssKB": 83744,
+      "start": "Sun Nov 8 04:41:12 2026",
+      "path": "/System/Library/CoreServices/Dock.app/Contents/XPCServices/com.apple.dock.extra.xpc/Contents/MacOS/com.apple.dock.extra",
+      "user": "admin"
+    },
+    {
+      "pid": 444,
+      "ppid": 1,
+      "uid": 501,
+      "cpu": 0.0,
+      "rssKB": 188992,
+      "start": "Sun Nov 8 04:41:12 2026",
+      "path": "/System/Library/CoreServices/Spotlight.app/Contents/MacOS/Spotlight",
+      "user": "admin"
+    },
+    {
+      "pid": 446,
+      "ppid": 1,
+      "uid": 501,
+      "cpu": 0.4,
+      "rssKB": 17392,
+      "start": "Sun Nov 8 04:41:12 2026",
+      "path": "/System/Library/Frameworks/ManagedSettings.framework/Versions/A/ManagedSettingsAgent",
+      "user": "admin"
+    },
+    {
+      "pid": 447,
+      "ppid": 1,
+      "uid": 501,
+      "cpu": 0.0,
+      "rssKB": 41200,
+      "start": "Sun Nov 8 04:41:12 2026",
+      "path": "/usr/libexec/routined",
+      "user": "admin"
+    },
+    {
+      "pid": 448,
+      "ppid": 1,
+      "uid": 501,
+      "cpu": 29.0,
+      "rssKB": 76336,
+      "start": "Sun Nov 8 04:41:12 2026",
+      "path": "/usr/libexec/sharingd",
+      "user": "admin"
+    },
+    {
+      "pid": 449,
+      "ppid": 1,
+      "uid": 501,
+      "cpu": 0.6,
+      "rssKB": 32448,
+      "start": "Sun Nov 8 04:41:13 2026",
+      "path": "/usr/libexec/findmylocateagent",
+      "user": "admin"
+    },
+    {
+      "pid": 450,
+      "ppid": 1,
+      "uid": 0,
+      "cpu": 0.0,
+      "rssKB": 19600,
+      "start": "Sun Nov 8 04:41:13 2026",
+      "path": "/usr/libexec/wifip2pd",
+      "user": "root"
+    },
+    {
+      "pid": 451,
+      "ppid": 1,
+      "uid": 0,
+      "cpu": 0.0,
+      "rssKB": 9856,
+      "start": "Sun Nov 8 04:41:13 2026",
+      "path": "/System/Library/PrivateFrameworks/AppleVirtualPlatform.framework/Versions/A/XPCServices/AppleVirtualPlatformIdentityService.xpc/Contents/MacOS/com.apple.Virtualization.AppleVirtualPlatformIdentity",
+      "user": "root"
+    },
+    {
+      "pid": 452,
+      "ppid": 1,
+      "uid": 501,
+      "cpu": 0.1,
+      "rssKB": 33104,
+      "start": "Sun Nov 8 04:41:13 2026",
+      "path": "/System/Library/PrivateFrameworks/GeoServices.framework/Versions/A/XPCServices/com.apple.geod.xpc/Contents/MacOS/com.apple.geod",
+      "user": "admin"
+    },
+    {
+      "pid": 453,
+      "ppid": 1,
+      "uid": 501,
+      "cpu": 0.0,
+      "rssKB": 20336,
+      "start": "Sun Nov 8 04:41:13 2026",
+      "path": "/System/Library/PrivateFrameworks/CallHistory.framework/Support/CallHistoryPluginHelper",
+      "user": "admin"
+    },
+    {
+      "pid": 454,
+      "ppid": 1,
+      "uid": 0,
+      "cpu": 0.0,
+      "rssKB": 12160,
+      "start": "Sun Nov 8 04:41:13 2026",
+      "path": "/System/Library/Frameworks/CryptoTokenKit.framework/ctkahp.bundle/Contents/MacOS/ctkahp",
+      "user": "root"
+    },
+    {
+      "pid": 455,
+      "ppid": 1,
+      "uid": 501,
+      "cpu": 0.0,
+      "rssKB": 27776,
+      "start": "Sun Nov 8 04:41:13 2026",
+      "path": "/usr/libexec/spotlightknowledged.updater",
+      "user": "admin"
+    },
+    {
+      "pid": 456,
+      "ppid": 1,
+      "uid": 501,
+      "cpu": 0.0,
+      "rssKB": 57200,
+      "start": "Sun Nov 8 04:41:13 2026",
+      "path": "/System/Library/PrivateFrameworks/SoftwareUpdate.framework/Resources/SoftwareUpdateNotificationManager.app/Contents/MacOS/SoftwareUpdateNotificationManager",
+      "user": "admin"
+    },
+    {
+      "pid": 457,
+      "ppid": 1,
+      "uid": 0,
+      "cpu": 0.0,
+      "rssKB": 7760,
+      "start": "Sun Nov 8 04:41:13 2026",
+      "path": "/System/Library/PrivateFrameworks/FindMyMac.framework/Resources/FindMyMacd",
+      "user": "root"
+    },
+    {
+      "pid": 458,
+      "ppid": 1,
+      "uid": 501,
+      "cpu": 0.3,
+      "rssKB": 32608,
+      "start": "Sun Nov 8 04:41:13 2026",
+      "path": "/System/Library/PrivateFrameworks/CoreParsec.framework/parsecd",
+      "user": "admin"
+    },
+    {
+      "pid": 459,
+      "ppid": 1,
+      "uid": 0,
+      "cpu": 0.0,
+      "rssKB": 9184,
+      "start": "Sun Nov 8 04:41:14 2026",
+      "path": "/Library/Apple/System/Library/PrivateFrameworks/DeviceInterface.framework/Support/deviceinterfaced",
+      "user": "root"
+    },
+    {
+      "pid": 460,
+      "ppid": 1,
+      "uid": 0,
+      "cpu": 0.0,
+      "rssKB": 13920,
+      "start": "Sun Nov 8 04:41:14 2026",
+      "path": "/System/Library/PrivateFrameworks/AmbientDisplay.framework/Versions/A/XPCServices/com.apple.AmbientDisplayAgent.xpc/Contents/MacOS/com.apple.AmbientDisplayAgent",
+      "user": "root"
+    },
+    {
+      "pid": 461,
+      "ppid": 1,
+      "uid": 0,
+      "cpu": 0.0,
+      "rssKB": 31408,
+      "start": "Sun Nov 8 04:41:15 2026",
+      "path": "/usr/libexec/kernelmanager_helper",
+      "user": "root"
+    },
+    {
+      "pid": 462,
+      "ppid": 1,
+      "uid": 0,
+      "cpu": 0.0,
+      "rssKB": 16064,
+      "start": "Sun Nov 8 04:41:15 2026",
+      "path": "/usr/libexec/audioanalyticsd",
+      "user": "root"
+    },
+    {
+      "pid": 464,
+      "ppid": 1,
+      "uid": 501,
+      "cpu": 0.0,
+      "rssKB": 19584,
+      "start": "Sun Nov 8 04:41:15 2026",
+      "path": "/System/Library/Frameworks/CryptoTokenKit.framework/ctkahp.bundle/Contents/MacOS/ctkahp",
+      "user": "admin"
+    },
+    {
+      "pid": 467,
+      "ppid": 1,
+      "uid": 501,
+      "cpu": 0.0,
+      "rssKB": 54672,
+      "start": "Sun Nov 8 04:41:16 2026",
+      "path": "/usr/libexec/networkserviceproxy",
+      "user": "admin"
+    },
+    {
+      "pid": 470,
+      "ppid": 1,
+      "uid": 501,
+      "cpu": 1.5,
+      "rssKB": 28416,
+      "start": "Sun Nov 8 04:41:16 2026",
+      "path": "/System/Library/PrivateFrameworks/StatusKit.framework/StatusKitAgent",
+      "user": "admin"
+    },
+    {
+      "pid": 471,
+      "ppid": 1,
+      "uid": 0,
+      "cpu": 0.0,
+      "rssKB": 4160,
+      "start": "Sun Nov 8 04:41:16 2026",
+      "path": "/System/Library/PrivateFrameworks/Categories.framework/Versions/A/XPCServices/CategoriesService.xpc/Contents/MacOS/CategoriesService",
+      "user": "root"
+    },
+    {
+      "pid": 472,
+      "ppid": 1,
+      "uid": 501,
+      "cpu": 0.0,
+      "rssKB": 7152,
+      "start": "Sun Nov 8 04:41:16 2026",
+      "path": "/System/Library/PrivateFrameworks/login.framework/Versions/A/XPCServices/LoginUserService.xpc/Contents/MacOS/LoginUserService",
+      "user": "admin"
+    },
+    {
+      "pid": 476,
+      "ppid": 1,
+      "uid": 501,
+      "cpu": 0.0,
+      "rssKB": 12304,
+      "start": "Sun Nov 8 04:41:16 2026",
+      "path": "/System/Library/PrivateFrameworks/CoreFollowUp.framework/Versions/A/Support/followupd",
+      "user": "admin"
+    },
+    {
+      "pid": 477,
+      "ppid": 1,
+      "uid": 501,
+      "cpu": 21.6,
+      "rssKB": 47008,
+      "start": "Sun Nov 8 04:41:16 2026",
+      "path": "/System/Library/PrivateFrameworks/IMCore.framework/imagent.app/Contents/MacOS/imagent",
+      "user": "admin"
+    },
+    {
+      "pid": 480,
+      "ppid": 1,
+      "uid": 222,
+      "cpu": 0.0,
+      "rssKB": 12048,
+      "start": "Sun Nov 8 04:41:16 2026",
+      "path": "/usr/sbin/netbiosd",
+      "user": "_netbios"
+    },
+    {
+      "pid": 481,
+      "ppid": 1,
+      "uid": 501,
+      "cpu": 0.0,
+      "rssKB": 10064,
+      "start": "Sun Nov 8 04:41:16 2026",
+      "path": "/System/Library/CoreServices/APFSUserAgent",
+      "user": "admin"
+    },
+    {
+      "pid": 491,
+      "ppid": 1,
+      "uid": 501,
+      "cpu": 0.0,
+      "rssKB": 39840,
+      "start": "Sun Nov 8 04:41:17 2026",
+      "path": "/System/Library/PrivateFrameworks/TextInputUIMacHelper.framework/Versions/A/XPCServices/CursorUIViewService.xpc/Contents/MacOS/CursorUIViewService",
+      "user": "admin"
+    },
+    {
+      "pid": 492,
+      "ppid": 1,
+      "uid": 501,
+      "cpu": 0.0,
+      "rssKB": 21312,
+      "start": "Sun Nov 8 04:41:17 2026",
+      "path": "/usr/libexec/triald",
+      "user": "admin"
+    },
+    {
+      "pid": 493,
+      "ppid": 1,
+      "uid": 268,
+      "cpu": 2.4,
+      "rssKB": 24288,
+      "start": "Sun Nov 8 04:41:18 2026",
+      "path": "/usr/libexec/nearbyd",
+      "user": "_nearbyd"
+    },
+    {
+      "pid": 494,
+      "ppid": 1,
+      "uid": 501,
+      "cpu": 0.2,
+      "rssKB": 63600,
+      "start": "Sun Nov 8 04:41:18 2026",
+      "path": "/System/Library/Frameworks/Contacts.framework/Support/contactsd",
+      "user": "admin"
+    },
+    {
+      "pid": 495,
+      "ppid": 1,
+      "uid": 92,
+      "cpu": 0.0,
+      "rssKB": 8624,
+      "start": "Sun Nov 8 04:41:18 2026",
+      "path": "/usr/sbin/distnoted",
+      "user": "_securityagent"
+    },
+    {
+      "pid": 496,
+      "ppid": 1,
+      "uid": 501,
+      "cpu": 0.0,
+      "rssKB": 27680,
+      "start": "Sun Nov 8 04:41:18 2026",
+      "path": "/System/Library/PrivateFrameworks/GenerativeExperiencesRuntime.framework/Versions/A/generativeexperiencesd",
+      "user": "admin"
+    },
+    {
+      "pid": 497,
+      "ppid": 1,
+      "uid": 501,
+      "cpu": 0.8,
+      "rssKB": 25152,
+      "start": "Sun Nov 8 04:41:19 2026",
+      "path": "/System/Library/PrivateFrameworks/FamilyCircle.framework/Versions/A/Resources/familycircled",
+      "user": "admin"
+    },
+    {
+      "pid": 498,
+      "ppid": 1,
+      "uid": 501,
+      "cpu": 0.0,
+      "rssKB": 31408,
+      "start": "Sun Nov 8 04:41:19 2026",
+      "path": "/System/Library/PrivateFrameworks/ContinuousDialogManagerService.framework/assistant_cdmd",
+      "user": "admin"
+    },
+    {
+      "pid": 499,
+      "ppid": 1,
+      "uid": 501,
+      "cpu": 0.0,
+      "rssKB": 24144,
+      "start": "Sun Nov 8 04:41:19 2026",
+      "path": "/usr/libexec/biomesyncd",
+      "user": "admin"
+    },
+    {
+      "pid": 500,
+      "ppid": 1,
+      "uid": 501,
+      "cpu": 0.0,
+      "rssKB": 9440,
+      "start": "Sun Nov 8 04:41:20 2026",
+      "path": "/System/Library/CoreServices/ReportCrash",
+      "user": "admin"
+    },
+    {
+      "pid": 501,
+      "ppid": 1,
+      "uid": 501,
+      "cpu": 0.0,
+      "rssKB": 35632,
+      "start": "Sun Nov 8 04:41:20 2026",
+      "path": "/System/Library/PrivateFrameworks/PhotoLibraryServices.framework/Versions/A/Support/photolibraryd",
+      "user": "admin"
+    },
+    {
+      "pid": 502,
+      "ppid": 1,
+      "uid": 501,
+      "cpu": 0.0,
+      "rssKB": 51552,
+      "start": "Sun Nov 8 04:41:20 2026",
+      "path": "/System/Library/PrivateFrameworks/HearingCore.framework/heard",
+      "user": "admin"
+    },
+    {
+      "pid": 503,
+      "ppid": 1,
+      "uid": 501,
+      "cpu": 0.0,
+      "rssKB": 32576,
+      "start": "Sun Nov 8 04:41:20 2026",
+      "path": "/System/Library/PrivateFrameworks/CoreSpeech.framework/corespeechd",
+      "user": "admin"
+    },
+    {
+      "pid": 504,
+      "ppid": 1,
+      "uid": 501,
+      "cpu": 0.0,
+      "rssKB": 37168,
+      "start": "Sun Nov 8 04:41:20 2026",
+      "path": "/System/Library/PrivateFrameworks/AXAssetLoader.framework/Support/axassetsd",
+      "user": "admin"
+    },
+    {
+      "pid": 505,
+      "ppid": 1,
+      "uid": 501,
+      "cpu": 0.1,
+      "rssKB": 7904,
+      "start": "Sun Nov 8 04:41:20 2026",
+      "path": "/System/Library/PrivateFrameworks/CoreDuetContext.framework/Resources/ContextStoreAgent",
+      "user": "admin"
+    },
+    {
+      "pid": 507,
+      "ppid": 1,
+      "uid": 501,
+      "cpu": 0.0,
+      "rssKB": 5744,
+      "start": "Sun Nov 8 04:41:20 2026",
+      "path": "xpcproxy",
+      "user": "admin"
+    },
+    {
+      "pid": 508,
+      "ppid": 1,
+      "uid": 501,
+      "cpu": 0.0,
+      "rssKB": 16240,
+      "start": "Sun Nov 8 04:41:20 2026",
+      "path": "/System/Library/Frameworks/InputMethodKit.framework/Resources/imklaunchagent",
+      "user": "admin"
+    },
+    {
+      "pid": 509,
+      "ppid": 1,
+      "uid": 501,
+      "cpu": 5.0,
+      "rssKB": 5856,
+      "start": "Sun Nov 8 04:41:20 2026",
+      "path": "/Library/Apple/System/Library/CoreServices/XProtect.app/Contents/MacOS/XProtect",
+      "user": "admin"
+    },
+    {
+      "pid": 510,
+      "ppid": 1,
+      "uid": 501,
+      "cpu": 0.0,
+      "rssKB": 15344,
+      "start": "Sun Nov 8 04:41:20 2026",
+      "path": "/System/Library/Image Capture/Support/icdd",
+      "user": "admin"
+    },
+    {
+      "pid": 511,
+      "ppid": 1,
+      "uid": 501,
+      "cpu": 0.1,
+      "rssKB": 304,
+      "start": "Sun Nov 8 04:41:20 2026",
+      "path": "/System/Library/CoreServices/appplaceholdersyncd",
+      "user": "admin"
+    },
+    {
+      "pid": 512,
+      "ppid": 1,
+      "uid": 501,
+      "cpu": 0.0,
+      "rssKB": 25216,
+      "start": "Sun Nov 8 04:41:20 2026",
+      "path": "/System/Library/PrivateFrameworks/AskPermission.framework/Versions/A/Resources/askpermissiond",
+      "user": "admin"
+    },
+    {
+      "pid": 514,
+      "ppid": 1,
+      "uid": 501,
+      "cpu": 0.0,
+      "rssKB": 11808,
+      "start": "Sun Nov 8 04:41:20 2026",
+      "path": "/usr/libexec/mobilerepaird",
+      "user": "admin"
+    },
+    {
+      "pid": 515,
+      "ppid": 1,
+      "uid": 501,
+      "cpu": 0.0,
+      "rssKB": 32608,
+      "start": "Sun Nov 8 04:41:20 2026",
+      "path": "/opt/homebrew/bin/tart-guest-agent",
+      "user": "admin",
+      "signing": {
+        "signed": true,
+        "Identifier": "tart-guest-agent",
+        "Authority": "Developer ID Application: Cirrus Labs, Inc. (9M2P8L4D89)",
+        "TeamIdentifier": "9M2P8L4D89",
+        "valid": true
+      }
+    },
+    {
+      "pid": 516,
+      "ppid": 1,
+      "uid": 501,
+      "cpu": 0.0,
+      "rssKB": 29312,
+      "start": "Sun Nov 8 04:41:20 2026",
+      "path": "/System/Library/CoreServices/AirPlayUIAgent.app/Contents/MacOS/AirPlayUIAgent",
+      "user": "admin"
+    },
+    {
+      "pid": 517,
+      "ppid": 1,
+      "uid": 501,
+      "cpu": 0.0,
+      "rssKB": 5744,
+      "start": "Sun Nov 8 04:41:20 2026",
+      "path": "xpcproxy",
+      "user": "admin"
+    },
+    {
+      "pid": 518,
+      "ppid": 1,
+      "uid": 501,
+      "cpu": 0.0,
+      "rssKB": 68864,
+      "start": "Sun Nov 8 04:41:20 2026",
+      "path": "/System/Library/CoreServices/TextInputMenuAgent.app/Contents/MacOS/TextInputMenuAgent",
+      "user": "admin"
+    },
+    {
+      "pid": 519,
+      "ppid": 1,
+      "uid": 501,
+      "cpu": 0.0,
+      "rssKB": 39968,
+      "start": "Sun Nov 8 04:41:20 2026",
+      "path": "/System/Library/PrivateFrameworks/AppleMediaServices.framework/Resources/amsaccountsd",
+      "user": "admin"
+    },
+    {
+      "pid": 520,
+      "ppid": 1,
+      "uid": 501,
+      "cpu": 2.2,
+      "rssKB": 26816,
+      "start": "Sun Nov 8 04:41:20 2026",
+      "path": "/System/Library/PrivateFrameworks/IMDPersistence.framework/XPCServices/IMDPersistenceAgent.xpc/Contents/MacOS/IMDPersistenceAgent",
+      "user": "admin"
+    },
+    {
+      "pid": 521,
+      "ppid": 1,
+      "uid": 501,
+      "cpu": 0.0,
+      "rssKB": 35248,
+      "start": "Sun Nov 8 04:41:20 2026",
+      "path": "/System/Library/PrivateFrameworks/iTunesCloud.framework/Support/itunescloudd",
+      "user": "admin"
+    },
+    {
+      "pid": 522,
+      "ppid": 1,
+      "uid": 501,
+      "cpu": 0.0,
+      "rssKB": 31008,
+      "start": "Sun Nov 8 04:41:20 2026",
+      "path": "/System/Library/CoreServices/UIKitSystem.app/Contents/MacOS/UIKitSystem",
+      "user": "admin"
+    },
+    {
+      "pid": 523,
+      "ppid": 1,
+      "uid": 501,
+      "cpu": 0.0,
+      "rssKB": 17984,
+      "start": "Sun Nov 8 04:41:21 2026",
+      "path": "/System/Library/CoreServices/ScopedBookmarkAgent",
+      "user": "admin"
+    },
+    {
+      "pid": 524,
+      "ppid": 1,
+      "uid": 501,
+      "cpu": 0.0,
+      "rssKB": 29504,
+      "start": "Sun Nov 8 04:41:21 2026",
+      "path": "/System/Library/CoreServices/TextInputSwitcher.app/Contents/MacOS/TextInputSwitcher",
+      "user": "admin"
+    },
+    {
+      "pid": 525,
+      "ppid": 1,
+      "uid": 501,
+      "cpu": 0.0,
+      "rssKB": 6720,
+      "start": "Sun Nov 8 04:41:21 2026",
+      "path": "/System/Library/Frameworks/NetFS.framework/Versions/A/XPCServices/PlugInLibraryService.xpc/Contents/MacOS/PlugInLibraryService",
+      "user": "admin"
+    },
+    {
+      "pid": 526,
+      "ppid": 1,
+      "uid": 501,
+      "cpu": 0.4,
+      "rssKB": 25008,
+      "start": "Sun Nov 8 04:41:21 2026",
+      "path": "/usr/libexec/neagent",
+      "user": "admin"
+    },
+    {
+      "pid": 527,
+      "ppid": 1,
+      "uid": 501,
+      "cpu": 0.0,
+      "rssKB": 12672,
+      "start": "Sun Nov 8 04:41:21 2026",
+      "path": "/System/Library/Frameworks/AudioToolbox.framework/XPCServices/com.apple.audio.SandboxHelper.xpc/Contents/MacOS/com.apple.audio.SandboxHelper",
+      "user": "admin"
+    },
+    {
+      "pid": 528,
+      "ppid": 1,
+      "uid": 501,
+      "cpu": 0.0,
+      "rssKB": 31040,
+      "start": "Sun Nov 8 04:41:21 2026",
+      "path": "/System/Library/PrivateFrameworks/MediaAnalysis.framework/Versions/A/mediaanalysisd",
+      "user": "admin"
+    },
+    {
+      "pid": 529,
+      "ppid": 1,
+      "uid": 501,
+      "cpu": 0.0,
+      "rssKB": 29664,
+      "start": "Sun Nov 8 04:41:21 2026",
+      "path": "/System/Library/PrivateFrameworks/PhotoAnalysis.framework/Versions/A/Support/photoanalysisd",
+      "user": "admin"
+    },
+    {
+      "pid": 530,
+      "ppid": 1,
+      "uid": 501,
+      "cpu": 0.0,
+      "rssKB": 25440,
+      "start": "Sun Nov 8 04:41:21 2026",
+      "path": "/System/Library/PrivateFrameworks/MacinTalk.framework/PlugIns/WardaSynthesizer.appex/Contents/MacOS/WardaSynthesizer",
+      "user": "admin"
+    },
+    {
+      "pid": 531,
+      "ppid": 1,
+      "uid": 501,
+      "cpu": 0.0,
+      "rssKB": 37952,
+      "start": "Sun Nov 8 04:41:22 2026",
+      "path": "/System/iOSSupport/System/Library/ExtensionKit/Extensions/KonaSynthesizer.appex/Contents/MacOS/KonaSynthesizer",
+      "user": "admin"
+    },
+    {
+      "pid": 532,
+      "ppid": 1,
+      "uid": 501,
+      "cpu": 0.0,
+      "rssKB": 36800,
+      "start": "Sun Nov 8 04:41:22 2026",
+      "path": "/System/iOSSupport/System/Library/ExtensionKit/Extensions/SiriAUSP.appex/Contents/MacOS/SiriAUSP",
+      "user": "admin"
+    },
+    {
+      "pid": 533,
+      "ppid": 1,
+      "uid": 501,
+      "cpu": 0.4,
+      "rssKB": 16256,
+      "start": "Sun Nov 8 04:41:22 2026",
+      "path": "/System/Library/PrivateFrameworks/CloudTelemetry.framework/Versions/A/XPCServices/CloudTelemetryService.xpc/Contents/MacOS/CloudTelemetryService",
+      "user": "admin"
+    },
+    {
+      "pid": 534,
+      "ppid": 1,
+      "uid": 501,
+      "cpu": 0.0,
+      "rssKB": 20752,
+      "start": "Sun Nov 8 04:41:22 2026",
+      "path": "/usr/libexec/frauddefensed",
+      "user": "admin"
+    },
+    {
+      "pid": 535,
+      "ppid": 1,
+      "uid": 0,
+      "cpu": 0.0,
+      "rssKB": 7664,
+      "start": "Sun Nov 8 04:41:22 2026",
+      "path": "/System/Library/PrivateFrameworks/CacheDelete.framework/deleted_helper",
+      "user": "root"
+    },
+    {
+      "pid": 536,
+      "ppid": 1,
+      "uid": 0,
+      "cpu": 0.0,
+      "rssKB": 6704,
+      "start": "Sun Nov 8 04:41:22 2026",
+      "path": "/System/Library/Frameworks/SystemConfiguration.framework/Versions/A/Helpers/SCHelper",
+      "user": "root"
+    },
+    {
+      "pid": 537,
+      "ppid": 1,
+      "uid": 501,
+      "cpu": 38.5,
+      "rssKB": 45104,
+      "start": "Sun Nov 8 04:41:22 2026",
+      "path": "/System/Library/PrivateFrameworks/HomeKitDaemon.framework/Support/homed",
+      "user": "admin"
+    },
+    {
+      "pid": 538,
+      "ppid": 1,
+      "uid": 0,
+      "cpu": 0.0,
+      "rssKB": 16224,
+      "start": "Sun Nov 8 04:41:22 2026",
+      "path": "/System/Library/Frameworks/Metal.framework/Versions/A/XPCServices/MTLCompilerService.xpc/Contents/MacOS/MTLCompilerService",
+      "user": "root"
+    },
+    {
+      "pid": 539,
+      "ppid": 1,
+      "uid": 501,
+      "cpu": 0.0,
+      "rssKB": 36864,
+      "start": "Sun Nov 8 04:41:22 2026",
+      "path": "/System/Library/PrivateFrameworks/MacinTalk.framework/PlugIns/MacinTalkAUSP.appex/Contents/MacOS/MacinTalkAUSP",
+      "user": "admin"
+    },
+    {
+      "pid": 540,
+      "ppid": 1,
+      "uid": 0,
+      "cpu": 0.0,
+      "rssKB": 8864,
+      "start": "Sun Nov 8 04:41:23 2026",
+      "path": "/usr/libexec/logd_helper",
+      "user": "root"
+    },
+    {
+      "pid": 543,
+      "ppid": 1,
+      "uid": 501,
+      "cpu": 0.6,
+      "rssKB": 22688,
+      "start": "Sun Nov 8 04:41:23 2026",
+      "path": "/System/iOSSupport/System/Library/ExtensionKit/Extensions/MauiAUSP.appex/Contents/MacOS/MauiAUSP",
+      "user": "admin"
+    },
+    {
+      "pid": 544,
+      "ppid": 1,
+      "uid": 501,
+      "cpu": 0.0,
+      "rssKB": 51664,
+      "start": "Sun Nov 8 04:41:24 2026",
+      "path": "/usr/libexec/appleaccountd",
+      "user": "admin"
+    },
+    {
+      "pid": 545,
+      "ppid": 1,
+      "uid": 501,
+      "cpu": 0.0,
+      "rssKB": 92656,
+      "start": "Sun Nov 8 04:41:24 2026",
+      "path": "/System/Library/Frameworks/Speech.framework/Versions/A/XPCServices/localspeechrecognition.xpc/Contents/MacOS/localspeechrecognition",
+      "user": "admin"
+    },
+    {
+      "pid": 546,
+      "ppid": 1,
+      "uid": 501,
+      "cpu": 0.0,
+      "rssKB": 20128,
+      "start": "Sun Nov 8 04:41:24 2026",
+      "path": "/System/Library/PrivateFrameworks/TelephonyUtilities.framework/XPCServices/com.apple.FaceTime.FTConversationService.xpc/Contents/MacOS/com.apple.FaceTime.FTConversationService",
+      "user": "admin"
+    },
+    {
+      "pid": 552,
+      "ppid": 1,
+      "uid": 0,
+      "cpu": 0.0,
+      "rssKB": 36992,
+      "start": "Sun Nov 8 04:41:25 2026",
+      "path": "/System/Library/PrivateFrameworks/EFILogin.framework/Resources/efilogin-helper",
+      "user": "root"
+    },
+    {
+      "pid": 554,
+      "ppid": 1,
+      "uid": 0,
+      "cpu": 0.0,
+      "rssKB": 16736,
+      "start": "Sun Nov 8 04:41:25 2026",
+      "path": "/usr/sbin/spindump",
+      "user": "root"
+    },
+    {
+      "pid": 555,
+      "ppid": 1,
+      "uid": 501,
+      "cpu": 0.0,
+      "rssKB": 36336,
+      "start": "Sun Nov 8 04:41:25 2026",
+      "path": "/System/Library/PrivateFrameworks/WorkflowKit.framework/XPCServices/BackgroundShortcutRunner.xpc/Contents/MacOS/BackgroundShortcutRunner",
+      "user": "admin"
+    },
+    {
+      "pid": 556,
+      "ppid": 1,
+      "uid": 501,
+      "cpu": 0.0,
+      "rssKB": 21840,
+      "start": "Sun Nov 8 04:41:25 2026",
+      "path": "/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/Metadata.framework/Versions/A/Support/mdbulkimport",
+      "user": "admin"
+    },
+    {
+      "pid": 557,
+      "ppid": 1,
+      "uid": 501,
+      "cpu": 0.0,
+      "rssKB": 30240,
+      "start": "Sun Nov 8 04:41:25 2026",
+      "path": "/System/Library/PrivateFrameworks/AuthKit.framework/Versions/A/Support/akd",
+      "user": "admin"
+    },
+    {
+      "pid": 558,
+      "ppid": 1,
+      "uid": 501,
+      "cpu": 0.0,
+      "rssKB": 16352,
+      "start": "Sun Nov 8 04:41:25 2026",
+      "path": "/System/Library/PrivateFrameworks/CoreCDP.framework/Versions/A/Resources/cdpd",
+      "user": "admin"
+    },
+    {
+      "pid": 559,
+      "ppid": 1,
+      "uid": 501,
+      "cpu": 0.0,
+      "rssKB": 8592,
+      "start": "Sun Nov 8 04:41:25 2026",
+      "path": "/usr/libexec/spindump_agent",
+      "user": "admin"
+    },
+    {
+      "pid": 566,
+      "ppid": 1,
+      "uid": 501,
+      "cpu": 0.0,
+      "rssKB": 30288,
+      "start": "Sun Nov 8 04:41:25 2026",
+      "path": "/System/Library/PrivateFrameworks/SiriTTSService.framework/sirittsd",
+      "user": "admin"
+    },
+    {
+      "pid": 572,
+      "ppid": 1,
+      "uid": 265,
+      "cpu": 0.0,
+      "rssKB": 10336,
+      "start": "Sun Nov 8 04:41:26 2026",
+      "path": "/System/Library/PrivateFrameworks/CoreADI.framework/adid",
+      "user": "_fpsd"
+    },
+    {
+      "pid": 573,
+      "ppid": 1,
+      "uid": 0,
+      "cpu": 0.6,
+      "rssKB": 160,
+      "start": "Sun Nov 8 04:41:26 2026",
+      "path": "/System/Library/CoreServices/SubmitDiagInfo",
+      "user": "root"
+    },
+    {
+      "pid": 579,
+      "ppid": 1,
+      "uid": 269,
+      "cpu": 0.0,
+      "rssKB": 21728,
+      "start": "Sun Nov 8 04:41:27 2026",
+      "path": "/usr/libexec/ReportMemoryException",
+      "user": "_reportmemoryexception"
+    },
+    {
+      "pid": 580,
+      "ppid": 1,
+      "uid": 501,
+      "cpu": 0.0,
+      "rssKB": 19696,
+      "start": "Sun Nov 8 04:41:27 2026",
+      "path": "/System/Library/PrivateFrameworks/CloudSubscriptionFeatures.framework/FeatureAccessAgent",
+      "user": "admin"
+    },
+    {
+      "pid": 581,
+      "ppid": 1,
+      "uid": 501,
+      "cpu": 0.0,
+      "rssKB": 31344,
+      "start": "Sun Nov 8 04:41:27 2026",
+      "path": "/System/Library/CoreServices/IOUIAgent.app/Contents/MacOS/IOUIAgent",
+      "user": "admin"
+    },
+    {
+      "pid": 582,
+      "ppid": 1,
+      "uid": 0,
+      "cpu": 0.0,
+      "rssKB": 13440,
+      "start": "Sun Nov 8 04:41:27 2026",
+      "path": "/System/Library/PrivateFrameworks/MobileSoftwareUpdate.framework/Versions/A/XPCServices/com.apple.MobileSoftwareUpdate.CleanupPreparePathService.xpc/Contents/MacOS/com.apple.MobileSoftwareUpdate.CleanupPreparePathService",
+      "user": "root"
+    },
+    {
+      "pid": 583,
+      "ppid": 1,
+      "uid": 501,
+      "cpu": 0.0,
+      "rssKB": 23200,
+      "start": "Sun Nov 8 04:41:27 2026",
+      "path": "/System/Library/PrivateFrameworks/ContactsDonation.framework/Versions/A/Support/contactsdonationagent",
+      "user": "admin"
+    },
+    {
+      "pid": 587,
+      "ppid": 1,
+      "uid": 0,
+      "cpu": 0.0,
+      "rssKB": 8576,
+      "start": "Sun Nov 8 04:41:27 2026",
+      "path": "/System/Library/PrivateFrameworks/AppleVirtualPlatform.framework/Versions/A/XPCServices/AppleVirtualPlatformIdentityService.xpc/Contents/MacOS/com.apple.Virtualization.AppleVirtualPlatformIdentity",
+      "user": "root"
+    },
+    {
+      "pid": 589,
+      "ppid": 1,
+      "uid": 501,
+      "cpu": 0.0,
+      "rssKB": 9680,
+      "start": "Sun Nov 8 04:41:28 2026",
+      "path": "/System/Library/PrivateFrameworks/AppleVirtualPlatform.framework/Versions/A/XPCServices/AppleVirtualPlatformIdentityService.xpc/Contents/MacOS/com.apple.Virtualization.AppleVirtualPlatformIdentity",
+      "user": "admin"
+    },
+    {
+      "pid": 591,
+      "ppid": 1,
+      "uid": 501,
+      "cpu": 0.0,
+      "rssKB": 21760,
+      "start": "Sun Nov 8 04:41:28 2026",
+      "path": "/System/Library/Frameworks/Speech.framework/Versions/A/XPCServices/localspeechrecognition.xpc/Contents/MacOS/localspeechrecognition",
+      "user": "admin"
+    },
+    {
+      "pid": 592,
+      "ppid": 1,
+      "uid": 501,
+      "cpu": 0.0,
+      "rssKB": 29776,
+      "start": "Sun Nov 8 04:41:28 2026",
+      "path": "/usr/libexec/avconferenced",
+      "user": "admin"
+    },
+    {
+      "pid": 593,
+      "ppid": 1,
+      "uid": 501,
+      "cpu": 0.0,
+      "rssKB": 8160,
+      "start": "Sun Nov 8 04:41:28 2026",
+      "path": "/System/Library/PrivateFrameworks/MediaRemote.framework/Support/mediaremoteagent",
+      "user": "admin"
+    },
+    {
+      "pid": 594,
+      "ppid": 1,
+      "uid": 501,
+      "cpu": 0.0,
+      "rssKB": 5744,
+      "start": "Sun Nov 8 04:41:28 2026",
+      "path": "xpcproxy",
+      "user": "admin"
+    },
+    {
+      "pid": 595,
+      "ppid": 1,
+      "uid": 501,
+      "cpu": 0.0,
+      "rssKB": 12688,
+      "start": "Sun Nov 8 04:41:28 2026",
+      "path": "/System/Library/Frameworks/AudioToolbox.framework/XPCServices/com.apple.audio.SandboxHelper.xpc/Contents/MacOS/com.apple.audio.SandboxHelper",
+      "user": "admin"
+    },
+    {
+      "pid": 596,
+      "ppid": 1,
+      "uid": 501,
+      "cpu": 0.0,
+      "rssKB": 12672,
+      "start": "Sun Nov 8 04:41:28 2026",
+      "path": "/System/Library/Frameworks/AudioToolbox.framework/XPCServices/com.apple.audio.SandboxHelper.xpc/Contents/MacOS/com.apple.audio.SandboxHelper",
+      "user": "admin"
+    },
+    {
+      "pid": 597,
+      "ppid": 1,
+      "uid": 501,
+      "cpu": 0.0,
+      "rssKB": 12704,
+      "start": "Sun Nov 8 04:41:28 2026",
+      "path": "/System/Library/Frameworks/AudioToolbox.framework/XPCServices/com.apple.audio.SandboxHelper.xpc/Contents/MacOS/com.apple.audio.SandboxHelper",
+      "user": "admin"
+    },
+    {
+      "pid": 598,
+      "ppid": 1,
+      "uid": 501,
+      "cpu": 0.0,
+      "rssKB": 12704,
+      "start": "Sun Nov 8 04:41:28 2026",
+      "path": "/System/Library/Frameworks/AudioToolbox.framework/XPCServices/com.apple.audio.SandboxHelper.xpc/Contents/MacOS/com.apple.audio.SandboxHelper",
+      "user": "admin"
+    },
+    {
+      "pid": 599,
+      "ppid": 1,
+      "uid": 501,
+      "cpu": 0.0,
+      "rssKB": 19808,
+      "start": "Sun Nov 8 04:41:28 2026",
+      "path": "/System/Library/PrivateFrameworks/CommerceKit.framework/Versions/A/Resources/commerce",
+      "user": "admin"
+    },
+    {
+      "pid": 600,
+      "ppid": 1,
+      "uid": 501,
+      "cpu": 0.0,
+      "rssKB": 43776,
+      "start": "Sun Nov 8 04:41:28 2026",
+      "path": "/System/Library/PrivateFrameworks/AppStoreDaemon.framework/Support/appstoreagent",
+      "user": "admin"
+    },
+    {
+      "pid": 601,
+      "ppid": 1,
+      "uid": 501,
+      "cpu": 0.0,
+      "rssKB": 23888,
+      "start": "Sun Nov 8 04:41:28 2026",
+      "path": "/System/Library/PrivateFrameworks/TextToSpeechVoiceBankingSupport.framework/Support/voicebankingd",
+      "user": "admin"
+    },
+    {
+      "pid": 602,
+      "ppid": 1,
+      "uid": 501,
+      "cpu": 0.0,
+      "rssKB": 20768,
+      "start": "Sun Nov 8 04:41:28 2026",
+      "path": "/System/Library/PrivateFrameworks/ContextKit.framework/Versions/A/XPCServices/ContextService.xpc/Contents/MacOS/ContextService",
+      "user": "admin"
+    },
+    {
+      "pid": 603,
+      "ppid": 1,
+      "uid": 501,
+      "cpu": 0.1,
+      "rssKB": 11504,
+      "start": "Sun Nov 8 04:41:28 2026",
+      "path": "/System/Library/Frameworks/AudioToolbox.framework/XPCServices/AUCrashHandlerService.xpc/Contents/MacOS/AUCrashHandlerService",
+      "user": "admin"
+    },
+    {
+      "pid": 605,
+      "ppid": 1,
+      "uid": 501,
+      "cpu": 0.0,
+      "rssKB": 12080,
+      "start": "Sun Nov 8 04:41:29 2026",
+      "path": "/System/Library/Frameworks/AudioToolbox.framework/XPCServices/AudioConverterService.xpc/Contents/MacOS/AudioConverterService",
+      "user": "admin"
+    },
+    {
+      "pid": 606,
+      "ppid": 1,
+      "uid": 501,
+      "cpu": 0.0,
+      "rssKB": 12160,
+      "start": "Sun Nov 8 04:41:29 2026",
+      "path": "/System/Library/Frameworks/AudioToolbox.framework/XPCServices/AudioConverterHardenedService.xpc/Contents/MacOS/AudioConverterHardenedService",
+      "user": "admin"
+    },
+    {
+      "pid": 607,
+      "ppid": 1,
+      "uid": 501,
+      "cpu": 0.0,
+      "rssKB": 12720,
+      "start": "Sun Nov 8 04:41:29 2026",
+      "path": "/System/Library/Frameworks/AudioToolbox.framework/XPCServices/com.apple.audio.SandboxHelper.xpc/Contents/MacOS/com.apple.audio.SandboxHelper",
+      "user": "admin"
+    },
+    {
+      "pid": 608,
+      "ppid": 1,
+      "uid": 501,
+      "cpu": 0.0,
+      "rssKB": 12640,
+      "start": "Sun Nov 8 04:41:29 2026",
+      "path": "/System/Library/Frameworks/AudioToolbox.framework/XPCServices/com.apple.audio.SandboxHelper.xpc/Contents/MacOS/com.apple.audio.SandboxHelper",
+      "user": "admin"
+    },
+    {
+      "pid": 609,
+      "ppid": 1,
+      "uid": 501,
+      "cpu": 0.0,
+      "rssKB": 12704,
+      "start": "Sun Nov 8 04:41:29 2026",
+      "path": "/System/Library/Frameworks/AudioToolbox.framework/XPCServices/com.apple.audio.SandboxHelper.xpc/Contents/MacOS/com.apple.audio.SandboxHelper",
+      "user": "admin"
+    },
+    {
+      "pid": 610,
+      "ppid": 1,
+      "uid": 235,
+      "cpu": 0.0,
+      "rssKB": 16736,
+      "start": "Sun Nov 8 04:41:29 2026",
+      "path": "/usr/libexec/AssetCache/AssetCache",
+      "user": "_assetcache"
+    },
+    {
+      "pid": 611,
+      "ppid": 1,
+      "uid": 205,
+      "cpu": 0.0,
+      "rssKB": 7968,
+      "start": "Sun Nov 8 04:41:29 2026",
+      "path": "/System/Library/Frameworks/Security.framework/Versions/A/XPCServices/XPCKeychainSandboxCheck.xpc/Contents/MacOS/XPCKeychainSandboxCheck",
+      "user": "_locationd"
+    },
+    {
+      "pid": 613,
+      "ppid": 1,
+      "uid": 501,
+      "cpu": 0.0,
+      "rssKB": 17936,
+      "start": "Sun Nov 8 04:41:29 2026",
+      "path": "/System/Library/PrivateFrameworks/JetCore.framework/Support/jetpackassetd",
+      "user": "admin"
+    },
+    {
+      "pid": 614,
+      "ppid": 1,
+      "uid": 501,
+      "cpu": 0.7,
+      "rssKB": 62512,
+      "start": "Sun Nov 8 04:41:29 2026",
+      "path": "/usr/libexec/searchpartyuseragent",
+      "user": "admin"
+    },
+    {
+      "pid": 615,
+      "ppid": 1,
+      "uid": 501,
+      "cpu": 1.6,
+      "rssKB": 25744,
+      "start": "Sun Nov 8 04:41:29 2026",
+      "path": "/System/Library/PrivateFrameworks/CallHistory.framework/Support/CallHistorySyncHelper",
+      "user": "admin"
+    },
+    {
+      "pid": 616,
+      "ppid": 1,
+      "uid": 501,
+      "cpu": 0.3,
+      "rssKB": 37824,
+      "start": "Sun Nov 8 04:41:29 2026",
+      "path": "/usr/libexec/siriknowledged",
+      "user": "admin"
+    },
+    {
+      "pid": 617,
+      "ppid": 1,
+      "uid": 501,
+      "cpu": 0.0,
+      "rssKB": 15648,
+      "start": "Sun Nov 8 04:41:29 2026",
+      "path": "/System/Library/PrivateFrameworks/NewDeviceOutreach.framework/ndoagent",
+      "user": "admin"
+    },
+    {
+      "pid": 618,
+      "ppid": 1,
+      "uid": 501,
+      "cpu": 1.2,
+      "rssKB": 35312,
+      "start": "Sun Nov 8 04:41:29 2026",
+      "path": "/System/Cryptexes/App/usr/libexec/SafariBookmarksSyncAgent",
+      "user": "admin"
+    },
+    {
+      "pid": 619,
+      "ppid": 1,
+      "uid": 501,
+      "cpu": 0.0,
+      "rssKB": 21344,
+      "start": "Sun Nov 8 04:41:29 2026",
+      "path": "/System/Cryptexes/App/usr/libexec/com.apple.Safari.History",
+      "user": "admin"
+    },
+    {
+      "pid": 620,
+      "ppid": 1,
+      "uid": 501,
+      "cpu": 0.1,
+      "rssKB": 23536,
+      "start": "Sun Nov 8 04:41:29 2026",
+      "path": "/usr/libexec/mlhostd",
+      "user": "admin"
+    },
+    {
+      "pid": 621,
+      "ppid": 1,
+      "uid": 501,
+      "cpu": 1.0,
+      "rssKB": 61344,
+      "start": "Sun Nov 8 04:41:29 2026",
+      "path": "/System/Library/PrivateFrameworks/AssistantServices.framework/Versions/A/Support/assistantd",
+      "user": "admin"
+    },
+    {
+      "pid": 622,
+      "ppid": 1,
+      "uid": 501,
+      "cpu": 0.0,
+      "rssKB": 34080,
+      "start": "Sun Nov 8 04:41:29 2026",
+      "path": "/System/Library/PrivateFrameworks/PassKitCore.framework/passd",
+      "user": "admin"
+    },
+    {
+      "pid": 623,
+      "ppid": 1,
+      "uid": 501,
+      "cpu": 0.0,
+      "rssKB": 20832,
+      "start": "Sun Nov 8 04:41:29 2026",
+      "path": "/System/Library/PrivateFrameworks/AvatarPersistence.framework/Support/avatarsd",
+      "user": "admin"
+    },
+    {
+      "pid": 624,
+      "ppid": 1,
+      "uid": 501,
+      "cpu": 0.0,
+      "rssKB": 16320,
+      "start": "Sun Nov 8 04:41:29 2026",
+      "path": "/usr/libexec/keyboardservicesd",
+      "user": "admin"
+    },
+    {
+      "pid": 625,
+      "ppid": 1,
+      "uid": 501,
+      "cpu": 0.0,
+      "rssKB": 12976,
+      "start": "Sun Nov 8 04:41:29 2026",
+      "path": "/usr/libexec/diagnosticspushd",
+      "user": "admin"
+    },
+    {
+      "pid": 627,
+      "ppid": 1,
+      "uid": 0,
+      "cpu": 0.0,
+      "rssKB": 10656,
+      "start": "Sun Nov 8 04:41:31 2026",
+      "path": "/System/Library/PrivateFrameworks/PackageKit.framework/Resources/system_installd",
+      "user": "root"
+    },
+    {
+      "pid": 628,
+      "ppid": 1,
+      "uid": 260,
+      "cpu": 0.0,
+      "rssKB": 14960,
+      "start": "Sun Nov 8 04:41:31 2026",
+      "path": "/usr/libexec/nfcd",
+      "user": "_applepay"
+    },
+    {
+      "pid": 629,
+      "ppid": 1,
+      "uid": 501,
+      "cpu": 0.0,
+      "rssKB": 7856,
+      "start": "Sun Nov 8 04:41:31 2026",
+      "path": "/System/Library/PrivateFrameworks/GeoServices.framework/geodMachServiceBridge",
+      "user": "admin"
+    },
+    {
+      "pid": 633,
+      "ppid": 1,
+      "uid": 0,
+      "cpu": 0.0,
+      "rssKB": 12416,
+      "start": "Sun Nov 8 04:41:31 2026",
+      "path": "/System/Library/PrivateFrameworks/AssetCacheServicesExtensions.framework/XPCServices/AssetCacheTetheratorService.xpc/Contents/MacOS/AssetCacheTetheratorService",
+      "user": "root"
+    },
+    {
+      "pid": 634,
+      "ppid": 1,
+      "uid": 274,
+      "cpu": 0.0,
+      "rssKB": 14944,
+      "start": "Sun Nov 8 04:41:31 2026",
+      "path": "/System/Library/PrivateFrameworks/InstallCoordination.framework/Support/installcoordinationd",
+      "user": "_installcoordinationd"
+    },
+    {
+      "pid": 635,
+      "ppid": 1,
+      "uid": 0,
+      "cpu": 0.0,
+      "rssKB": 6560,
+      "start": "Sun Nov 8 04:41:31 2026",
+      "path": "/System/Library/Frameworks/ColorSync.framework/Versions/A/XPCServices/com.apple.ColorSyncXPCAgent.xpc/Contents/MacOS/com.apple.ColorSyncXPCAgent",
+      "user": "root"
+    },
+    {
+      "pid": 636,
+      "ppid": 1,
+      "uid": 0,
+      "cpu": 0.0,
+      "rssKB": 9952,
+      "start": "Sun Nov 8 04:41:31 2026",
+      "path": "/System/Library/PrivateFrameworks/MobileInstallation.framework/XPCServices/com.apple.MobileInstallationHelperService.xpc/Contents/MacOS/com.apple.MobileInstallationHelperService",
+      "user": "root"
+    },
+    {
+      "pid": 637,
+      "ppid": 1,
+      "uid": 274,
+      "cpu": 0.0,
+      "rssKB": 8640,
+      "start": "Sun Nov 8 04:41:31 2026",
+      "path": "/usr/sbin/distnoted",
+      "user": "_installcoordinationd"
+    },
+    {
+      "pid": 638,
+      "ppid": 1,
+      "uid": 0,
+      "cpu": 0.0,
+      "rssKB": 11120,
+      "start": "Sun Nov 8 04:41:32 2026",
+      "path": "/System/Library/PrivateFrameworks/AppStoreDaemon.framework/Versions/A/XPCServices/com.apple.AppStoreDaemon.StorePrivilegedODRService.xpc/Contents/MacOS/com.apple.AppStoreDaemon.StorePrivilegedODRService",
+      "user": "root"
+    },
+    {
+      "pid": 639,
+      "ppid": 1,
+      "uid": 501,
+      "cpu": 0.7,
+      "rssKB": 30368,
+      "start": "Sun Nov 8 04:41:32 2026",
+      "path": "/usr/libexec/promotedcontentd",
+      "user": "admin"
+    },
+    {
+      "pid": 642,
+      "ppid": 1,
+      "uid": 265,
+      "cpu": 0.1,
+      "rssKB": 12992,
+      "start": "Sun Nov 8 04:41:32 2026",
+      "path": "/usr/libexec/fairplaydeviceidentityd",
+      "user": "_fpsd"
+    },
+    {
+      "pid": 644,
+      "ppid": 1,
+      "uid": 0,
+      "cpu": 0.0,
+      "rssKB": 10592,
+      "start": "Sun Nov 8 04:41:35 2026",
+      "path": "/System/Library/PrivateFrameworks/PackageKit.framework/Resources/installd",
+      "user": "root"
+    },
+    {
+      "pid": 645,
+      "ppid": 1,
+      "uid": 501,
+      "cpu": 0.0,
+      "rssKB": 8784,
+      "start": "Sun Nov 8 04:41:35 2026",
+      "path": "/System/Library/PrivateFrameworks/AppleVirtualPlatform.framework/Versions/A/XPCServices/AppleVirtualPlatformIdentityService.xpc/Contents/MacOS/com.apple.Virtualization.AppleVirtualPlatformIdentity",
+      "user": "admin"
+    },
+    {
+      "pid": 651,
+      "ppid": 1,
+      "uid": 501,
+      "cpu": 0.0,
+      "rssKB": 26320,
+      "start": "Sun Nov 8 04:41:37 2026",
+      "path": "/System/Volumes/Preboot/Cryptexes/App/System/Applications/Safari.app/Contents/PlugIns/CacheDeleteExtension.appex/Contents/MacOS/CacheDeleteExtension",
+      "user": "admin"
+    },
+    {
+      "pid": 653,
+      "ppid": 1,
+      "uid": 501,
+      "cpu": 0.0,
+      "rssKB": 12784,
+      "start": "Sun Nov 8 04:41:37 2026",
+      "path": "/System/Library/Frameworks/AudioToolbox.framework/XPCServices/com.apple.audio.SandboxHelper.xpc/Contents/MacOS/com.apple.audio.SandboxHelper",
+      "user": "admin"
+    },
+    {
+      "pid": 654,
+      "ppid": 1,
+      "uid": 501,
+      "cpu": 0.0,
+      "rssKB": 18464,
+      "start": "Sun Nov 8 04:41:37 2026",
+      "path": "/usr/libexec/assessmentagent",
+      "user": "admin"
+    },
+    {
+      "pid": 655,
+      "ppid": 1,
+      "uid": 501,
+      "cpu": 0.0,
+      "rssKB": 12816,
+      "start": "Sun Nov 8 04:41:37 2026",
+      "path": "/System/Library/Frameworks/AudioToolbox.framework/XPCServices/com.apple.audio.SandboxHelper.xpc/Contents/MacOS/com.apple.audio.SandboxHelper",
+      "user": "admin"
+    },
+    {
+      "pid": 656,
+      "ppid": 1,
+      "uid": 501,
+      "cpu": 0.0,
+      "rssKB": 23680,
+      "start": "Sun Nov 8 04:41:37 2026",
+      "path": "/System/Applications/Mail.app/Contents/PlugIns/MailCacheDelete.appex/Contents/MacOS/MailCacheDelete",
+      "user": "admin"
+    },
+    {
+      "pid": 658,
+      "ppid": 1,
+      "uid": 501,
+      "cpu": 0.0,
+      "rssKB": 17776,
+      "start": "Sun Nov 8 04:41:37 2026",
+      "path": "/System/Applications/TV.app/Contents/PlugIns/TVCacheExtension.appex/Contents/MacOS/TVCacheExtension",
+      "user": "admin"
+    },
+    {
+      "pid": 660,
+      "ppid": 1,
+      "uid": 501,
+      "cpu": 0.0,
+      "rssKB": 18512,
+      "start": "Sun Nov 8 04:41:37 2026",
+      "path": "/System/Applications/Music.app/Contents/PlugIns/MusicCacheExtension.appex/Contents/MacOS/MusicCacheExtension",
+      "user": "admin"
+    },
+    {
+      "pid": 661,
+      "ppid": 515,
+      "uid": 501,
+      "cpu": 0.0,
+      "rssKB": 1792,
+      "start": "Sun Nov 8 04:41:37 2026",
+      "path": "/bin/bash",
+      "user": "admin"
+    },
+    {
+      "pid": 663,
+      "ppid": 661,
+      "uid": 501,
+      "cpu": 0.0,
+      "rssKB": 1376,
+      "start": "Sun Nov 8 04:41:38 2026",
+      "path": "/bin/bash",
+      "user": "admin"
+    },
+    {
+      "pid": 664,
+      "ppid": 663,
+      "uid": 0,
+      "cpu": 0.0,
+      "rssKB": 1792,
+      "start": "Sun Nov 8 04:41:38 2026",
+      "path": "ps",
+      "user": "root"
+    },
+    {
+      "pid": 666,
+      "ppid": 663,
+      "uid": 501,
+      "cpu": 0.0,
+      "rssKB": 1408,
+      "start": "Sun Nov 8 04:41:38 2026",
+      "path": "awk",
+      "user": "admin"
+    },
+    {
+      "pid": 669,
+      "ppid": 663,
+      "uid": 501,
+      "cpu": 0.0,
+      "rssKB": 1312,
+      "start": "Sun Nov 8 04:41:38 2026",
+      "path": "/bin/bash",
+      "user": "admin"
+    },
+    {
+      "pid": 670,
+      "ppid": 1,
+      "uid": 0,
+      "cpu": 0.0,
+      "rssKB": 8944,
+      "start": "Sun Nov 8 04:41:38 2026",
+      "path": "/System/Library/PrivateFrameworks/CoreSymbolication.framework/coresymbolicationd",
+      "user": "root"
+    },
+    {
+      "pid": 671,
+      "ppid": 661,
+      "uid": 501,
+      "cpu": 8.4,
+      "rssKB": 22208,
+      "start": "Sun Nov 8 04:41:38 2026",
+      "path": "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/Resources/Python.app/Contents/MacOS/Python",
+      "user": "admin",
+      "signing": {
+        "signed": true,
+        "Identifier": "com.apple.python3",
+        "Authority": "Software Signing",
+        "TeamIdentifier": "59GAB85EFG",
+        "valid": true
+      }
+    },
+    {
+      "pid": 672,
+      "ppid": 1,
+      "uid": 501,
+      "cpu": 0.0,
+      "rssKB": 35328,
+      "start": "Sun Nov 8 04:41:38 2026",
+      "path": "/System/Library/PrivateFrameworks/WorkflowKit.framework/XPCServices/BackgroundShortcutRunner.xpc/Contents/MacOS/BackgroundShortcutRunner",
+      "user": "admin"
+    },
+    {
+      "pid": 673,
+      "ppid": 284,
+      "uid": 0,
+      "cpu": 0.0,
+      "rssKB": 15264,
+      "start": "Sun Nov 8 04:41:38 2026",
+      "path": "diskutil",
+      "user": "root"
+    },
+    {
+      "pid": 674,
+      "ppid": 1,
+      "uid": 278,
+      "cpu": 0.0,
+      "rssKB": 8576,
+      "start": "Sun Nov 8 04:41:39 2026",
+      "path": "/usr/sbin/distnoted",
+      "user": "_accessoryupdater"
+    },
+    {
+      "pid": 675,
+      "ppid": 1,
+      "uid": 501,
+      "cpu": 1.2,
+      "rssKB": 19712,
+      "start": "Sun Nov 8 04:41:39 2026",
+      "path": "/System/Library/Frameworks/ExtensionFoundation.framework/Versions/A/XPCServices/extensionkitservice.xpc/Contents/MacOS/extensionkitservice",
+      "user": "admin"
+    },
+    {
+      "pid": 676,
+      "ppid": 1,
+      "uid": 501,
+      "cpu": 0.0,
+      "rssKB": 47056,
+      "start": "Sun Nov 8 04:41:39 2026",
+      "path": "/System/Applications/Calendar.app/Contents/PlugIns/CalendarWidgetExtension.appex/Contents/MacOS/CalendarWidgetExtension",
+      "user": "admin"
+    },
+    {
+      "pid": 677,
+      "ppid": 1,
+      "uid": 501,
+      "cpu": 92.1,
+      "rssKB": 68320,
+      "start": "Sun Nov 8 04:41:39 2026",
+      "path": "/System/Applications/Weather.app/Contents/PlugIns/WeatherWidget.appex/Contents/MacOS/WeatherWidget",
+      "user": "admin"
+    },
+    {
+      "pid": 678,
+      "ppid": 1,
+      "uid": 501,
+      "cpu": 0.0,
+      "rssKB": 51920,
+      "start": "Sun Nov 8 04:41:39 2026",
+      "path": "/System/Applications/Photos.app/Contents/PlugIns/PhotosReliveWidget.appex/Contents/MacOS/PhotosReliveWidget",
+      "user": "admin"
+    },
+    {
+      "pid": 679,
+      "ppid": 1,
+      "uid": 501,
+      "cpu": 25.2,
+      "rssKB": 15776,
+      "start": "Sun Nov 8 04:41:41 2026",
+      "path": "/System/Library/Frameworks/Metal.framework/Versions/A/XPCServices/MTLCompilerService.xpc/Contents/MacOS/MTLCompilerService",
+      "user": "admin"
+    },
+    {
+      "pid": 680,
+      "ppid": 1,
+      "uid": 501,
+      "cpu": 0.0,
+      "rssKB": 7616,
+      "start": "Sun Nov 8 04:41:41 2026",
+      "path": "/System/Library/PrivateFrameworks/IASUtilities.framework/Versions/A/Resources/installerauthagent",
+      "user": "admin"
+    },
+    {
+      "pid": 681,
+      "ppid": 1,
+      "uid": 200,
+      "cpu": 0.6,
+      "rssKB": 18656,
+      "start": "Sun Nov 8 04:41:41 2026",
+      "path": "/usr/libexec/NRDUpdated",
+      "user": "_softwareupdate"
+    },
+    {
+      "pid": 682,
+      "ppid": 1,
+      "uid": 278,
+      "cpu": 0.0,
+      "rssKB": 5712,
+      "start": "Sun Nov 8 04:41:41 2026",
+      "path": "xpcproxy",
+      "user": "_accessoryupdater"
+    },
+    {
+      "pid": 683,
+      "ppid": 1,
+      "uid": 235,
+      "cpu": 1.3,
+      "rssKB": 18432,
+      "start": "Sun Nov 8 04:41:42 2026",
+      "path": "/System/Library/PrivateFrameworks/AssetCacheServices.framework/Versions/A/XPCServices/AssetCacheLocatorService.xpc/Contents/MacOS/AssetCacheLocatorService",
+      "user": "_assetcache"
+    },
+    {
+      "pid": 684,
+      "ppid": 1,
+      "uid": 501,
+      "cpu": 1.2,
+      "rssKB": 12704,
+      "start": "Sun Nov 8 04:41:42 2026",
+      "path": "/System/Library/Frameworks/AudioToolbox.framework/XPCServices/com.apple.audio.SandboxHelper.xpc/Contents/MacOS/com.apple.audio.SandboxHelper",
+      "user": "admin"
+    },
+    {
+      "pid": 692,
+      "ppid": 1,
+      "uid": 0,
+      "cpu": 0.1,
+      "rssKB": 144,
+      "start": "Sun Nov 8 04:41:42 2026",
+      "path": "/System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/HIServices.framework/Versions/A/XPCServices/com.apple.hiservices-xpcservice.xpc/Contents/MacOS/com.apple.hiservices-xpcservice",
+      "user": "root"
+    },
+    {
+      "pid": 694,
+      "ppid": 1,
+      "uid": 0,
+      "cpu": 14.7,
+      "rssKB": 18352,
+      "start": "Sun Nov 8 04:41:43 2026",
+      "path": "/usr/libexec/mdmclient",
+      "user": "root"
+    },
+    {
+      "pid": 695,
+      "ppid": 671,
+      "uid": 0,
+      "cpu": 0.6,
+      "rssKB": 1680,
+      "start": "Sun Nov 8 04:41:43 2026",
+      "path": "/bin/ps",
+      "user": "root"
+    },
+    {
+      "pid": 696,
+      "ppid": 1,
+      "uid": 0,
+      "cpu": 7.5,
+      "rssKB": 14880,
+      "start": "Sun Nov 8 04:41:43 2026",
+      "path": "/System/Library/CoreServices/ManagedClient.app/Contents/MacOS/ManagedClient",
+      "user": "root"
+    },
+    {
+      "pid": 415,
+      "ppid": 355,
+      "uid": 0,
+      "cpu": 0.0,
+      "rssKB": 9520,
+      "start": "Sun Nov 8 04:41:09 2026",
+      "path": "login",
+      "user": "root"
+    },
+    {
+      "pid": 445,
+      "ppid": 415,
+      "uid": 501,
+      "cpu": 0.0,
+      "rssKB": 3280,
+      "start": "Sun Nov 8 04:41:12 2026",
+      "path": "-zsh",
+      "user": "admin"
+    }
+  ],
+  "launchd": {
+    "jobs": [
+      {
+        "plist": "/Library/LaunchAgents/org.cirruslabs.tart-guest-agent.plist",
+        "symlinkTarget": null,
+        "domain": "gui/501",
+        "label": "org.cirruslabs.tart-guest-agent",
+        "program": null,
+        "programArguments": [
+          "/opt/homebrew/bin/tart-guest-agent",
+          "--run-agent"
+        ],
+        "runAtLoad": true,
+        "keepAlive": true,
+        "disabledKey": null,
+        "owner": "root",
+        "loaded": true,
+        "state": "running",
+        "runs": 1,
+        "pid": 515,
+        "lastExit": "(never exited)"
+      },
+      {
+        "plist": "/Library/LaunchDaemons/limit.maxfiles.plist",
+        "symlinkTarget": null,
+        "domain": "system",
+        "label": "limit.maxfiles",
+        "program": null,
+        "programArguments": [
+          "launchctl",
+          "limit",
+          "maxfiles",
+          "65536",
+          "524288"
+        ],
+        "runAtLoad": true,
+        "keepAlive": null,
+        "disabledKey": null,
+        "owner": "root",
+        "loaded": true,
+        "state": "not running",
+        "runs": 1,
+        "lastExit": "0"
+      },
+      {
+        "plist": "/Library/LaunchDaemons/org.cirruslabs.tart-guest-daemon.plist",
+        "symlinkTarget": null,
+        "domain": "system",
+        "label": "org.cirruslabs.tart-guest-daemon",
+        "program": null,
+        "programArguments": [
+          "/opt/homebrew/bin/tart-guest-agent",
+          "--run-daemon"
+        ],
+        "runAtLoad": true,
+        "keepAlive": true,
+        "disabledKey": null,
+        "owner": "root",
+        "loaded": true,
+        "state": "running",
+        "runs": 1,
+        "pid": 284,
+        "lastExit": "(never exited)"
+      }
+    ],
+    "disabledOverrides": {
+      "gui/501/com.apple.Siri.agent": "disabled",
+      "gui/501/com.apple.FolderActionsDispatcher": "disabled",
+      "gui/501/com.apple.appleseed.seedusaged.postinstall": "disabled",
+      "gui/501/com.apple.ScriptMenuApp": "disabled",
+      "system/com.apple.screensharing": "enabled",
+      "system/com.apple.CSCSupportd": "disabled",
+      "system/com.apple.mdmclient.daemon.runatboot": "disabled",
+      "system/com.apple.ftpd": "disabled",
+      "system/com.openssh.sshd": "enabled"
+    }
+  },
+  "receipts": [
+    {
+      "id": "com.microsoft.gitcredentialmanager",
+      "package-id": "com.microsoft.gitcredentialmanager",
+      "version": "3.0.2",
+      "volume": "/",
+      "location": "usr/local/share/gcm-core",
+      "install-time": "1794052074"
+    }
+  ],
+  "bundles": [
+    {
+      "path": "/Applications/Safari.app",
+      "bundleID": "com.apple.Safari",
+      "version": "26.6.2",
+      "teamID": "not set"
+    },
+    {
+      "path": "/Library/Application Support/Script Editor/Templates/Cocoa-AppleScript Applet.app",
+      "bundleID": "com.apple.ScriptEditor.id.cocoa-applet-template",
+      "version": "1.0",
+      "teamID": "not set"
+    },
+    {
+      "path": "/Library/Application Support/Script Editor/Templates/Droplets/Droplet with Settable Properties.app",
+      "bundleID": "com.apple.ScriptEditor.id.droplet-with-settable-properties-template",
+      "version": "1.0",
+      "teamID": null
+    },
+    {
+      "path": "/Library/Application Support/Script Editor/Templates/Droplets/Recursive File Processing Droplet.app",
+      "bundleID": "com.apple.ScriptEditor.id.file-processing-droplet-template",
+      "version": "1.0",
+      "teamID": null
+    },
+    {
+      "path": "/Library/Application Support/Script Editor/Templates/Droplets/Recursive Image File Processing Droplet.app",
+      "bundleID": "com.apple.ScriptEditor.id.image-file-processing-droplet-template",
+      "version": "1.0",
+      "teamID": null
+    }
+  ],
+  "extensions": {
+    "systemextensionsctl": [
+      "0 extension(s)"
+    ],
+    "loadedThirdPartyKexts": [],
+    "kmutilError": "No variant specified, falling back to release",
+    "libraryExtensions": [
+      "HighPointIOP.kext",
+      "HighPointRR.kext"
+    ]
+  },
+  "vendorDirectories": {
+    "/Library/Internet Plug-Ins": [],
+    "/Library/Extensions": [
+      "HighPointIOP.kext",
+      "HighPointRR.kext"
+    ]
+  },
+  "nativeMessagingHosts": {
+    "/Library/Google/Chrome/NativeMessagingHosts": {
+      "com.apple.passwordmanager.json": {
+        "path": "/System/Cryptexes/App/System/Library/CoreServices/PasswordManagerBrowserExtensionHelper.app/Contents/MacOS/PasswordManagerBrowserExtensionHelper",
+        "allowed": [
+          "chrome-extension://pejdijmoenmkgeppbflobdenhhabjlaj/",
+          "chrome-extension://mfbcdcnpokpoajjciilocoachedjkima/"
+        ]
+      }
+    },
+    "/Library/Application Support/Mozilla/NativeMessagingHosts": {
+      "com.apple.passwordmanager.json": {
+        "path": "/System/Cryptexes/App/System/Library/CoreServices/PasswordManagerBrowserExtensionHelper.app/Contents/MacOS/PasswordManagerBrowserExtensionHelper",
+        "allowed": [
+          "password-manager-firefox-extension@apple.com",
+          "apple-passwords-firefox-extension@apple.com"
+        ]
+      }
+    }
+  },
+  "certificates": [
+    {
+      "keychain": "/Library/Keychains/System.keychain",
+      "subject": " O=System Identity,CN=com.apple.systemdefault",
+      "issuer": " O=System Identity,CN=com.apple.systemdefault",
+      "notAfter": "Aug 13 16:10:00 2046 GMT",
+      "notBefore": "Aug 18 16:10:00 2026 GMT",
+      "sha256": "61:C0:E4:88:BC:AB:72:35:A0:57:79:21:FD:B2:55:73:CD:25:3B:5B:94:AD:19:21:69:CC:17:64:72:9B:70:5E",
+      "keyAlgorithm": "rsaEncryption",
+      "commonName": "com.apple.systemdefault",
+      "selfSigned": true,
+      "trustDomains": []
+    },
+    {
+      "keychain": "/Library/Keychains/System.keychain",
+      "subject": " O=System Identity,CN=com.apple.kerberos.kdc",
+      "issuer": " O=System Identity,CN=com.apple.kerberos.kdc",
+      "notAfter": "Aug 13 16:10:02 2046 GMT",
+      "notBefore": "Aug 18 16:10:02 2026 GMT",
+      "sha256": "78:81:4B:4C:6E:48:FC:D5:BC:5C:2F:92:0C:4A:98:73:1D:3B:22:DD:6D:8A:2E:60:6E:F0:7B:C8:F2:62:62:4D",
+      "keyAlgorithm": "rsaEncryption",
+      "commonName": "com.apple.kerberos.kdc",
+      "selfSigned": true,
+      "trustDomains": []
+    }
+  ],
+  "gurakilla": {
+    "products": []
+  },
+  "captureSeconds": 6.0
+}

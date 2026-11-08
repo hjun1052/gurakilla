@@ -1,0 +1,81 @@
+{
+  "products" : [
+    {
+      "bundles" : [
+        {
+          "bundleID" : "com.wizvera.uninstaller.Uninstaller",
+          "path" : "\/Applications\/Veraport\/Uninstaller.app",
+          "signing" : "Team C86MGS2A3T",
+          "version" : "1.0"
+        },
+        {
+          "bundleID" : "com.wizvera.vp20handler",
+          "path" : "\/Applications\/Veraport\/veraport.app",
+          "signing" : "Team C86MGS2A3T",
+          "version" : "3,8,6,6"
+        }
+      ],
+      "certificates" : [
+        {
+          "adminTrusted" : true,
+          "commonName" : "VERAPORT-CA",
+          "issuer" : "CN=VERAPORT-CA,O=WIZVERA,C=KR",
+          "keychain" : "\/Library\/Keychains\/System.keychain",
+          "sha256" : "D42922936A1009179A52858265E0963650FBC588BB5429141F1D5A01C334D7EB",
+          "subject" : "CN=VERAPORT-CA,O=WIZVERA,C=KR",
+          "userTrusted" : false
+        },
+        {
+          "adminTrusted" : true,
+          "commonName" : "127.0.0.1",
+          "issuer" : "CN=VERAPORT-CA,O=WIZVERA,C=KR",
+          "keychain" : "\/Library\/Keychains\/System.keychain",
+          "sha256" : "EB145D817B510DB0F405B7B225D9B520D52FCE464F3909576984453A59FE95F4",
+          "subject" : "CN=127.0.0.1,O=WIZVERA,C=KR",
+          "userTrusted" : false
+        }
+      ],
+      "extraPaths" : [
+
+      ],
+      "id" : "wizvera-veraport",
+      "installPaths" : [
+        "\/Applications\/Veraport"
+      ],
+      "kernelExtensions" : [
+
+      ],
+      "launchJobs" : [
+        {
+          "autoStarts" : true,
+          "disabled" : false,
+          "keepAlive" : true,
+          "loaded" : true,
+          "pid" : 879,
+          "plist" : "\/Library\/LaunchAgents\/com.wizvera.veraport.plist",
+          "target" : "gui\/501\/com.wizvera.veraport"
+        }
+      ],
+      "name" : "Veraport",
+      "processes" : [
+        {
+          "cpu" : 0,
+          "owner" : "admin",
+          "path" : "\/Applications\/Veraport\/veraport.app\/Contents\/MacOS\/veraport",
+          "pid" : 879,
+          "rssKB" : 9620
+        }
+      ],
+      "publisher" : "Wizvera",
+      "receipts" : [
+        "com.wizvera.vp20handler"
+      ],
+      "systemExtensions" : [
+
+      ],
+      "uninstallers" : [
+        "\/Applications\/Veraport\/Uninstaller.app"
+      ]
+    }
+  ]
+}

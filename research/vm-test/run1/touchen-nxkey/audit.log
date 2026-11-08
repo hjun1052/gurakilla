@@ -1,0 +1,9 @@
+2026-11-08T04:39:11Z  REMOVAL_START       TouchEn nxKey: 7 item(s) [cli]
+2026-11-08T04:39:11Z  MOVE_TO_TRASH       /Applications/TouchEn nxKey -> /Users/admin/.Trash/GuraKilla 20261108-043911/Applications/TouchEn nxKey
+2026-11-08T04:39:11Z  REMOVE              Moved to Trash: /Library/Application Support/raonsecure/TouchEn nxKey
+2026-11-08T04:39:11Z  REMOVE              Moved to Trash: /Library/Internet Plug-Ins/npraontouchenex.plugin
+2026-11-08T04:39:11Z  REMOVE              Moved to Trash: /Library/LaunchAgents/com.raon.agent.touchen.nxkey.plist
+2026-11-08T04:39:11Z  REMOVE              Moved to Trash: /Library/LaunchAgents/com.raon.touchen.UserAgent.plist
+2026-11-08T04:39:11Z  REMOVE              Moved to Trash: /Library/LaunchDaemons/com.raon.touchen.nxkey.plist
+2026-11-08T04:39:11Z  REMOVE              Package receipt forgotten: com.raonsecure.pkg.nxkey
+2026-11-08T04:39:11Z  REMOVAL_END         TouchEn nxKey

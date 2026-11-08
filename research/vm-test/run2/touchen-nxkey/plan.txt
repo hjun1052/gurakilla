@@ -1,0 +1,10 @@
+Removal plan for TouchEn nxKey:
+  [x] Install location: /Applications/TouchEn nxKey
+  [x] Install location: /Library/Application Support/raonsecure/TouchEn nxKey  (admin)
+  [x] Installed file: /Library/Internet Plug-Ins/npraontouchenex.plugin  (admin)
+  [x] Launchd plist: /Library/LaunchAgents/com.raon.agent.touchen.nxkey.plist  (admin)
+  [x] Launchd plist: /Library/LaunchAgents/com.raon.touchen.UserAgent.plist  (admin)
+  [x] Launchd plist: /Library/LaunchDaemons/com.raon.touchen.nxkey.plist  (admin)
+  [x] Package receipt: com.raonsecure.pkg.nxkey  (admin)
+  [-] not touched: /Library/Extensions/TKVHD.kext (Kernel extension — use the vendor uninstaller. GuraKilla never removes kernel extensions.)
+Dry run. Add --yes to remove the checked items.

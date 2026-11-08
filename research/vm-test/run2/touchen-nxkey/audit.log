@@ -1,0 +1,14 @@
+2026-11-08T04:52:57Z  REMOVAL_START       TouchEn nxKey: 7 item(s) [cli]
+2026-11-08T04:52:57Z  MOVE_TO_TRASH       /Applications/TouchEn nxKey -> /Users/admin/.Trash/GuraKilla 20261108-045257/Applications/TouchEn nxKey
+2026-11-08T04:52:57Z  REMOVE              Moved to Trash: /Library/Application Support/raonsecure/TouchEn nxKey
+2026-11-08T04:52:57Z  REMOVE              Moved to Trash: /Library/Internet Plug-Ins/npraontouchenex.plugin
+2026-11-08T04:52:57Z  REMOVE              Moved to Trash: /Library/LaunchAgents/com.raon.agent.touchen.nxkey.plist
+2026-11-08T04:52:57Z  REMOVE              Moved to Trash: /Library/LaunchAgents/com.raon.touchen.UserAgent.plist
+2026-11-08T04:52:57Z  REMOVE              Moved to Trash: /Library/LaunchDaemons/com.raon.touchen.nxkey.plist
+2026-11-08T04:52:57Z  REMOVE              Package receipt forgotten: com.raonsecure.pkg.nxkey
+2026-11-08T04:52:57Z  REMOVAL_END         TouchEn nxKey
+2026-11-08T04:52:59Z  REMOVAL_START       CrossEX Service: 8 item(s) [cli]
+2026-11-08T04:52:59Z  UNLOAD              gui/501/kr.co.iniline.crossex-service
+2026-11-08T04:52:59Z  MOVE_TO_TRASH       /Applications/CrossEX -> /Users/admin/.Trash/GuraKilla 20261108-045259/Applications/CrossEX
+2026-11-08T04:52:59Z  MOVE_TO_TRASH       /Users/admin/Library/LaunchAgents/kr.co.iniline.crossex-service.plist -> /Users/admin/.Trash/GuraKilla 20261108-045259/Users/admin/Library/LaunchAgents/kr.co.iniline.crossex-service.plist
+2026-11-08T04:54:06Z  REMOVAL_END         CrossEX Service: /bin/sh: line 7:  1372 Terminated: 15          ( /usr/bin/security remove-trusted-cert -d '/Users/admin/Library/Application Support/GuraKilla/certificate-backups/22EC41463F63233727DC1CCA0E5ECD604FAF02BD9212ABB04206BA7D1B656A43.pem' )

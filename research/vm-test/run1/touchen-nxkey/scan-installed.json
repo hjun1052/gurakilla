@@ -1,0 +1,179 @@
+{
+  "products" : [
+    {
+      "bundles" : [
+        {
+          "bundleID" : "com.raonsecure.TKUninstall",
+          "path" : "\/Applications\/TouchEn nxKey\/TKUninstall.app",
+          "signing" : "Team 9TKT2BJHQF",
+          "version" : "1.0.0.3"
+        },
+        {
+          "bundleID" : "com.raon.touchen.UserAgent",
+          "path" : "\/Library\/Application Support\/raonsecure\/TouchEn nxKey\/TEK_UserAgent.app",
+          "signing" : "Team 9TKT2BJHQF",
+          "version" : "1.0.0.2"
+        },
+        {
+          "bundleID" : "com.raonsecure.TKAgent",
+          "path" : "\/Library\/Application Support\/raonsecure\/TouchEn nxKey\/TKAgent.app",
+          "signing" : "Team 9TKT2BJHQF",
+          "version" : "1.0.0.3"
+        },
+        {
+          "bundleID" : "com.raonsecure.TKPref",
+          "path" : "\/Library\/Application Support\/raonsecure\/TouchEn nxKey\/TKPref.app",
+          "signing" : "Team 9TKT2BJHQF",
+          "version" : "1.0.0.1"
+        }
+      ],
+      "certificates" : [
+
+      ],
+      "extraPaths" : [
+        "\/Library\/Internet Plug-Ins\/npraontouchenex.plugin"
+      ],
+      "id" : "touchen-nxkey",
+      "installPaths" : [
+        "\/Applications\/TouchEn nxKey",
+        "\/Library\/Application Support\/raonsecure\/TouchEn nxKey"
+      ],
+      "kernelExtensions" : [
+        "\/Library\/Extensions\/TKVHD.kext"
+      ],
+      "launchJobs" : [
+        {
+          "autoStarts" : true,
+          "disabled" : false,
+          "keepAlive" : true,
+          "loaded" : false,
+          "pid" : null,
+          "plist" : "\/Library\/LaunchAgents\/com.raon.touchen.UserAgent.plist",
+          "target" : "gui\/501\/com.raon.touchen.UserAgent"
+        },
+        {
+          "autoStarts" : true,
+          "disabled" : false,
+          "keepAlive" : true,
+          "loaded" : false,
+          "pid" : null,
+          "plist" : "\/Library\/LaunchAgents\/com.raon.agent.touchen.nxkey.plist",
+          "target" : "gui\/501\/com.raon.agent.touchen.nxkey"
+        },
+        {
+          "autoStarts" : true,
+          "disabled" : false,
+          "keepAlive" : true,
+          "loaded" : true,
+          "pid" : 1112,
+          "plist" : "\/Library\/LaunchDaemons\/com.raon.touchen.nxkey.plist",
+          "target" : "system\/com.raon.touchen.nxkey"
+        }
+      ],
+      "name" : "TouchEn nxKey",
+      "processes" : [
+        {
+          "cpu" : 0.10000000000000001,
+          "owner" : "root",
+          "path" : "\/Library\/Application Support\/raonsecure\/TouchEn nxKey\/TEK_Daemon",
+          "pid" : 1112,
+          "rssKB" : 8660
+        }
+      ],
+      "publisher" : "RaonSecure",
+      "receipts" : [
+        "com.raonsecure.pkg.nxkey"
+      ],
+      "systemExtensions" : [
+
+      ],
+      "uninstallers" : [
+        "\/Applications\/TouchEn nxKey\/TKUninstall.app"
+      ]
+    },
+    {
+      "bundles" : [
+        {
+          "bundleID" : "com.yourcompany.UnInstallCrossEXService",
+          "path" : "\/Applications\/CrossEX\/crossex\/UnInstallCrossEXService.app",
+          "signing" : "Team W77CBPNBYQ",
+          "version" : "9.0.0.0"
+        },
+        {
+          "bundleID" : "com.yourcompany.UnInstallCrossEX",
+          "path" : "\/Applications\/CrossEX\/touchenex\/UnInstallCrossEX.app",
+          "signing" : "Team W77CBPNBYQ",
+          "version" : "1.0.1.1550"
+        },
+        {
+          "bundleID" : "iniLine.CrossExChrome",
+          "path" : "\/Library\/Application Support\/iniLINE\/CrossEX\/touchenex\/CrossExChrome.app",
+          "signing" : "Team W77CBPNBYQ",
+          "version" : "1.0.1.1550"
+        }
+      ],
+      "certificates" : [
+        {
+          "adminTrusted" : true,
+          "commonName" : "iniLINE CrossEX RootCA2",
+          "issuer" : "CN=iniLINE CrossEX RootCA2,O=iniLINE Co.\\, Ltd.,L=Seoul,ST=Some-State,C=KR",
+          "keychain" : "\/Library\/Keychains\/System.keychain",
+          "sha256" : "22EC41463F63233727DC1CCA0E5ECD604FAF02BD9212ABB04206BA7D1B656A43",
+          "subject" : "CN=iniLINE CrossEX RootCA2,O=iniLINE Co.\\, Ltd.,L=Seoul,ST=Some-State,C=KR",
+          "userTrusted" : false
+        }
+      ],
+      "extraPaths" : [
+
+      ],
+      "id" : "iniline-crossex",
+      "installPaths" : [
+        "\/Applications\/CrossEX",
+        "\/Library\/Application Support\/iniLINE\/CrossEX"
+      ],
+      "kernelExtensions" : [
+
+      ],
+      "launchJobs" : [
+        {
+          "autoStarts" : true,
+          "disabled" : false,
+          "keepAlive" : false,
+          "loaded" : true,
+          "pid" : 1025,
+          "plist" : "\/Users\/admin\/Library\/LaunchAgents\/kr.co.iniline.crossex-service.plist",
+          "target" : "gui\/501\/kr.co.iniline.crossex-service"
+        }
+      ],
+      "name" : "CrossEX Service",
+      "processes" : [
+        {
+          "cpu" : 0,
+          "owner" : "admin",
+          "path" : "\/Library\/Application Support\/iniLINE\/CrossEX\/crossex\/CrossEXService",
+          "pid" : 1025,
+          "rssKB" : 14288
+        },
+        {
+          "cpu" : 0,
+          "owner" : "admin",
+          "path" : "\/Library\/Application Support\/iniLINE\/CrossEX\/crossex\/CrossEXService",
+          "pid" : 1036,
+          "rssKB" : 3856
+        }
+      ],
+      "publisher" : "iniLINE",
+      "receipts" : [
+        "kr.co.iniline.pkg.CrossEXPackage",
+        "kr.co.iniline.pkg.CrossEXServicePackage"
+      ],
+      "systemExtensions" : [
+
+      ],
+      "uninstallers" : [
+        "\/Applications\/CrossEX\/crossex\/UnInstallCrossEXService.app",
+        "\/Applications\/CrossEX\/touchenex\/UnInstallCrossEX.app"
+      ]
+    }
+  ]
+}

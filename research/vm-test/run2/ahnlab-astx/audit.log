@@ -1,0 +1,2 @@
+2026-11-08T04:42:46Z  REMOVAL_START       AhnLab Safe Transaction: 8 item(s) [cli]
+2026-11-08T04:43:56Z  REMOVAL_END         AhnLab Safe Transaction: /bin/sh: line 11:  1116 Terminated: 15          ( /usr/bin/security remove-trusted-cert -d '/Users/admin/Library/Application Support/GuraKilla/certificate-backups/8A81891C6200605F963355A7D7B379221D4A14F2BC55C969353C04214A7C5685.pem' )

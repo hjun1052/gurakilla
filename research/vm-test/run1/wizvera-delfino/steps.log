@@ -1,0 +1,8 @@
+[04:24:43] snapshot before
+[04:24:48] install /Volumes/My Shared Files/repo/research/downloads/kb-delfino-g3/delfino-g3.pkg
+[04:25:06] installer exit 0
+[04:25:36] snapshot installed
+[04:25:41] remove via GuraKilla
+[04:26:44] remove exit 1
+[04:27:00] snapshot removed
+[04:27:04] done

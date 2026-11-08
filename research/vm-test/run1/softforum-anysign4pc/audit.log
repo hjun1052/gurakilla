@@ -1,0 +1,2 @@
+2026-11-08T04:35:31Z  REMOVAL_START       AnySign4PC: 4 item(s) [cli]
+2026-11-08T04:36:33Z  REMOVAL_END         AnySign4PC: /bin/sh: line 8:  1045 Terminated: 15          ( /usr/bin/security remove-trusted-cert -d '/Users/admin/Library/Application Support/GuraKilla/certificate-backups/2C32B156E72FDB88871E89B078CAD28C449F686A0980877158DD8F8EC94BA2F3.pem' )

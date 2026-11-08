@@ -1,0 +1,6 @@
+build/
+*.xcodeproj/xcuserdata/
+.DS_Store
+research/downloads/
+research/expanded/
+research/vm-test/out/

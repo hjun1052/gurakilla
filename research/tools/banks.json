@@ -1,0 +1,10 @@
+[
+  {"id": "shinhan", "start": ["https://bizbank.shinhan.com/sw/wizvera/veraport/install20/install.html"], "maxPages": 2},
+  {"id": "hana", "start": ["https://www.kebhana.com/common/installSecurityModule.jsp", "https://sab.hanabank.com/raonnx/install/install.html"], "maxPages": 3},
+  {"id": "woori", "start": ["https://spot.wooribank.com/pot/Dream?withyou=CQSCT0083"], "maxPages": 3},
+  {"id": "nh", "start": ["https://banking.nonghyup.com/nhbank.html"], "maxPages": 3},
+  {"id": "hometax", "start": ["https://www.hometax.go.kr/html/pp/veraport/html/nx_veraportView.html"], "maxPages": 2},
+  {"id": "raon-touchen", "start": ["http://faq.touchen.co.kr/nxKey/download/download.html", "https://www.cashbee.co.kr/TouchEn/install/install.html"], "maxPages": 3},
+  {"id": "anysign", "start": ["https://www.cros.or.kr/AnySign/AnySign4PC/installAnySign.jsp"], "maxPages": 2},
+  {"id": "ipinside", "start": ["https://vbv.samsungcard.co.kr/secPrgFaq/IPINSIDE_FAQ.html"], "maxPages": 2}
+]

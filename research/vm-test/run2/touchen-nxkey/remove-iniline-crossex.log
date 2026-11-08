@@ -1,0 +1,22 @@
+Removal plan for CrossEX Service:
+  [x] Install location: /Applications/CrossEX
+  [x] Package file: /Library/Application Support/Mozilla/NativeMessagingHosts/kr.co.raon.touchenex.firefox.json  (admin)
+  [x] Install location: /Library/Application Support/iniLINE/CrossEX  (admin)
+  [x] Package file: /Library/Google/Chrome/NativeMessagingHosts/kr.co.raon.touchenex.json  (admin)
+  [x] Launchd plist: /Users/admin/Library/LaunchAgents/kr.co.iniline.crossex-service.plist
+  [x] Package receipt: kr.co.iniline.pkg.CrossEXPackage  (admin)
+  [x] Package receipt: kr.co.iniline.pkg.CrossEXServicePackage  (admin)
+  [x] Trusted certificate: iniLINE CrossEX RootCA2 — System keychain, trusted system-wide  (admin)
+Unloaded gui/501/kr.co.iniline.crossex-service
+Moved to Trash: /Applications/CrossEX
+Moved to Trash: /Users/admin/Library/LaunchAgents/kr.co.iniline.crossex-service.plist
+Administrator steps:
+  /bin/mkdir -p '/Users/admin/.Trash/GuraKilla 20261108-045259/Library/Application Support/Mozilla/NativeMessagingHosts' && /bin/mv '/Library/Application Support/Mozilla/NativeMessagingHosts/kr.co.raon.touchenex.firefox.json' '/Users/admin/.Trash/GuraKilla 20261108-045259/Library/Application Support/Mozilla/NativeMessagingHosts/kr.co.raon.touchenex.firefox.json'
+  /bin/mkdir -p '/Users/admin/.Trash/GuraKilla 20261108-045259/Library/Application Support/iniLINE' && /bin/mv '/Library/Application Support/iniLINE/CrossEX' '/Users/admin/.Trash/GuraKilla 20261108-045259/Library/Application Support/iniLINE/CrossEX'
+  /bin/mkdir -p '/Users/admin/.Trash/GuraKilla 20261108-045259/Library/Google/Chrome/NativeMessagingHosts' && /bin/mv '/Library/Google/Chrome/NativeMessagingHosts/kr.co.raon.touchenex.json' '/Users/admin/.Trash/GuraKilla 20261108-045259/Library/Google/Chrome/NativeMessagingHosts/kr.co.raon.touchenex.json'
+  /usr/sbin/chown -R 501:20 '/Users/admin/.Trash/GuraKilla 20261108-045259'
+  /usr/bin/security delete-certificate -Z DC2F16A0E1AF8FAF0D3E93EAC9ACA7315A409C79 '/Library/Keychains/System.keychain'
+  /usr/bin/security remove-trusted-cert -d '/Users/admin/Library/Application Support/GuraKilla/certificate-backups/22EC41463F63233727DC1CCA0E5ECD604FAF02BD9212ABB04206BA7D1B656A43.pem'
+  /usr/sbin/pkgutil --forget 'kr.co.iniline.pkg.CrossEXPackage'
+  /usr/sbin/pkgutil --forget 'kr.co.iniline.pkg.CrossEXServicePackage'
+Partly removed: /bin/sh: line 7:  1372 Terminated: 15          ( /usr/bin/security remove-trusted-cert -d '/Users/admin/Library/Application Support/GuraKilla/certificate-backups/22EC41463F63233727DC1CCA0E5ECD604FAF02BD9212ABB04206BA7D1B656A43.pem' )

@@ -1,0 +1,3 @@
+2026-11-08T04:22:08Z  REMOVAL_START       Veraport: 5 item(s) [cli]
+2026-11-08T04:22:09Z  UNLOAD              gui/501/com.wizvera.veraport
+2026-11-08T04:23:15Z  REMOVAL_END         Veraport: /bin/sh: line 8:  1068 Terminated: 15          ( /usr/bin/security remove-trusted-cert -d '/Users/admin/Library/Application Support/GuraKilla/certificate-backups/EB145D817B510DB0F405B7B225D9B520D52FCE464F3909576984453A59FE95F4.pem' )

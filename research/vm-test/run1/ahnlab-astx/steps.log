@@ -1,0 +1,8 @@
+[04:27:45] snapshot before
+[04:28:00] install /Volumes/ASTx/ASTx.pkg
+[04:28:08] installer exit 0
+[04:28:38] snapshot installed
+[04:28:44] remove via GuraKilla
+[04:29:48] remove exit 1
+[04:30:03] snapshot removed
+[04:30:06] done

@@ -1,0 +1,1 @@
+[04:26:44] cancelled stuck (needs admin auth dialog): /usr/bin/security remove-trusted-cert -d /Users/admin/Library/Application Support/GuraKilla/certificate-backups/A4796AC9DEB8B26E80A8FC739381027FE7779ADB49A6350618C86D2158EFD717.pem

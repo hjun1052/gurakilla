@@ -1,0 +1,5 @@
+2026-11-08T04:31:58Z  REMOVAL_START       INISAFE CrossWeb EX: 11 item(s) [cli]
+2026-11-08T04:31:58Z  UNLOAD              gui/501/com.initech.INISAFECrossWebEXSvc
+2026-11-08T04:31:58Z  MOVE_TO_TRASH       /Applications/CrossWebEX -> /Users/admin/.Trash/GuraKilla 20261108-043158/Applications/CrossWebEX
+2026-11-08T04:31:58Z  MOVE_TO_TRASH       /Library/Application Support/iniLINE/CrossWebEX -> /Users/admin/.Trash/GuraKilla 20261108-043158/Library/Application Support/iniLINE/CrossWebEX
+2026-11-08T04:33:08Z  REMOVAL_END         INISAFE CrossWeb EX: /bin/sh: line 12:  1090 Terminated: 15          ( /usr/bin/security remove-trusted-cert -d '/Users/admin/Library/Application Support/GuraKilla/certificate-backups/172158D8484F2439E6BF4CD865388B80919CA1358D606C2D4053F0652F51E7C7.pem' )

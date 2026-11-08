@@ -1,0 +1,658 @@
+{
+  "generatedAt": "2026-11-08",
+  "method": "Bank pages and their JavaScript fetched with ego-browser's Node runtime fetch() (browser task space was held by the user); installers downloaded and inspected statically with pkgutil/lsbom/codesign; installed state read from research/baseline.json.",
+  "evidenceLegend": {
+    "Verified": "Observed directly on this Mac (installed state, or downloaded package contents)",
+    "Documented": "Stated by an official vendor/bank page or script",
+    "Unverified": "Needs more testing (keyword reference, unresolved URL, or inferred)"
+  },
+  "products": [
+    {
+      "id": "touchen-nxkey",
+      "name": "TouchEn nxKey",
+      "vendor": "RaonSecure",
+      "teamIDs": [
+        "9TKT2BJHQF"
+      ],
+      "installedVersion": {
+        "value": "1.0.0.3 (TKAgent.app); receipt com.raonsecure.pkg.nxkey 1.0, installed 2026-08-15",
+        "evidence": "Verified"
+      },
+      "distributedVersion": {
+        "value": "exMacVer 1.0.0.18 (Shinhan config), 1.0.0.13 (Hana config)",
+        "evidence": "Documented"
+      },
+      "downloads": [
+        {
+          "url": "https://bizbank.shinhan.com/sw/TouchEn/raonnx/nxKey/module/TouchEn_nxKey_Installer.pkg",
+          "bytes": 10879702,
+          "sha256": "5905519b59d2734ff693eeb2f798601b7f7a58e2e76b4471ef5267563e76804a",
+          "serverLastModified": "Thu, 15 May 2025 12:00:00 GMT",
+          "packageIDs": [
+            "com.raonsecure.pkg.nxkey 1.0"
+          ],
+          "signer": "RaonSecure Co., Ltd.",
+          "teamID": "9TKT2BJHQF",
+          "notarized": true,
+          "evidence": "Verified (downloaded and statically inspected; not installed)"
+        },
+        {
+          "url": "https://sab.hanabank.com/raonnx/nxKey/module/TouchEn_nxKey_Installer.pkg",
+          "bytes": 8573685,
+          "sha256": "29c6f5a920be3d1b22f0f306eece8eee4b1d695111da527513f2e02dbf2235cd",
+          "serverLastModified": "Tue, 05 Jul 2022 00:28:27 GMT",
+          "packageIDs": [
+            "com.raonsecure.pkg.nxkey 1.0"
+          ],
+          "signer": "RaonSecure Co., Ltd.",
+          "teamID": "9TKT2BJHQF",
+          "notarized": true,
+          "evidence": "Verified (downloaded and statically inspected; not installed)"
+        },
+        {
+          "url": "https://mybank.ibk.co.kr/IBK/uib/sw/raon/TouchEn/nxKey/module/TouchEn_nxKey_Installer.pkg",
+          "bytes": 10885276,
+          "sha256": "d8a74aef974775f690c84fd140f5ad512e418aff3f0692b426844fffa8356eac",
+          "serverLastModified": "Thu, 01 Jun 2023 03:03:00 GMT",
+          "packageIDs": [
+            "com.raonsecure.pkg.nxkey 1.0"
+          ],
+          "signer": "RaonSecure Co., Ltd.",
+          "teamID": "9TKT2BJHQF",
+          "notarized": false,
+          "evidence": "Verified (downloaded and statically inspected; not installed)",
+          "notes": "Signed 2023-02-27; no stapled notarization ticket (all other packages have one). Online notarization status Unverified."
+        }
+      ],
+      "usedBy": [
+        {
+          "site": "Shinhan Bank (bizbank)",
+          "evidence": "Documented"
+        },
+        {
+          "site": "Hana Bank (sab)",
+          "evidence": "Documented"
+        },
+        {
+          "site": "NH Bank (config present, package URL returned 404)",
+          "evidence": "Unverified"
+        },
+        {
+          "site": "Hometax (script reference)",
+          "evidence": "Unverified"
+        },
+        {
+          "site": "IBK Industrial Bank (mybank.ibk.co.kr)",
+          "evidence": "Documented"
+        }
+      ],
+      "supportedMacOS": {
+        "value": "Site JS enumerates Mac OS X 10.5–11.0; binaries are x86_64-only (run under Rosetta 2 on Apple silicon)",
+        "evidence": "Verified"
+      },
+      "architectures": {
+        "value": "x86_64 only",
+        "evidence": "Verified"
+      },
+      "officialDownloadPage": {
+        "value": "https://faq.touchen.co.kr/nxKey/download/download.html",
+        "evidence": "Documented"
+      }
+    },
+    {
+      "id": "wizvera-veraport",
+      "name": "Veraport (G3 handler)",
+      "vendor": "Wizvera",
+      "teamIDs": [
+        "C86MGS2A3T"
+      ],
+      "installedVersion": {
+        "value": "3,8,6,6 (veraport.app); receipt com.wizvera.vp20handler, installed 2026-08-12",
+        "evidence": "Verified"
+      },
+      "distributedVersion": {
+        "value": "version_g3 3,8,6,6 (KB veraport20.js)",
+        "evidence": "Documented"
+      },
+      "downloads": [
+        {
+          "url": "https://download.kbstar.com/security/wizvera/veraport/g3/veraport-g3.pkg",
+          "bytes": 4435820,
+          "sha256": "41e1460987718d5cff49a1301f03a7e4bbc72bbfa1c6bffef5dcd2794daec186",
+          "serverLastModified": "Thu, 13 Apr 2023 08:30:38 GMT",
+          "packageIDs": [
+            "com.wizvera.vp20handler 0"
+          ],
+          "signer": "WIZVERA Co., Ltd.",
+          "teamID": "C86MGS2A3T",
+          "notarized": true,
+          "evidence": "Verified (downloaded and statically inspected; not installed)"
+        },
+        {
+          "url": "https://bizbank.shinhan.com/sw/wizvera/veraport/down/veraport-g3.pkg",
+          "bytes": 4406007,
+          "sha256": "d250a349fc1ff9ec49bcf877538a4e3d6a9a48da5f5f32f835760f1d571c8269",
+          "serverLastModified": "Thu, 08 Aug 2024 12:00:00 GMT",
+          "packageIDs": [
+            "com.wizvera.vp20handler 0"
+          ],
+          "signer": "WIZVERA Co., Ltd.",
+          "teamID": "C86MGS2A3T",
+          "notarized": true,
+          "evidence": "Verified (downloaded and statically inspected; not installed)"
+        },
+        {
+          "url": "https://www.kebhana.com/wizvera/veraport/down/veraport-g3.pkg",
+          "bytes": 4435820,
+          "sha256": "41e1460987718d5cff49a1301f03a7e4bbc72bbfa1c6bffef5dcd2794daec186",
+          "serverLastModified": "Thu, 15 Jun 2023 08:00:56 GMT",
+          "packageIDs": [
+            "com.wizvera.vp20handler 0"
+          ],
+          "signer": "WIZVERA Co., Ltd.",
+          "teamID": "C86MGS2A3T",
+          "notarized": true,
+          "evidence": "Verified (downloaded and statically inspected; not installed)"
+        }
+      ],
+      "usedBy": [
+        {
+          "site": "KB Kookmin Bank",
+          "evidence": "Documented"
+        },
+        {
+          "site": "Shinhan Bank",
+          "evidence": "Documented"
+        },
+        {
+          "site": "Hana Bank",
+          "evidence": "Documented"
+        },
+        {
+          "site": "Hometax (install guide page)",
+          "evidence": "Documented"
+        },
+        {
+          "site": "Woori Bank (integrated install page; Windows downloads listed)",
+          "evidence": "Documented"
+        }
+      ],
+      "supportedMacOS": {
+        "value": "No minimum declared in package; binary x86_64-only",
+        "evidence": "Verified"
+      },
+      "architectures": {
+        "value": "x86_64 only",
+        "evidence": "Verified"
+      },
+      "notes": "KB and Hana serve byte-identical packages (same SHA-256). Shinhan's build differs (VeraportUninstaller.app instead of Uninstaller.app)."
+    },
+    {
+      "id": "wizvera-delfino",
+      "name": "Delfino G3",
+      "vendor": "Wizvera",
+      "teamIDs": [
+        "C86MGS2A3T"
+      ],
+      "installedVersion": {
+        "value": "5.0.0.3 (delfino.app); receipt com.wizvera.delfino, installed 2026-07-10",
+        "evidence": "Verified"
+      },
+      "distributedVersion": {
+        "value": "KB version_g3.Mac 3,6,9,5",
+        "evidence": "Documented"
+      },
+      "downloads": [
+        {
+          "url": "https://download.kbstar.com/security/wizvera/delfino/g3/delfino-g3.pkg",
+          "bytes": 14637594,
+          "sha256": "d19dd25a1d27a6fe702e89dc9f7a83d5d066a37b961c3bf1aae51260aba32069",
+          "serverLastModified": "Thu, 27 Feb 2025 08:02:36 GMT",
+          "packageIDs": [
+            "com.wizvera.delfino 0"
+          ],
+          "signer": "WIZVERA Co., Ltd.",
+          "teamID": "C86MGS2A3T",
+          "notarized": true,
+          "evidence": "Verified (downloaded and statically inspected; not installed)"
+        },
+        {
+          "url": "https://www.kebhana.com/wizvera/delfino/down/g3/delfino-g3.pkg",
+          "bytes": 14855793,
+          "sha256": "3de3f02fc18a65b05f740bd3070b1c478d68cbab3f9721e09d3923453b996d0a",
+          "serverLastModified": "Thu, 27 Jun 2024 08:00:44 GMT",
+          "packageIDs": [
+            "com.wizvera.delfino 0"
+          ],
+          "signer": "WIZVERA Co., Ltd.",
+          "teamID": "C86MGS2A3T",
+          "notarized": true,
+          "evidence": "Verified (downloaded and statically inspected; not installed)"
+        },
+        {
+          "url": "https://mybank.ibk.co.kr/IBK/uib/sw/wizvera/delfino/down/delfino-g3.pkg",
+          "bytes": 14855793,
+          "sha256": "3de3f02fc18a65b05f740bd3070b1c478d68cbab3f9721e09d3923453b996d0a",
+          "serverLastModified": "Wed, 11 Oct 2023 05:21:10 GMT",
+          "packageIDs": [
+            "com.wizvera.delfino 0"
+          ],
+          "signer": "WIZVERA Co., Ltd.",
+          "teamID": "C86MGS2A3T",
+          "notarized": true,
+          "evidence": "Verified (downloaded and statically inspected; not installed)"
+        }
+      ],
+      "usedBy": [
+        {
+          "site": "KB Kookmin Bank",
+          "evidence": "Documented"
+        },
+        {
+          "site": "Hana Bank",
+          "evidence": "Documented"
+        },
+        {
+          "site": "Shinhan Bank (script reference)",
+          "evidence": "Unverified"
+        },
+        {
+          "site": "IBK Industrial Bank (same file as Hana)",
+          "evidence": "Documented"
+        }
+      ],
+      "supportedMacOS": {
+        "value": "No minimum declared; binary x86_64-only",
+        "evidence": "Verified"
+      },
+      "architectures": {
+        "value": "x86_64 only",
+        "evidence": "Verified"
+      }
+    },
+    {
+      "id": "wizvera-keysharpbiz",
+      "name": "KeySharp NX Biz",
+      "vendor": "Wizvera",
+      "teamIDs": [
+        "C86MGS2A3T"
+      ],
+      "installedVersion": {
+        "value": "not installed",
+        "evidence": "Verified"
+      },
+      "downloads": [],
+      "usedBy": [
+        {
+          "site": "Referenced in Wizvera's bundled uninstaller (keysharpnxbiz.sh); Shinhan/Hana/yessign scripts mention KeySharp",
+          "evidence": "Documented"
+        }
+      ],
+      "supportedMacOS": {
+        "value": "unknown",
+        "evidence": "Unverified"
+      }
+    },
+    {
+      "id": "initech-crosswebex",
+      "name": "INISAFE CrossWeb EX",
+      "vendor": "Initech",
+      "teamIDs": [
+        "BN4D26VM76"
+      ],
+      "installedVersion": {
+        "value": "1.0.1 (INISAFECrossWebEXSvc.app, LSMinimumSystemVersion 10.11); receipt installed 2026-10-20",
+        "evidence": "Verified"
+      },
+      "distributedVersion": {
+        "value": "exMacVer 3.3.3.3 (Shinhan)",
+        "evidence": "Documented"
+      },
+      "downloads": [
+        {
+          "url": "https://bizbank.shinhan.com/sw/initech/extension/down/CrossWebEX_3.3.3.3.pkg",
+          "bytes": 8375089,
+          "sha256": "3b59f40183bbc2f24b03e5cda275f25a724e95cba4357d6f792a92060ca65bdb",
+          "serverLastModified": "Thu, 11 Jul 2024 12:00:00 GMT",
+          "packageIDs": [
+            "kr.co.initech.pkg.CrossWebEX 1.0"
+          ],
+          "signer": "INITECH",
+          "teamID": "BN4D26VM76",
+          "notarized": true,
+          "evidence": "Verified (downloaded and statically inspected; not installed)"
+        }
+      ],
+      "usedBy": [
+        {
+          "site": "Shinhan Bank",
+          "evidence": "Documented"
+        },
+        {
+          "site": "Hana / NH (script reference)",
+          "evidence": "Unverified"
+        }
+      ],
+      "supportedMacOS": {
+        "value": "Distribution hostArchitectures=x86_64; app minimum 10.11",
+        "evidence": "Verified"
+      },
+      "architectures": {
+        "value": "x86_64 only",
+        "evidence": "Verified"
+      }
+    },
+    {
+      "id": "iniline-crossex",
+      "name": "CrossEX Service",
+      "vendor": "iniLINE",
+      "teamIDs": [
+        "W77CBPNBYQ"
+      ],
+      "installedVersion": {
+        "value": "receipt kr.co.iniline.pkg.CrossEXServicePackage 1.0.1.11, installed 2026-08-15",
+        "evidence": "Verified"
+      },
+      "distributedVersion": {
+        "value": "macDaemonVer 1.0.1.7 (bundled inside TouchEn nxKey package as CrossEXService_Install.pkg)",
+        "evidence": "Documented"
+      },
+      "downloads": [],
+      "usedBy": [
+        {
+          "site": "Installed as a dependency of TouchEn nxKey and CrossWeb EX",
+          "evidence": "Verified"
+        }
+      ],
+      "supportedMacOS": {
+        "value": "unknown",
+        "evidence": "Unverified"
+      }
+    },
+    {
+      "id": "ahnlab-astx",
+      "name": "AhnLab Safe Transaction (ASTx)",
+      "vendor": "AhnLab",
+      "teamIDs": [
+        "G99MLRF664"
+      ],
+      "installedVersion": {
+        "value": "152.0.39 (astxAgent.app, LSMinimumSystemVersion 12.0); receipts installed 2026-07-10",
+        "evidence": "Verified"
+      },
+      "downloads": [
+        {
+          "url": "https://safetx.ahnlab.com/master/mac/astx.dmg",
+          "bytes": 49258720,
+          "sha256": "264ee58b2905a9fef37a5629372f8fc646131b95117df31ae1dc2b3dbd2cb176",
+          "serverLastModified": "Mon, 13 Jul 2026 07:08:34 GMT",
+          "packageIDs": [
+            "com.ahnlab.astxagent.pkg 0",
+            "com.ahnlab.astxd.pkg 0",
+            "com.ahnlab.astx.AhnLab.pkg 0"
+          ],
+          "signer": "AhnLab, INC.",
+          "teamID": "G99MLRF664",
+          "notarized": true,
+          "evidence": "Verified (downloaded and statically inspected; not installed)"
+        }
+      ],
+      "usedBy": [
+        {
+          "site": "KB Kookmin Bank (Mac: personal firewall + device info only, per KB page)",
+          "evidence": "Documented"
+        },
+        {
+          "site": "NH Bank (astx2_run.js)",
+          "evidence": "Documented"
+        },
+        {
+          "site": "Woori Bank (PC firewall page lists Windows downloads only)",
+          "evidence": "Documented"
+        }
+      ],
+      "supportedMacOS": {
+        "value": "macOS 12+ (app LSMinimumSystemVersion); Universal binary",
+        "evidence": "Verified"
+      },
+      "architectures": {
+        "value": "x86_64 + arm64",
+        "evidence": "Verified"
+      }
+    },
+    {
+      "id": "interezen-ipinside",
+      "name": "IPinside LWS Agent",
+      "vendor": "Interezen",
+      "teamIDs": [
+        "BQNTQCRV77"
+      ],
+      "installedVersion": {
+        "value": "3.0.0.21 (IPinside.app, min 10.11); receipt installed 2026-09-30",
+        "evidence": "Verified"
+      },
+      "downloads": [],
+      "usedBy": [
+        {
+          "site": "Woori Bank — 'security log collector' (Mac install guide shows IPinside 3.0.0.3 pkg)",
+          "evidence": "Documented"
+        },
+        {
+          "site": "Hometax, Hana (script references)",
+          "evidence": "Unverified"
+        }
+      ],
+      "supportedMacOS": {
+        "value": "10.11+; Universal binary",
+        "evidence": "Verified"
+      },
+      "architectures": {
+        "value": "x86_64 + arm64",
+        "evidence": "Verified"
+      },
+      "notes": "Mac package link is not published on Woori's page (only the Windows .exe); distributed through Veraport.",
+      "uninstall": {
+        "value": "Open /Applications/IPinside.app and confirm, then enter your password (Woori official removal guide, CQSCT0088)",
+        "evidence": "Documented"
+      }
+    },
+    {
+      "id": "dreamsecurity-magicline",
+      "name": "MagicLine4NX",
+      "vendor": "DreamSecurity",
+      "teamIDs": [
+        "PVRBEFNNC6"
+      ],
+      "installedVersion": {
+        "value": "1.0.0.20 (min 10.13); receipt installed 2026-09-04",
+        "evidence": "Verified"
+      },
+      "downloads": [],
+      "usedBy": [
+        {
+          "site": "Hometax (script reference)",
+          "evidence": "Unverified"
+        }
+      ],
+      "supportedMacOS": {
+        "value": "10.13+; x86_64-only",
+        "evidence": "Verified"
+      },
+      "architectures": {
+        "value": "x86_64 only",
+        "evidence": "Verified"
+      }
+    },
+    {
+      "id": "inca-nprotect",
+      "name": "nProtect Online Security V1",
+      "vendor": "INCA Internet",
+      "teamIDs": [
+        "R2PBZJ465V"
+      ],
+      "installedVersion": {
+        "value": "nosmain.app 1.0 (min 10.15); 32 receipts installed 2026-08-12; system extension com.nprotect.nosfw 1.0/1",
+        "evidence": "Verified"
+      },
+      "downloads": [],
+      "usedBy": [
+        {
+          "site": "IBK and Korea Post load INCA nppfs (nProtect pluginfree) scripts",
+          "evidence": "Documented"
+        },
+        {
+          "site": "Woori lists nProtect Online Security for Windows only",
+          "evidence": "Documented"
+        },
+        {
+          "site": "KB / Shinhan / Hometax (keyword references)",
+          "evidence": "Unverified"
+        }
+      ],
+      "supportedMacOS": {
+        "value": "10.15+; x86_64-only app; network system extension",
+        "evidence": "Verified"
+      },
+      "architectures": {
+        "value": "x86_64 only",
+        "evidence": "Verified"
+      },
+      "notes": "No macOS package URL appears in the nppfs scripts; the installer location is likely returned by the server at runtime."
+    },
+    {
+      "id": "softforum-anysign4pc",
+      "name": "AnySign4PC",
+      "vendor": "Hancom WITH (formerly SoftForum)",
+      "teamIDs": [
+        "5R777FVMKA"
+      ],
+      "installedVersion": {
+        "value": "app removed; stale receipt com.softforum.anysign4pc 7.0.0 (2026-02-11) and Hancom Secure Root Authority remain",
+        "evidence": "Verified"
+      },
+      "distributedVersion": {
+        "value": "1.1.5.3 (package), interface aVersion 1.1.5.0",
+        "evidence": "Verified"
+      },
+      "downloads": [
+        {
+          "url": "https://download.softforum.com/Published/AnySign/v1.1.5.0/anysign4pc_mac_universal.pkg",
+          "bytes": 21149365,
+          "sha256": "408c81b2a493a41c91eabf433b38f501cba29f04694aa2e2f71d6430f7f6e417",
+          "serverLastModified": "Thu, 15 Oct 2026 04:15:14 GMT",
+          "packageIDs": [
+            "com.softforum.anysign4pc 1.1.5.3"
+          ],
+          "signer": "Hancom WITH Inc.",
+          "teamID": "5R777FVMKA",
+          "notarized": true,
+          "evidence": "Verified (downloaded and statically inspected; not installed)"
+        },
+        {
+          "url": "https://spot.wooribank.com/pot/jcc?withyou=CQSCT0067&__ID=c007279&sdiv=SD_SEC&fileName=anysign4pc_mac_universal.pkg&filePath=/AnySign_Installer/",
+          "bytes": 21149365,
+          "sha256": "408c81b2a493a41c91eabf433b38f501cba29f04694aa2e2f71d6430f7f6e417",
+          "serverLastModified": null,
+          "packageIDs": [
+            "com.softforum.anysign4pc 1.1.5.3"
+          ],
+          "signer": "Hancom WITH Inc.",
+          "teamID": "5R777FVMKA",
+          "notarized": true,
+          "evidence": "Verified (downloaded and statically inspected; not installed)"
+        }
+      ],
+      "usedBy": [
+        {
+          "site": "Korea Post Banking (epostbank.go.kr loads hancom/anySign4PCInterface.js)",
+          "evidence": "Documented"
+        },
+        {
+          "site": "cros.or.kr install page",
+          "evidence": "Documented"
+        },
+        {
+          "site": "Woori Bank (certificate security page; same file as SoftForum's)",
+          "evidence": "Documented"
+        }
+      ],
+      "supportedMacOS": {
+        "value": "Distribution hostArchitectures x86_64,arm64",
+        "evidence": "Verified"
+      },
+      "architectures": {
+        "value": "x86_64 + arm64",
+        "evidence": "Verified"
+      }
+    },
+    {
+      "id": "innorix-ex",
+      "name": "INNORIX EX Agent",
+      "vendor": "INNORIX",
+      "teamIDs": [],
+      "installedVersion": {
+        "value": "not present; 11 receipts (2024-10-15, 2025-08-27) pointing at /tmp/INNORIX-EX and a trusted INNORIX.CA root remain",
+        "evidence": "Verified"
+      },
+      "downloads": [],
+      "usedBy": [],
+      "supportedMacOS": {
+        "value": "unknown",
+        "evidence": "Unverified"
+      }
+    },
+    {
+      "id": "raonwiz-raonk",
+      "name": "RAON K (certificate only)",
+      "vendor": "RAONWIZ",
+      "teamIDs": [],
+      "installedVersion": {
+        "value": "only trusted root 'RAON K CA' (expires 2027-07-09) found",
+        "evidence": "Verified"
+      },
+      "downloads": [],
+      "usedBy": [],
+      "supportedMacOS": {
+        "value": "unknown",
+        "evidence": "Unverified"
+      }
+    },
+    {
+      "id": "signkorea-root",
+      "name": "SignKorea local root (component unidentified)",
+      "vendor": "SignKorea",
+      "teamIDs": [],
+      "installedVersion": {
+        "value": "user-trusted root CN=Root,OU=SignKorea NA in login keychain",
+        "evidence": "Verified"
+      },
+      "downloads": [],
+      "usedBy": [
+        {
+          "site": "yessign/yeskey uses RaonSecure KSCertRelay nx (KSCertRelay_nx_Installer.pkg, now 404)",
+          "evidence": "Unverified"
+        }
+      ],
+      "supportedMacOS": {
+        "value": "unknown",
+        "evidence": "Unverified"
+      }
+    },
+    {
+      "id": "mangowire-root",
+      "name": "MangoWire local root (component unidentified)",
+      "vendor": "MangoWire",
+      "teamIDs": [],
+      "installedVersion": {
+        "value": "user-trusted root CN=Root,OU=MangoWire in login keychain",
+        "evidence": "Verified"
+      },
+      "downloads": [],
+      "usedBy": [],
+      "supportedMacOS": {
+        "value": "unknown",
+        "evidence": "Unverified"
+      }
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+[04:30:56] snapshot before
+[04:31:03] install /Volumes/My Shared Files/repo/research/downloads/shinhan-crosswebex/CrossWebEX_3.3.3.3.pkg
+[04:31:21] installer exit 0
+[04:31:51] snapshot installed
+[04:31:56] remove via GuraKilla
+[04:33:08] remove exit 1
+[04:33:23] snapshot removed
+[04:33:26] done

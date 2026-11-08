@@ -1,0 +1,9 @@
+[04:51:34] snapshot before
+[04:51:46] install /Volumes/My Shared Files/repo/research/downloads/shinhan-touchen-nxkey/TouchEn_nxKey_Installer.pkg
+[04:52:17] installer exit 0
+[04:52:47] snapshot installed
+[04:52:55] remove via GuraKilla
+[04:52:57] remove exit 0
+[04:54:06] remove iniline-crossex exit 1
+[04:54:21] snapshot removed
+[04:54:24] done

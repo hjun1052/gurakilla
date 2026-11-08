@@ -1,0 +1,9 @@
+Removal plan for AhnLab Safe Transaction:
+  [x] Install location: /Applications/AhnLab/ASTx  (admin)
+  [x] Launchd plist: /Library/LaunchAgents/com.ahnlab.astxagent.plist  (admin)
+  [x] Launchd plist: /Library/LaunchDaemons/com.ahnlab.astxd.plist  (admin)
+  [x] Package receipt: com.ahnlab.astxagent.pkg  (admin)
+  [x] Package receipt: com.ahnlab.astx.AhnLab.pkg  (admin)
+  [x] Package receipt: com.ahnlab.astxd.pkg  (admin)
+  [x] Trusted certificate: ASTxRoot2 — System keychain, trusted system-wide  (admin)
+Dry run. Add --yes to remove the checked items.

@@ -1,0 +1,15 @@
+Removal plan for AnySign4PC:
+  [x] Install location: /Applications/SoftForum/AnySign4PC.app  (admin)
+  [x] Launchd plist: /Library/LaunchDaemons/com.softforum.anysign.plist  (admin)
+  [x] Package receipt: com.softforum.anysign4pc  (admin)
+  [x] Trusted certificate: Hancom With Root Authority — System keychain, trusted system-wide  (admin)
+Administrator steps:
+  '/bin/launchctl' 'bootout' 'system/com.softforum.anysign'
+  if /bin/ps -p 821 -o lstart= | /usr/bin/grep -qF 'Sun Nov  8 04:34:50 2026'; then /bin/kill -TERM 821; fi
+  /bin/mkdir -p '/Users/admin/.Trash/GuraKilla 20261108-043531/Applications/SoftForum' && /bin/mv '/Applications/SoftForum/AnySign4PC.app' '/Users/admin/.Trash/GuraKilla 20261108-043531/Applications/SoftForum/AnySign4PC.app'
+  /bin/mkdir -p '/Users/admin/.Trash/GuraKilla 20261108-043531/Library/LaunchDaemons' && /bin/mv '/Library/LaunchDaemons/com.softforum.anysign.plist' '/Users/admin/.Trash/GuraKilla 20261108-043531/Library/LaunchDaemons/com.softforum.anysign.plist'
+  /usr/sbin/chown -R 501:20 '/Users/admin/.Trash/GuraKilla 20261108-043531'
+  /usr/bin/security delete-certificate -Z D4E067B2944B7E098A5A7B4ABCADE95B4705435A '/Library/Keychains/System.keychain'
+  /usr/bin/security remove-trusted-cert -d '/Users/admin/Library/Application Support/GuraKilla/certificate-backups/2C32B156E72FDB88871E89B078CAD28C449F686A0980877158DD8F8EC94BA2F3.pem'
+  /usr/sbin/pkgutil --forget 'com.softforum.anysign4pc'
+Partly removed: /bin/sh: line 8:  1045 Terminated: 15          ( /usr/bin/security remove-trusted-cert -d '/Users/admin/Library/Application Support/GuraKilla/certificate-backups/2C32B156E72FDB88871E89B078CAD28C449F686A0980877158DD8F8EC94BA2F3.pem' )

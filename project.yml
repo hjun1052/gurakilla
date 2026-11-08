@@ -1,0 +1,50 @@
+name: GuraKilla
+options:
+  bundleIdPrefix: dev.hjun
+  deploymentTarget:
+    macOS: "26.0"
+  createIntermediateGroups: true
+settings:
+  base:
+    SWIFT_VERSION: "5.0"
+    MACOSX_DEPLOYMENT_TARGET: "26.0"
+    CODE_SIGN_IDENTITY: "-"
+    CODE_SIGN_STYLE: Manual
+targets:
+  GuraKilla:
+    type: application
+    platform: macOS
+    sources: [GuraKilla]
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: dev.hjun.GuraKilla
+        PRODUCT_NAME: GuraKilla
+        GENERATE_INFOPLIST_FILE: YES
+        INFOPLIST_KEY_CFBundleDisplayName: GuraKilla
+        INFOPLIST_KEY_LSApplicationCategoryType: public.app-category.utilities
+        INFOPLIST_KEY_NSHumanReadableCopyright: "GuraKilla — local system management utility"
+        MARKETING_VERSION: "1.0.0"
+        CURRENT_PROJECT_VERSION: "1"
+        ENABLE_APP_SANDBOX: NO
+      configs:
+        Release:
+          ENABLE_HARDENED_RUNTIME: YES
+  GuraKillaTests:
+    type: bundle.unit-test
+    platform: macOS
+    sources: [GuraKillaTests]
+    dependencies:
+      - target: GuraKilla
+    settings:
+      base:
+        GENERATE_INFOPLIST_FILE: YES
+        TEST_HOST: "$(BUILT_PRODUCTS_DIR)/GuraKilla.app/Contents/MacOS/GuraKilla"
+        BUNDLE_LOADER: "$(TEST_HOST)"
+schemes:
+  GuraKilla:
+    build:
+      targets:
+        GuraKilla: all
+        GuraKillaTests: [test]
+    test:
+      targets: [GuraKillaTests]

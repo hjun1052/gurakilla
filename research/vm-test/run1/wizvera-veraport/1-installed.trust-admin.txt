@@ -1,0 +1,7 @@
+Number of trusted certs = 2
+Cert 0: VERAPORT-CA
+   Number of trust settings : 0
+Cert 1: 127.0.0.1
+   Number of trust settings : 1
+   Trust Setting 0:
+      Result Type           : kSecTrustSettingsResultTrustAsRoot
