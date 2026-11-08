@@ -1,0 +1,24 @@
+Removal plan for AhnLab Safe Transaction:
+  [x] Install location: /Applications/AhnLab/ASTx  (admin)
+  [x] Installed file: /Library/Application Support/ahnlab/.{0D02314D-EC55-4D53-95FD-41183118B518}  (admin)
+  [x] Launchd plist: /Library/LaunchAgents/com.ahnlab.astxagent.plist  (admin)
+  [x] Launchd plist: /Library/LaunchDaemons/com.ahnlab.astxd.plist  (admin)
+  [x] Package receipt: com.ahnlab.astxagent.pkg  (admin)
+  [x] Package receipt: com.ahnlab.astx.AhnLab.pkg  (admin)
+  [x] Package receipt: com.ahnlab.astxd.pkg  (admin)
+  [x] Trusted certificate: ASTxRoot2 — System keychain, trusted system-wide  (admin)
+Administrator steps:
+  '/bin/launchctl' 'bootout' 'system/com.astx.firewall.Daemon'
+  if /bin/ps -p 863 -o lstart= | /usr/bin/grep -qF 'Sun Nov  8 05:43:29 2026'; then /bin/kill -TERM 863; fi
+  if /bin/ps -p 866 -o lstart= | /usr/bin/grep -qF 'Sun Nov  8 05:43:30 2026'; then /bin/kill -TERM 866; fi
+  /bin/mkdir -p '/Users/admin/.Trash/GuraKilla 20261108-054436/Applications/AhnLab' && /bin/mv '/Applications/AhnLab/ASTx' '/Users/admin/.Trash/GuraKilla 20261108-054436/Applications/AhnLab/ASTx'
+  /bin/mkdir -p '/Users/admin/.Trash/GuraKilla 20261108-054436/Library/Application Support/ahnlab' && /bin/mv '/Library/Application Support/ahnlab/.{0D02314D-EC55-4D53-95FD-41183118B518}' '/Users/admin/.Trash/GuraKilla 20261108-054436/Library/Application Support/ahnlab/.{0D02314D-EC55-4D53-95FD-41183118B518}'
+  /bin/mkdir -p '/Users/admin/.Trash/GuraKilla 20261108-054436/Library/LaunchAgents' && /bin/mv '/Library/LaunchAgents/com.ahnlab.astxagent.plist' '/Users/admin/.Trash/GuraKilla 20261108-054436/Library/LaunchAgents/com.ahnlab.astxagent.plist'
+  /bin/mkdir -p '/Users/admin/.Trash/GuraKilla 20261108-054436/Library/LaunchDaemons' && /bin/mv '/Library/LaunchDaemons/com.ahnlab.astxd.plist' '/Users/admin/.Trash/GuraKilla 20261108-054436/Library/LaunchDaemons/com.ahnlab.astxd.plist'
+  /usr/sbin/chown -R 501:20 '/Users/admin/.Trash/GuraKilla 20261108-054436'
+  /usr/bin/security delete-certificate -Z E6E5C1EB1E19E4F89A0C37DDCDA50C8B6EDDDD8F '/Library/Keychains/System.keychain'
+  /usr/bin/security remove-trusted-cert -d '/Users/admin/Library/Application Support/GuraKilla/certificate-backups/8A81891C6200605F963355A7D7B379221D4A14F2BC55C969353C04214A7C5685.pem'
+  /usr/sbin/pkgutil --forget 'com.ahnlab.astxagent.pkg'
+  /usr/sbin/pkgutil --forget 'com.ahnlab.astx.AhnLab.pkg'
+  /usr/sbin/pkgutil --forget 'com.ahnlab.astxd.pkg'
+Partly removed: /bin/sh: line 11:  1248 Terminated: 15          ( /usr/bin/security remove-trusted-cert -d '/Users/admin/Library/Application Support/GuraKilla/certificate-backups/8A81891C6200605F963355A7D7B379221D4A14F2BC55C969353C04214A7C5685.pem' )

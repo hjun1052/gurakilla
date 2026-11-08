@@ -1,0 +1,3 @@
+Number of trusted certs = 1
+Cert 0: Hancom With Root Authority
+   Number of trust settings : 0

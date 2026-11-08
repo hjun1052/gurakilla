@@ -1,0 +1,11 @@
+[05:39:04] snapshot before
+[05:39:17] install /Volumes/My Shared Files/repo/research/downloads/kb-delfino-g3/delfino-g3.pkg
+[05:39:38] installer exit 0
+[05:40:08] snapshot installed
+[05:40:12] vendor uninstall logic
+[05:40:12] vendor done: vendor exit 0
+[05:40:27] snapshot after vendor
+[05:40:32] GuraKilla cleans leftovers
+[05:41:44] remove exit 1
+[05:41:54] snapshot final
+[05:41:57] done

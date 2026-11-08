@@ -63,7 +63,8 @@ python3 -I research/tools/inspect_installers.py
 ## Not done (and why)
 
 - **Nothing was installed or uninstalled on this Mac.** Install → remove tests ran only in throwaway VMs (approved on 2026-11-08),
-  so pre-existing software here was not touched. Vendor uninstallers were not run (they need a password typed into a system dialog).
+  so pre-existing software here was not touched. Vendor uninstaller GUIs were not driven (password dialog); the commands they
+  contain were run in VMs for Veraport, Delfino, CrossWeb EX and ASTx, and every testable predicted gap was confirmed (`vm-test/`).
 - **Gov24** (resolved 2026-11-08, rendered in ego-browser): its Mac page lists AnySign4PC, ezCertForClient, ezPDFReader and
   CertShareXFree, but only AnySign4PC has a Mac package (already analysed and VM-tested); the other three download Windows `.exe` files.
 - KDB's XecureKeypad is not in GuraKilla's registry: its Mac package URL returns an error page, so no identifiers could be verified.

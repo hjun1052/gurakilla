@@ -1,0 +1,5 @@
+Number of trusted certs = 1
+Cert 0: localhost
+   Number of trust settings : 1
+   Trust Setting 0:
+      Result Type           : kSecTrustSettingsResultTrustAsRoot

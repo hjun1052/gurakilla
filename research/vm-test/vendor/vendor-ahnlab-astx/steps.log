@@ -1,0 +1,11 @@
+[05:43:00] snapshot before
+[05:43:26] install /Volumes/ASTx/ASTx.pkg
+[05:43:35] installer exit 0
+[05:44:05] snapshot installed
+[05:44:08] vendor uninstall logic
+[05:44:08] vendor done: vendor exit 0
+[05:44:23] snapshot after vendor
+[05:44:32] GuraKilla cleans leftovers
+[05:45:40] remove exit 1
+[05:45:50] snapshot final
+[05:45:58] done

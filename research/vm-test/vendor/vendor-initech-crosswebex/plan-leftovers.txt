@@ -1,0 +1,5 @@
+Removal plan for INISAFE CrossWeb EX:
+  [x] Package file: /Library/Application Support/Mozilla/NativeMessagingHosts/kr.co.iniline.crosswebex.firefox.json  (admin)
+  [x] Package receipt: kr.co.initech.pkg.CrossWebEX  (admin)
+  [x] Trusted certificate: localhost — System keychain, trusted system-wide  (admin)
+Dry run. Add --yes to remove the checked items.

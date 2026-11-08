@@ -1,0 +1,14 @@
+Removal plan for Veraport:
+  [x] Install location: /Applications/Veraport
+  [x] Package receipt: com.wizvera.vp20handler  (admin)
+  [x] Trusted certificate: VERAPORT-CA — System keychain, trusted system-wide  (admin)
+  [x] Trusted certificate: 127.0.0.1 — System keychain, trusted system-wide  (admin)
+Administrator steps:
+  /bin/mkdir -p '/Users/admin/.Trash/GuraKilla 20261108-053646/Applications' && /bin/mv '/Applications/Veraport' '/Users/admin/.Trash/GuraKilla 20261108-053646/Applications/Veraport'
+  /usr/sbin/chown -R 501:20 '/Users/admin/.Trash/GuraKilla 20261108-053646'
+  /usr/bin/security delete-certificate -Z FFFAB6EDCE6C5E5D83DE3AACADBD690ABB86D3A1 '/Library/Keychains/System.keychain'
+  /usr/bin/security remove-trusted-cert -d '/Users/admin/Library/Application Support/GuraKilla/certificate-backups/602AC951F94602DEE59D0518998C92AC52136EB83FB4C0FD4096163340DB7A9E.pem'
+  /usr/bin/security delete-certificate -Z E5AA62B42FD10B2B4BB012D7966265A707F1C103 '/Library/Keychains/System.keychain'
+  /usr/bin/security remove-trusted-cert -d '/Users/admin/Library/Application Support/GuraKilla/certificate-backups/A5A08C321991EA88788D9A996D1E137953E957E00388DAF8B328F67B2BB43FA5.pem'
+  /usr/sbin/pkgutil --forget 'com.wizvera.vp20handler'
+Partly removed: /bin/sh: line 7:  1169 Terminated: 15          ( /usr/bin/security remove-trusted-cert -d '/Users/admin/Library/Application Support/GuraKilla/certificate-backups/A5A08C321991EA88788D9A996D1E137953E957E00388DAF8B328F67B2BB43FA5.pem' )

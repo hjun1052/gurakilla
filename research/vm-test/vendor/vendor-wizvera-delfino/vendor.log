@@ -1,0 +1,5 @@
+Warning: Expecting a LaunchDaemons path since the command was run as root. Got LaunchAgents instead.
+`launchctl bootout` is a recommended alternative.
+Unload failed: 5: Input/output error
+Try running `launchctl bootout` as root for richer errors.
+vendor exit 0

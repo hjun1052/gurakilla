@@ -4,8 +4,9 @@ What each vendor provides for removal, what it actually removes (read from the
 uninstaller's script or the commands embedded in its binary), and what should
 be gone after a complete removal.
 
-No vendor uninstaller was run: they are GUI apps that ask for a password in a
-system dialog. "Removes" below means the uninstaller **contains** those commands.
+The vendor GUI apps were not driven (they ask for a password in a system dialog), but the **commands they
+contain** were run as root after a fresh install in throwaway VMs for Veraport, Delfino, CrossWeb EX and ASTx
+(`vm-test/README.md`, section "Vendor uninstallers"). Rows marked **Verified (VM)** below come from those runs.
 GuraKilla's own removal **was** run after a fresh install of six products in
 throwaway VMs; the expected end states below were checked against those runs
 (`vm-test/README.md`).
@@ -18,9 +19,9 @@ matched) · **Documented** = official vendor material · **Unverified** = predic
 | Product | Vendor uninstaller | Type | Removes receipt | Removes its root CA | Known gaps |
 |---|---|---|---|---|---|
 | TouchEn nxKey | `/Applications/TouchEn nxKey/TKUninstall.app` | compiled | no | no | Removes kexts only from `/System/Library/Extensions`. `/Library/Extensions/TKVHD.kext` (present here) is probably left behind. CrossEX is not removed. |
-| Veraport | `/Applications/Veraport/Uninstaller.app` (KB/Hana) or `VeraportUninstaller.app` (Shinhan) | app + shell (`veraport.sh`) | no | no | Script only unloads and deletes the launchd plist. `/Applications/Veraport`, both VERAPORT-CA roots and the 127.0.0.1 certs stay. Script also references a wrong path (`/Applications/Delfino/veraport.app`). |
-| Delfino | `/Applications/Delfino/DelfinoUninstaller.app` | app + shell (`delfino.sh`) | no | no | Same as Veraport: plist only. The same uninstaller app (identical scripts) ships with both products. |
-| CrossWeb EX | `/Applications/CrossWebEX/UnInstallCrossEX.app` | app + shell | no | tries (`delete_certificate.sh`) | Firefox manifest path misspelled (`NaviteMessagingHosts`), so it stays. Certificate deletion runs as the user, so a System-keychain cert may not be removable without root (Unverified). |
+| Veraport | `/Applications/Veraport/Uninstaller.app` (KB/Hana) or `VeraportUninstaller.app` (Shinhan) | app + shell (`veraport.sh`) | no **(VM)** | no **(VM)** | Script only unloads and deletes the launchd plist. `/Applications/Veraport`, both VERAPORT-CA roots and the 127.0.0.1 certs stay. Script also references a wrong path (`/Applications/Delfino/veraport.app`). |
+| Delfino | `/Applications/Delfino/DelfinoUninstaller.app` | app + shell (`delfino.sh`) | no **(VM)** | no **(VM)** | Same as Veraport: plist only. The same uninstaller app (identical scripts) ships with both products. |
+| CrossWeb EX | `/Applications/CrossWebEX/UnInstallCrossEX.app` | app + shell | no **(VM)** | root CA yes, localhost cert **no** **(VM)** | Firefox manifest path misspelled (`NaviteMessagingHosts`), so it stays **(VM)**. The localhost-certificate lookup passes an empty hash to `security delete-certificate`, so that trusted cert stays **(VM)**. |
 | CrossEX Service | `/Applications/CrossEX/crossex/UnInstallCrossEXService.app` + `/Applications/CrossEX/touchenex/UnInstallCrossEX.app` | app + shell | no | no | Two separate uninstallers. Neither removes `kr.co.raon.touchenex.firefox.json`/`kr.co.iniline.crosswebex.firefox.json` or iniLINE CrossEX RootCA2. |
 | AhnLab Safe Transaction | `/Applications/AhnLab/ASTx/Uninstaller.app` → `astxUninstall` | compiled | no | **yes**: `security delete-certificate -Z E6E5C1EB…`, matching the installed ASTxRoot2 exactly | Receipts remain. |
 | IPinside LWS Agent | the app itself: open `/Applications/IPinside.app` → confirm → password (Woori Bank official Mac removal guide, **Documented**) | app | not checked | not checked | No separate uninstaller app; the daemon plist and INTEREZEN CA removal not verified. |

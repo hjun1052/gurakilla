@@ -1,0 +1,15 @@
+Removal plan for Delfino:
+  [x] Install location: /Applications/Delfino
+  [x] Install location: /Library/Application Support/wizvera/delfino
+  [x] Package receipt: com.wizvera.delfino  (admin)
+  [x] Trusted certificate: DELFINO-CA — System keychain, trusted system-wide  (admin)
+  [x] Trusted certificate: 127.0.0.1 — System keychain, trusted system-wide  (admin)
+Moved to Trash: /Applications/Delfino
+Moved to Trash: /Library/Application Support/wizvera/delfino
+Administrator steps:
+  /usr/bin/security delete-certificate -Z 768114ED1DE33B20154B2F24E25658649312B594 '/Library/Keychains/System.keychain'
+  /usr/bin/security remove-trusted-cert -d '/Users/admin/Library/Application Support/GuraKilla/certificate-backups/2EE7D426E06570BB38B803F9C505605CC439DE2FFC2DF3CF63AF581617A68B60.pem'
+  /usr/bin/security delete-certificate -Z B70258F348FBFB40199C355713DDCA5434B8F9F0 '/Library/Keychains/System.keychain'
+  /usr/bin/security remove-trusted-cert -d '/Users/admin/Library/Application Support/GuraKilla/certificate-backups/30415407C9F9287AB894BC4C74E6A638137B4E95514E197B06B43E3F178715F8.pem'
+  /usr/sbin/pkgutil --forget 'com.wizvera.delfino'
+Partly removed: /bin/sh: line 5:  1129 Terminated: 15          ( /usr/bin/security remove-trusted-cert -d '/Users/admin/Library/Application Support/GuraKilla/certificate-backups/30415407C9F9287AB894BC4C74E6A638137B4E95514E197B06B43E3F178715F8.pem' )

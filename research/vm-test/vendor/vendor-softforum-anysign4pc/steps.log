@@ -1,0 +1,11 @@
+[05:49:54] snapshot before
+[05:50:19] install /Volumes/My Shared Files/repo/research/downloads/softforum-anysign4pc/anysign4pc_mac_universal.pkg
+[05:50:25] installer exit 0
+[05:50:55] snapshot installed
+[05:50:59] vendor uninstall logic
+[05:50:59] vendor done: vendor exit 0
+[05:51:14] snapshot after vendor
+[05:51:19] GuraKilla cleans leftovers
+[05:52:27] remove exit 1
+[05:52:37] snapshot final
+[05:52:39] done

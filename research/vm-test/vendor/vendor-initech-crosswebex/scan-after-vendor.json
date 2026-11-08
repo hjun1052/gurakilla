@@ -1,0 +1,47 @@
+{
+  "products" : [
+    {
+      "bundles" : [
+
+      ],
+      "certificates" : [
+        {
+          "adminTrusted" : true,
+          "commonName" : "localhost",
+          "issuer" : "CN=Initech Root Authority - CrossWeb EX,OU=PKI_DEV,O=INITECH,C=kr",
+          "keychain" : "\/Library\/Keychains\/System.keychain",
+          "sha256" : "87428E64995CF701F898D8DAC13EF3ABAA215B479D660E8DB265176C9CB50A51",
+          "subject" : "CN=localhost,OU=PKI_DEV,O=INITECH,C=kr",
+          "userTrusted" : false
+        }
+      ],
+      "extraPaths" : [
+
+      ],
+      "id" : "initech-crosswebex",
+      "installPaths" : [
+
+      ],
+      "kernelExtensions" : [
+
+      ],
+      "launchJobs" : [
+
+      ],
+      "name" : "INISAFE CrossWeb EX",
+      "processes" : [
+
+      ],
+      "publisher" : "Initech",
+      "receipts" : [
+        "kr.co.initech.pkg.CrossWebEX"
+      ],
+      "systemExtensions" : [
+
+      ],
+      "uninstallers" : [
+
+      ]
+    }
+  ]
+}

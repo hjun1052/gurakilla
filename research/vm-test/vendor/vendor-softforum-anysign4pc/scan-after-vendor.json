@@ -1,0 +1,66 @@
+{
+  "products" : [
+    {
+      "bundles" : [
+        {
+          "bundleID" : "com.softforum.anysign4pc",
+          "path" : "\/Applications\/SoftForum\/AnySign4PC.app",
+          "signing" : "Team 5R777FVMKA",
+          "version" : "1.1.5.3"
+        }
+      ],
+      "certificates" : [
+        {
+          "adminTrusted" : true,
+          "commonName" : "Hancom With Root Authority",
+          "issuer" : "CN=Hancom With Root Authority,OU=Research and development office,O=Hancom With Inc.,C=KR",
+          "keychain" : "\/Library\/Keychains\/System.keychain",
+          "sha256" : "2C32B156E72FDB88871E89B078CAD28C449F686A0980877158DD8F8EC94BA2F3",
+          "subject" : "CN=Hancom With Root Authority,OU=Research and development office,O=Hancom With Inc.,C=KR",
+          "userTrusted" : false
+        }
+      ],
+      "extraPaths" : [
+        "\/Applications\/SoftForum\/Uninstaller_AnySign4PC.app"
+      ],
+      "id" : "softforum-anysign4pc",
+      "installPaths" : [
+        "\/Applications\/SoftForum\/AnySign4PC.app"
+      ],
+      "kernelExtensions" : [
+
+      ],
+      "launchJobs" : [
+        {
+          "autoStarts" : true,
+          "disabled" : false,
+          "keepAlive" : true,
+          "loaded" : true,
+          "pid" : 816,
+          "plist" : "\/Library\/LaunchDaemons\/com.softforum.anysign.plist",
+          "target" : "system\/com.softforum.anysign"
+        }
+      ],
+      "name" : "AnySign4PC",
+      "processes" : [
+        {
+          "cpu" : 0,
+          "owner" : "root",
+          "path" : "\/Applications\/SoftForum\/AnySign4PC.app\/Contents\/MacOS\/AnySign.ex",
+          "pid" : 816,
+          "rssKB" : 13376
+        }
+      ],
+      "publisher" : "Hancom WITH (SoftForum)",
+      "receipts" : [
+        "com.softforum.anysign4pc"
+      ],
+      "systemExtensions" : [
+
+      ],
+      "uninstallers" : [
+        "\/Applications\/SoftForum\/Uninstaller_AnySign4PC.app"
+      ]
+    }
+  ]
+}

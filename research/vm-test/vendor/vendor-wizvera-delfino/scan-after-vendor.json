@@ -1,0 +1,68 @@
+{
+  "products" : [
+    {
+      "bundles" : [
+        {
+          "bundleID" : "com.wizvera.uninstaller.DelfinoUninstaller",
+          "path" : "\/Applications\/Delfino\/DelfinoUninstaller.app",
+          "signing" : "Team C86MGS2A3T",
+          "version" : "1.0"
+        },
+        {
+          "bundleID" : "com.wizvera.delfino",
+          "path" : "\/Applications\/Delfino\/delfino.app",
+          "signing" : "Team C86MGS2A3T",
+          "version" : "5.0.0.3"
+        }
+      ],
+      "certificates" : [
+        {
+          "adminTrusted" : true,
+          "commonName" : "DELFINO-CA",
+          "issuer" : "CN=DELFINO-CA,O=WIZVERA,C=KR",
+          "keychain" : "\/Library\/Keychains\/System.keychain",
+          "sha256" : "2EE7D426E06570BB38B803F9C505605CC439DE2FFC2DF3CF63AF581617A68B60",
+          "subject" : "CN=DELFINO-CA,O=WIZVERA,C=KR",
+          "userTrusted" : false
+        },
+        {
+          "adminTrusted" : true,
+          "commonName" : "127.0.0.1",
+          "issuer" : "CN=DELFINO-CA,O=WIZVERA,C=KR",
+          "keychain" : "\/Library\/Keychains\/System.keychain",
+          "sha256" : "30415407C9F9287AB894BC4C74E6A638137B4E95514E197B06B43E3F178715F8",
+          "subject" : "CN=127.0.0.1,O=WIZVERA,C=KR",
+          "userTrusted" : false
+        }
+      ],
+      "extraPaths" : [
+
+      ],
+      "id" : "wizvera-delfino",
+      "installPaths" : [
+        "\/Applications\/Delfino",
+        "\/Library\/Application Support\/wizvera\/delfino"
+      ],
+      "kernelExtensions" : [
+
+      ],
+      "launchJobs" : [
+
+      ],
+      "name" : "Delfino",
+      "processes" : [
+
+      ],
+      "publisher" : "Wizvera",
+      "receipts" : [
+        "com.wizvera.delfino"
+      ],
+      "systemExtensions" : [
+
+      ],
+      "uninstallers" : [
+        "\/Applications\/Delfino\/DelfinoUninstaller.app"
+      ]
+    }
+  ]
+}

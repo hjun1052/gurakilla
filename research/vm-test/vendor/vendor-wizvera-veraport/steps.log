@@ -1,0 +1,11 @@
+[05:35:24] snapshot before
+[05:35:42] install /Volumes/My Shared Files/repo/research/downloads/kb-veraport-g3/veraport-g3.pkg
+[05:35:52] installer exit 0
+[05:36:22] snapshot installed
+[05:36:25] vendor uninstall logic
+[05:36:25] vendor done: vendor exit 0
+[05:36:40] snapshot after vendor
+[05:36:45] GuraKilla cleans leftovers
+[05:37:56] remove exit 1
+[05:38:06] snapshot final
+[05:38:09] done

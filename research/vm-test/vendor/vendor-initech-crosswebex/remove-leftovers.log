@@ -1,0 +1,11 @@
+Removal plan for INISAFE CrossWeb EX:
+  [x] Package file: /Library/Application Support/Mozilla/NativeMessagingHosts/kr.co.iniline.crosswebex.firefox.json  (admin)
+  [x] Package receipt: kr.co.initech.pkg.CrossWebEX  (admin)
+  [x] Trusted certificate: localhost — System keychain, trusted system-wide  (admin)
+Administrator steps:
+  /bin/mkdir -p '/Users/admin/.Trash/GuraKilla 20261108-054842/Library/Application Support/Mozilla/NativeMessagingHosts' && /bin/mv '/Library/Application Support/Mozilla/NativeMessagingHosts/kr.co.iniline.crosswebex.firefox.json' '/Users/admin/.Trash/GuraKilla 20261108-054842/Library/Application Support/Mozilla/NativeMessagingHosts/kr.co.iniline.crosswebex.firefox.json'
+  /usr/sbin/chown -R 501:20 '/Users/admin/.Trash/GuraKilla 20261108-054842'
+  /usr/bin/security delete-certificate -Z 4FCF1B696593F87B986B18C9378F357E9FDE6447 '/Library/Keychains/System.keychain'
+  /usr/bin/security remove-trusted-cert -d '/Users/admin/Library/Application Support/GuraKilla/certificate-backups/87428E64995CF701F898D8DAC13EF3ABAA215B479D660E8DB265176C9CB50A51.pem'
+  /usr/sbin/pkgutil --forget 'kr.co.initech.pkg.CrossWebEX'
+Removed. Restore from the app's Restore Settings.

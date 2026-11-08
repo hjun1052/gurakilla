@@ -1,0 +1,6 @@
+Removal plan for Veraport:
+  [x] Install location: /Applications/Veraport
+  [x] Package receipt: com.wizvera.vp20handler  (admin)
+  [x] Trusted certificate: VERAPORT-CA — System keychain, trusted system-wide  (admin)
+  [x] Trusted certificate: 127.0.0.1 — System keychain, trusted system-wide  (admin)
+Dry run. Add --yes to remove the checked items.

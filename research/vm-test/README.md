@@ -66,10 +66,28 @@ Admin trust settings (`security dump-trust-settings -d`) were empty after every 
 6. **LibreSSL prints `SHA256 Fingerprint=`** (uppercase), so the inventory script's certificate hashes were empty
    on stock macOS. Fixed; the diff tool now keys certificates by subject + expiry, which also works for older snapshots.
 
+## Vendor uninstallers, then GuraKilla (`vendor/`)
+
+The vendor uninstaller apps confirm with an `NSAlert` and elevate through `AuthorizationExecuteWithPrivileges`
+(a password dialog), so they cannot run unattended. Instead, the **commands each uninstaller contains** were run
+as root in a fresh VM right after install (`tools/guest_vendor.sh`): Wizvera's bundled `veraport.sh` / `delfino.sh`,
+CrossWeb EX's embedded `launchctl unload` + `rm -r` line and its `delete_certificate.sh`, AhnLab's `astxUninstall`.
+Then GuraKilla removed whatever was left. `diff-after-vendor.md` = vendor leftovers, `diff-final.md` = after GuraKilla.
+
+| Product | Left by the vendor's uninstall logic | Left after GuraKilla |
+|---|---|---|
+| Veraport | app, receipt, **VERAPORT-CA + 127.0.0.1 still trusted system-wide** (script only unloads and deletes the launchd plist; its `chmod` points at a wrong path under `/Applications/Delfino`) | nothing |
+| Delfino | app, `wizvera/delfino` folder, receipt, **DELFINO-CA + 127.0.0.1 still trusted** | nothing |
+| CrossWeb EX | receipt, **localhost certificate still trusted** (its lookup feeds an empty hash to `security delete-certificate`), Firefox host manifest (misspelled `NaviteMessagingHosts`), launchd override. The Initech root itself was removed. | inert launchd override, empty `iniLINE/CrossEX` |
+| AhnLab ASTx | everything: `astxUninstall` run as root without its GUI wrapper exited 0 and removed nothing (it likely needs arguments from `Uninstaller.app`) — **inconclusive** for the vendor tool | nothing |
+| AnySign4PC | everything: its uninstaller is one compiled binary with no script to run — **not testable** headless | nothing |
+
+Every predicted vendor gap in `../uninstallation.md` that could be exercised was confirmed: no Wizvera or Initech
+uninstall logic forgets its receipt, and the Wizvera scripts leave both trusted roots. **Verified (VM)**
+
 ## Not covered
 
-- Vendor uninstallers were not run in the VM. They are GUI apps that ask for a password in a system dialog, and
-  entering passwords into system dialogs is outside what this test automates. Their script content is analysed in `../uninstallation.md`.
+- The vendor GUI apps themselves (password dialog), TouchEn's compiled `TKUninstall` and AhnLab's/AnySign's GUI flows.
 - IPinside, MagicLine4NX and nProtect: no official package URL was found (see `../installations.md`).
 - Browsers were not installed in the VM, so Firefox NSS imports and AnySign's `prefs.js` change were not exercised.
 - The GUI removal path (osascript administrator prompt) was not driven; the CLI uses the same plan and executor
