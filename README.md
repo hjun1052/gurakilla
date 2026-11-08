@@ -10,6 +10,8 @@ AhnLab Safe Transaction, IPinside, MagicLine4NX, nProtect, AnySign4PC와 그 잔
 
 Swift + SwiftUI, macOS 26, Apple 실리콘과 Intel 지원. 외부 의존성 없음.
 
+![GuraKilla 메인 화면](Design/screenshots/main-ko.png)
+
 ## 다운로드
 
 [Releases](https://github.com/hjun1052/gurakilla/releases/latest)에서 최신 `.dmg`를 받으세요. macOS 26 이상이
