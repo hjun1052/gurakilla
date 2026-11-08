@@ -54,6 +54,14 @@ certificate's system-wide trust is guarded by macOS itself, so it may ask once m
 before that step, so cancelling it leaves no trusted root behind.
 GuraKilla never sees your password, and never touches SIP, Endpoint Security, MDM or Apple components.
 
+## Languages
+
+English and Korean (한국어). The app follows the macOS language order; to force Korean for GuraKilla only, use
+System Settings › General › Language & Region › Applications. UI strings live in
+`GuraKilla/Resources/Localizable.xcstrings`; publishers, categories and notes in `Products.xcstrings`. Product names
+stay as the vendors write them (the same names Korean banks show). `--scan-json` and the `--remove` plan output stay in English;
+audit log action codes are English, with details in the language the app was running in. `LocalizationTests` fails if a string has no Korean translation.
+
 ## Extending the registry
 
 Add products without rebuilding: `~/Library/Application Support/GuraKilla/registry.json`, a JSON array with the

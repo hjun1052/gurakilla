@@ -77,7 +77,10 @@ struct StartupManagerSheet: View {
                             Toggle(isOn: binding(job)) {
                                 VStack(alignment: .leading, spacing: 2) {
                                     Text(job.label).font(.callout.monospaced())
-                                    Text("\(job.domain.displayName)\(job.domain.requiresAdmin ? " · needs administrator" : "") · \(job.isLoaded ? "loaded" : "not loaded")\(job.isRunning ? ", running" : "")")
+                                    Text(verbatim: [job.domain.displayName,
+                                                   job.domain.requiresAdmin ? String(localized: "needs administrator") : nil,
+                                                   job.isLoaded ? (job.isRunning ? String(localized: "loaded, running") : String(localized: "loaded"))
+                                                                : String(localized: "not loaded")].compactMap { $0 }.joined(separator: " · "))
                                         .font(.caption).foregroundStyle(.secondary)
                                 }
                             }
@@ -92,7 +95,7 @@ struct StartupManagerSheet: View {
                 Toggle("Also unload disabled jobs now (stops them immediately)", isOn: $unloadNow)
                 Spacer()
                 Button("Cancel") { dismiss() }.keyboardShortcut(.cancelAction)
-                Button(changedCount == 0 ? "Apply" : "Apply \(changedCount) Change\(changedCount == 1 ? "" : "s")") {
+                Button(changedCount == 0 ? "Apply" : changedCount == 1 ? "Apply 1 Change" : LocalizedStringKey("Apply \(changedCount) Changes")) {
                     model.applyStartup(desired, unloadNow: unloadNow)
                     dismiss()
                 }
@@ -135,8 +138,8 @@ struct RestoreSheet: View {
                 List(records) { r in
                     HStack {
                         VStack(alignment: .leading, spacing: 2) {
-                            Text(r.summary).font(.callout).lineLimit(2).truncationMode(.middle)
-                            Text("\(r.product) · \(r.date.formatted(date: .abbreviated, time: .shortened))")
+                            Text(r.localizedSummary).font(.callout).lineLimit(2).truncationMode(.middle)
+                            Text(verbatim: "\(r.product) · \(r.date.formatted(date: .abbreviated, time: .shortened))")
                                 .font(.caption).foregroundStyle(.secondary)
                         }
                         Spacer()
@@ -182,7 +185,7 @@ struct AuditLogSheet: View {
             }
             .padding(16)
             ScrollView {
-                Text(text.isEmpty ? "No entries yet." : text)
+                Text(text.isEmpty ? String(localized: "No entries yet.") : text)
                     .font(.system(.caption, design: .monospaced))
                     .textSelection(.enabled)
                     .frame(maxWidth: .infinity, alignment: .leading)
@@ -217,7 +220,7 @@ struct UninstallSheet: View {
                 ProductIcon(product: product).scaleEffect(1.5).frame(width: 36, height: 36)
                 VStack(alignment: .leading, spacing: 2) {
                     Text("Uninstall \(product.definition.name)").font(.title3.weight(.semibold))
-                    Text(product.definition.publisher).foregroundStyle(.secondary)
+                    Text(product.definition.localizedPublisher).foregroundStyle(.secondary)
                 }
             }
 
@@ -239,7 +242,7 @@ struct UninstallSheet: View {
                 .glassEffect(.regular, in: .rect(cornerRadius: 12))
             }
 
-            Text(product.uninstallers.isEmpty ? "Removal plan" : "Or remove manually")
+            Text(product.uninstallers.isEmpty ? LocalizedStringKey("Removal plan") : "Or remove manually")
                 .font(.headline)
             Text("Review each item. Files are moved to your Trash, not deleted, and can be put back from Restore Settings. Items also used by other installed software are unchecked.")
                 .font(.caption).foregroundStyle(.secondary)
@@ -252,9 +255,9 @@ struct UninstallSheet: View {
                             Toggle(isOn: Binding(get: { selected.contains(item.id) },
                                                  set: { if $0 { selected.insert(item.id) } else { selected.remove(item.id) } })) {
                                 VStack(alignment: .leading, spacing: 2) {
-                                    Text(item.path).font(.caption.monospaced()).lineLimit(2).truncationMode(.middle)
+                                    Text(item.displayPath).font(.caption.monospaced()).lineLimit(2).truncationMode(.middle)
                                     HStack(spacing: 6) {
-                                        Text(item.kind.rawValue)
+                                        Text(item.kind.localizedName)
                                         if item.requiresAdmin { Text("· administrator") }
                                         if item.kind == .receipt { Text("· not reversible") }
                                         if item.kind == .certificate { Text("· backed up, restorable") }
@@ -272,7 +275,7 @@ struct UninstallSheet: View {
                             ForEach(plan.excluded) { e in
                                 VStack(alignment: .leading, spacing: 2) {
                                     Text(e.path).font(.caption.monospaced())
-                                    Text(e.reason).font(.caption2).foregroundStyle(.secondary)
+                                    Text(Bundle.main.localizedString(forKey: e.reason, value: e.reason, table: nil)).font(.caption2).foregroundStyle(.secondary)
                                 }
                             }
                         }
@@ -292,7 +295,7 @@ struct UninstallSheet: View {
             HStack {
                 Spacer()
                 Button("Cancel") { dismiss() }.keyboardShortcut(.cancelAction)
-                Button("Move \(selected.count) Item\(selected.count == 1 ? "" : "s") to Trash…", role: .destructive) { confirm = true }
+                Button(selected.count == 1 ? "Move 1 Item to Trash…" : LocalizedStringKey("Move \(selected.count) Items to Trash…"), role: .destructive) { confirm = true }
                     .disabled(selected.isEmpty || plan == nil)
             }
         }
@@ -311,5 +314,28 @@ struct UninstallSheet: View {
         } message: {
             Text("\(selected.count) item(s) will be moved to the Trash after stopping the software. Package receipts that are forgotten cannot be restored.")
         }
+    }
+}
+
+// MARK: - Localized removal labels (engine strings stay English for the CLI and audit log)
+
+extension RemovalItem.Kind {
+    var localizedName: String {
+        switch self {
+        case .installLocation: String(localized: "Install location")
+        case .launchdPlist: String(localized: "Launchd plist")
+        case .receiptFile: String(localized: "Package file")
+        case .extraFile: String(localized: "Installed file")
+        case .receipt: String(localized: "Package receipt")
+        case .certificate: String(localized: "Trusted certificate")
+        }
+    }
+}
+
+extension RemovalItem {
+    var displayPath: String {
+        guard let c = certificate else { return path }
+        let keychain = c.inSystemKeychain ? String(localized: "System keychain") : String(localized: "login keychain")
+        return "\(c.commonName) — \(keychain), \(c.trustLabel)"
     }
 }

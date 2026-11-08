@@ -1,0 +1,1789 @@
+{
+  "sourceLanguage": "en",
+  "strings": {
+    "%@ partly removed": {
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ 일부 제거됨"
+          }
+        }
+      }
+    },
+    "%@ removed": {
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ 제거됨"
+          }
+        }
+      }
+    },
+    "%@ · %@ · expires %@": {
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%1$@ · %2$@ · 만료 %3$@"
+          }
+        }
+      }
+    },
+    "%@: certificate backup is missing (%@).": {
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%1$@: 인증서 백업 파일이 없습니다(%2$@)."
+          }
+        }
+      }
+    },
+    "%@: item is no longer in the Trash, or the original location is occupied.": {
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@: 항목이 휴지통에 없거나 원래 위치에 이미 다른 항목이 있습니다."
+          }
+        }
+      }
+    },
+    "%lld": {
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld"
+          }
+        }
+      }
+    },
+    "%lld item(s) will be moved to the Trash after stopping the software. Package receipts that are forgotten cannot be restored.": {
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "소프트웨어를 중지한 후 항목 %lld개를 휴지통으로 이동합니다. 삭제한 패키지 영수증은 복원할 수 없습니다."
+          }
+        }
+      }
+    },
+    "%lld launchd job(s) will be unloaded and %lld process(es) asked to quit.": {
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "launchd 작업 %1$lld개를 내리고 프로세스 %2$lld개에 종료를 요청합니다."
+          }
+        }
+      }
+    },
+    "%lld process(es) did not respond to a graceful quit request: %@.": {
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "프로세스 %1$lld개가 정상 종료 요청에 응답하지 않았습니다: %2$@."
+          }
+        }
+      }
+    },
+    "%lld process(es) quit. Software set to start automatically will launch again at next login or restart.": {
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "프로세스 %lld개를 종료했습니다. 자동 실행으로 설정된 소프트웨어는 다음 로그인이나 재시동 때 다시 실행됩니다."
+          }
+        }
+      }
+    },
+    "%lld processes": {
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "프로세스 %lld개"
+          }
+        }
+      }
+    },
+    "1 process": {
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "프로세스 1개"
+          }
+        }
+      }
+    },
+    "A trusted root lets anything signed with its key appear secure to your browsers. It stays trusted after the software is gone unless removed.": {
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "신뢰된 루트 인증서가 있으면 그 키로 서명된 모든 것이 브라우저에서 안전하게 보입니다. 소프트웨어를 지워도 이 인증서를 제거하지 않으면 계속 신뢰됩니다."
+          }
+        }
+      }
+    },
+    "Actions": {
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "동작"
+          }
+        }
+      }
+    },
+    "Administrator authorization required": {
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "관리자 권한이 필요합니다"
+          }
+        }
+      }
+    },
+    "Administrator steps were cancelled; only user-owned items were handled.": {
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "관리자 단계가 취소되어 사용자 소유 항목만 처리했습니다."
+          }
+        }
+      }
+    },
+    "Also unload disabled jobs now (stops them immediately)": {
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "끈 작업을 지금 내리기(즉시 중지)"
+          }
+        }
+      }
+    },
+    "Apply": {
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "적용"
+          }
+        }
+      }
+    },
+    "Apply %lld Changes": {
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "변경 사항 %lld개 적용"
+          }
+        }
+      }
+    },
+    "Apply 1 Change": {
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "변경 사항 1개 적용"
+          }
+        }
+      }
+    },
+    "Ask every detected program to quit": {
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "감지된 모든 프로그램에 종료 요청"
+          }
+        }
+      }
+    },
+    "Ask the selected software to quit": {
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "선택한 소프트웨어에 종료 요청"
+          }
+        }
+      }
+    },
+    "Audit Log": {
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "감사 로그"
+          }
+        }
+      }
+    },
+    "Auto-start": {
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "자동 실행"
+          }
+        }
+      }
+    },
+    "Auto-start disabled: %@/%@": {
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "자동 실행 끔: %1$@/%2$@"
+          }
+        }
+      }
+    },
+    "Auto-start off": {
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "자동 실행 꺼짐"
+          }
+        }
+      }
+    },
+    "Auto-start on": {
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "자동 실행 켜짐"
+          }
+        }
+      }
+    },
+    "Before removal": {
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "제거 전"
+          }
+        }
+      }
+    },
+    "Building removal plan…": {
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "제거 계획을 만드는 중…"
+          }
+        }
+      }
+    },
+    "CAs": {
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "인증서"
+          }
+        }
+      }
+    },
+    "CPU": {
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "CPU"
+          }
+        }
+      }
+    },
+    "Cancel": {
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "취소"
+          }
+        }
+      }
+    },
+    "Certificate removed: %@ (%@)": {
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "인증서 제거됨: %1$@ (%2$@)"
+          }
+        }
+      }
+    },
+    "Certificates": {
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "인증서"
+          }
+        }
+      }
+    },
+    "Change automatic startup": {
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "자동 실행 변경"
+          }
+        }
+      }
+    },
+    "Choose what launches automatically": {
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "자동으로 실행할 항목 선택"
+          }
+        }
+      }
+    },
+    "Choose which launchd jobs start automatically at login or boot. This is different from quitting: turning auto-start off prevents **future** launches but doesn't stop anything running now — unless you also unload the job below.": {
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "로그인하거나 시동할 때 자동으로 실행할 launchd 작업을 고릅니다. 종료와는 다릅니다. 자동 실행을 끄면 **다음부터** 실행되지 않지만, 아래에서 작업을 함께 내리지 않으면 지금 실행 중인 것은 멈추지 않습니다."
+          }
+        }
+      }
+    },
+    "Clearing certificate trust is guarded by macOS, which may ask for your password once more; the certificate is already deleted by then.": {
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "인증서 신뢰 해제는 macOS가 보호하므로 암호를 한 번 더 물을 수 있습니다. 그 시점에는 인증서가 이미 삭제되어 있습니다."
+          }
+        }
+      }
+    },
+    "Close": {
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "닫기"
+          }
+        }
+      }
+    },
+    "Continue…": {
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "계속…"
+          }
+        }
+      }
+    },
+    "Could not change all jobs": {
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "일부 작업을 변경하지 못했습니다"
+          }
+        }
+      }
+    },
+    "Could not open uninstaller": {
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "제거 프로그램을 열 수 없습니다"
+          }
+        }
+      }
+    },
+    "Detected": {
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "감지됨"
+          }
+        }
+      }
+    },
+    "Done": {
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "완료"
+          }
+        }
+      }
+    },
+    "Every change GuraKilla made is listed here. Auto-start changes are re-enabled in launchd; removed files are moved back from the Trash.": {
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "GuraKilla가 바꾼 모든 내용이 여기에 있습니다. 자동 실행 변경은 launchd에서 다시 켜고, 제거한 파일은 휴지통에서 원래 위치로 옮깁니다."
+          }
+        }
+      }
+    },
+    "Extensions": {
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "확장 프로그램"
+          }
+        }
+      }
+    },
+    "Files": {
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "파일"
+          }
+        }
+      }
+    },
+    "Force Quit": {
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "강제 종료"
+          }
+        }
+      }
+    },
+    "Force quit processes": {
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "프로세스 강제 종료"
+          }
+        }
+      }
+    },
+    "Force quitting (SIGKILL) stops the process immediately without letting it save state. These processes belong to another user and need administrator rights.": {
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "강제 종료(SIGKILL)는 상태를 저장할 틈 없이 프로세스를 즉시 멈춥니다. 이 프로세스는 다른 사용자 소유라 관리자 권한이 필요합니다."
+          }
+        }
+      }
+    },
+    "GuraKilla": {
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "GuraKilla"
+          }
+        }
+      }
+    },
+    "GuraKilla hasn't changed anything yet.": {
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "GuraKilla가 아직 아무것도 바꾸지 않았습니다."
+          }
+        }
+      }
+    },
+    "Inspector": {
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "속성"
+          }
+        }
+      }
+    },
+    "Install location": {
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "설치 위치"
+          }
+        }
+      }
+    },
+    "Installed by the product's scripts": {
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "제품의 설치 스크립트가 만든 파일"
+          }
+        }
+      }
+    },
+    "Installed file": {
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "설치된 파일"
+          }
+        }
+      }
+    },
+    "Invalid signature": {
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "유효하지 않은 서명"
+          }
+        }
+      }
+    },
+    "It knows about every component, including kernel extensions and browser add-ons, and asks for authorization itself.": {
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "커널 확장과 브라우저 부가 기능까지 모든 구성 요소를 알고 있으며, 권한도 직접 요청합니다."
+          }
+        }
+      }
+    },
+    "Kernel extension · never removed by GuraKilla": {
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "커널 확장 · GuraKilla는 제거하지 않음"
+          }
+        }
+      }
+    },
+    "Kernel extension — use the vendor uninstaller. GuraKilla never removes kernel extensions.": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "커널 확장 — 제조사 제거 프로그램을 쓰세요. GuraKilla는 커널 확장을 제거하지 않습니다."
+          }
+        }
+      }
+    },
+    "Launchd plist": {
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "launchd plist"
+          }
+        }
+      }
+    },
+    "Leaf": {
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "최종 인증서"
+          }
+        }
+      }
+    },
+    "Leftover": {
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "잔여물"
+          }
+        }
+      }
+    },
+    "Manage Startup": {
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "자동 실행 관리"
+          }
+        }
+      }
+    },
+    "Manage Startup…": {
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "자동 실행 관리…"
+          }
+        }
+      }
+    },
+    "Memory": {
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "메모리"
+          }
+        }
+      }
+    },
+    "Move %lld Items to Trash…": {
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "항목 %lld개를 휴지통으로 이동…"
+          }
+        }
+      }
+    },
+    "Move 1 Item to Trash…": {
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "항목 1개를 휴지통으로 이동…"
+          }
+        }
+      }
+    },
+    "Move to Trash": {
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "휴지통으로 이동"
+          }
+        }
+      }
+    },
+    "Moved to Trash: %@": {
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "휴지통으로 이동함: %@"
+          }
+        }
+      }
+    },
+    "No Changes": {
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "변경 사항 없음"
+          }
+        }
+      }
+    },
+    "No Selection": {
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "선택 항목 없음"
+          }
+        }
+      }
+    },
+    "No entries yet.": {
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "아직 기록이 없습니다."
+          }
+        }
+      }
+    },
+    "No known banking or government security software was found on this Mac.": {
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "이 Mac에서 알려진 금융·공공기관 보안프로그램을 찾지 못했습니다."
+          }
+        }
+      }
+    },
+    "None of the selected software is running.": {
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "선택한 소프트웨어 중 실행 중인 것이 없습니다."
+          }
+        }
+      }
+    },
+    "Not explicitly trusted": {
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "명시적으로 신뢰되지 않음"
+          }
+        }
+      }
+    },
+    "Not reversible": {
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "되돌릴 수 없음"
+          }
+        }
+      }
+    },
+    "Not running": {
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "실행 중이 아님"
+          }
+        }
+      }
+    },
+    "Not touched": {
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "건드리지 않음"
+          }
+        }
+      }
+    },
+    "Nothing Detected": {
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "감지된 항목 없음"
+          }
+        }
+      }
+    },
+    "Nothing to quit": {
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "종료할 항목 없음"
+          }
+        }
+      }
+    },
+    "OK": {
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "확인"
+          }
+        }
+      }
+    },
+    "Off": {
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "꺼짐"
+          }
+        }
+      }
+    },
+    "On": {
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "켜짐"
+          }
+        }
+      }
+    },
+    "On (%lld)": {
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "켜짐 (%lld)"
+          }
+        }
+      }
+    },
+    "Open %@": {
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ 열기"
+          }
+        }
+      }
+    },
+    "Open Trash": {
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "휴지통 열기"
+          }
+        }
+      }
+    },
+    "Or remove manually": {
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "또는 직접 제거"
+          }
+        }
+      }
+    },
+    "Package file": {
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "패키지 파일"
+          }
+        }
+      }
+    },
+    "Package receipt": {
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "패키지 영수증"
+          }
+        }
+      }
+    },
+    "Package receipt forgotten: %@": {
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "패키지 영수증 삭제됨: %@"
+          }
+        }
+      }
+    },
+    "Package receipts": {
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "패키지 영수증"
+          }
+        }
+      }
+    },
+    "Package receipts can only be recreated by reinstalling the software.": {
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "패키지 영수증은 소프트웨어를 다시 설치해야만 다시 생깁니다."
+          }
+        }
+      }
+    },
+    "Processes": {
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "프로세스"
+          }
+        }
+      }
+    },
+    "Protected system location": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "보호된 시스템 위치"
+          }
+        }
+      }
+    },
+    "Quit": {
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "종료"
+          }
+        }
+      }
+    },
+    "Quit All Detected": {
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "감지된 항목 모두 종료"
+          }
+        }
+      }
+    },
+    "Quit Selected": {
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "선택 항목 종료"
+          }
+        }
+      }
+    },
+    "Quit complete": {
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "종료 완료"
+          }
+        }
+      }
+    },
+    "Quit processes owned by another user": {
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "다른 사용자 소유 프로세스 종료"
+          }
+        }
+      }
+    },
+    "Recommended: use the vendor's uninstaller": {
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "권장: 제조사 제거 프로그램 사용"
+          }
+        }
+      }
+    },
+    "Reload": {
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "새로 고침"
+          }
+        }
+      }
+    },
+    "Removal plan": {
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "제거 계획"
+          }
+        }
+      }
+    },
+    "Remove %@": {
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ 제거"
+          }
+        }
+      }
+    },
+    "Remove %@?": {
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@을(를) 제거하겠습니까?"
+          }
+        }
+      }
+    },
+    "Removed items are in your Trash and can be restored from Restore Settings. Restart your Mac to clear anything still loaded in memory.": {
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "제거한 항목은 휴지통에 있으며 설정 복원에서 되돌릴 수 있습니다. 메모리에 남아 있는 것을 지우려면 Mac을 재시동하세요."
+          }
+        }
+      }
+    },
+    "Rescan": {
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "다시 검사"
+          }
+        }
+      }
+    },
+    "Restore": {
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "복원"
+          }
+        }
+      }
+    },
+    "Restore All": {
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "모두 복원"
+          }
+        }
+      }
+    },
+    "Restore Settings": {
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "설정 복원"
+          }
+        }
+      }
+    },
+    "Restore Settings…": {
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "설정 복원…"
+          }
+        }
+      }
+    },
+    "Restore previous settings": {
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "이전 설정 복원"
+          }
+        }
+      }
+    },
+    "Restored %@": {
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@에 복원됨"
+          }
+        }
+      }
+    },
+    "Review each item. Files are moved to your Trash, not deleted, and can be put back from Restore Settings. Items also used by other installed software are unchecked.": {
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "각 항목을 확인하세요. 파일은 삭제하지 않고 휴지통으로 옮기며, 설정 복원에서 되돌릴 수 있습니다. 다른 설치된 소프트웨어도 쓰는 항목은 선택 해제되어 있습니다."
+          }
+        }
+      }
+    },
+    "Root CA": {
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "루트 인증서"
+          }
+        }
+      }
+    },
+    "Running": {
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "실행 중"
+          }
+        }
+      }
+    },
+    "Scan again": {
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "다시 검사"
+          }
+        }
+      }
+    },
+    "Scanned %@": {
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@에 검사함"
+          }
+        }
+      }
+    },
+    "Scanning…": {
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "검사 중…"
+          }
+        }
+      }
+    },
+    "Select software to see processes, startup jobs and files.": {
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "소프트웨어를 선택하면 프로세스, 자동 실행 작업, 파일을 볼 수 있습니다."
+          }
+        }
+      }
+    },
+    "Show every change GuraKilla made": {
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "GuraKilla가 바꾼 모든 내용 보기"
+          }
+        }
+      }
+    },
+    "Show in Finder": {
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Finder에서 보기"
+          }
+        }
+      }
+    },
+    "Signed (no team)": {
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "서명됨(팀 없음)"
+          }
+        }
+      }
+    },
+    "Signed by team %@": {
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "서명한 팀: %@"
+          }
+        }
+      }
+    },
+    "Software": {
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "소프트웨어"
+          }
+        }
+      }
+    },
+    "Some changes were made in system locations and need administrator rights to undo.": {
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "일부 변경은 시스템 위치에서 이루어져 되돌리려면 관리자 권한이 필요합니다."
+          }
+        }
+      }
+    },
+    "Some items could not be restored": {
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "일부 항목을 복원하지 못했습니다"
+          }
+        }
+      }
+    },
+    "Some software is still running": {
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "일부 소프트웨어가 아직 실행 중입니다"
+          }
+        }
+      }
+    },
+    "Startup (launchd)": {
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "자동 실행(launchd)"
+          }
+        }
+      }
+    },
+    "Startup…": {
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "자동 실행…"
+          }
+        }
+      }
+    },
+    "Status": {
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "상태"
+          }
+        }
+      }
+    },
+    "Stopped": {
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "중지됨"
+          }
+        }
+      }
+    },
+    "System daemon": {
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "시스템 데몬"
+          }
+        }
+      }
+    },
+    "System extension · team %@ · %@": {
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "시스템 확장 · 팀 %1$@ · %2$@"
+          }
+        }
+      }
+    },
+    "System extension — only the app that installed it can remove it. Use the vendor uninstaller, or System Settings › General › Login Items & Extensions.": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "시스템 확장 — 설치한 앱만 제거할 수 있습니다. 제조사 제거 프로그램이나 시스템 설정 › 일반 › 로그인 항목 및 확장 프로그램을 이용하세요."
+          }
+        }
+      }
+    },
+    "System keychain": {
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "시스템 키체인"
+          }
+        }
+      }
+    },
+    "Team %@": {
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "팀 %@"
+          }
+        }
+      }
+    },
+    "Team %@ — invalid": {
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "팀 %@ — 유효하지 않음"
+          }
+        }
+      }
+    },
+    "The following commands will run as root:": {
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "다음 명령이 root 권한으로 실행됩니다:"
+          }
+        }
+      }
+    },
+    "The remaining steps touch files or processes owned by the system. Files are moved to your Trash (in a “GuraKilla …” folder), not deleted, and can be put back from Restore Settings.": {
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "남은 단계는 시스템 소유 파일이나 프로세스를 다룹니다. 파일은 삭제하지 않고 휴지통의 “GuraKilla …” 폴더로 옮기며, 설정 복원에서 되돌릴 수 있습니다."
+          }
+        }
+      }
+    },
+    "These jobs belong to the system domain and need administrator rights.": {
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "이 작업들은 시스템 영역에 속해 관리자 권한이 필요합니다."
+          }
+        }
+      }
+    },
+    "These processes run as another user (usually root) and can only be asked to quit with administrator rights:\n%@": {
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "이 프로세스는 다른 사용자(보통 root)로 실행 중이라 관리자 권한이 있어야 종료를 요청할 수 있습니다:\n%@"
+          }
+        }
+      }
+    },
+    "Trusted (system + user)": {
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "신뢰됨(시스템 + 사용자)"
+          }
+        }
+      }
+    },
+    "Trusted certificate": {
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "신뢰된 인증서"
+          }
+        }
+      }
+    },
+    "Trusted for this user": {
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "이 사용자에게 신뢰됨"
+          }
+        }
+      }
+    },
+    "Trusted roots": {
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "신뢰된 루트 인증서"
+          }
+        }
+      }
+    },
+    "Trusted system-wide": {
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "시스템 전체에서 신뢰됨"
+          }
+        }
+      }
+    },
+    "Undo changes made by GuraKilla": {
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "GuraKilla가 바꾼 내용 되돌리기"
+          }
+        }
+      }
+    },
+    "Uninstall": {
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "제거"
+          }
+        }
+      }
+    },
+    "Uninstall %@": {
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ 제거"
+          }
+        }
+      }
+    },
+    "Uninstall the selected software": {
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "선택한 소프트웨어 제거"
+          }
+        }
+      }
+    },
+    "Uninstall…": {
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "제거…"
+          }
+        }
+      }
+    },
+    "Unload Job Now": {
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "지금 작업 내리기"
+          }
+        }
+      }
+    },
+    "Unload launchd jobs": {
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "launchd 작업 내리기"
+          }
+        }
+      }
+    },
+    "Unloading stops these jobs now. They will start again at next login or restart unless auto-start is disabled.": {
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "작업을 내리면 지금 멈춥니다. 자동 실행을 끄지 않으면 다음 로그인이나 재시동 때 다시 시작됩니다."
+          }
+        }
+      }
+    },
+    "Unsigned": {
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "서명 없음"
+          }
+        }
+      }
+    },
+    "User agent": {
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "사용자 에이전트"
+          }
+        }
+      }
+    },
+    "Vendor uninstaller": {
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "제조사 제거 프로그램"
+          }
+        }
+      }
+    },
+    "Will be removed": {
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "제거할 항목"
+          }
+        }
+      }
+    },
+    "launchd jobs": {
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "launchd 작업"
+          }
+        }
+      }
+    },
+    "launchd keeps its own enable/disable list; vendor files are not modified. Every change can be undone from Restore Settings.": {
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "launchd는 자체 켜기/끄기 목록을 관리하므로 제조사 파일은 수정하지 않습니다. 모든 변경은 설정 복원에서 되돌릴 수 있습니다."
+          }
+        }
+      }
+    },
+    "launchd restarted %@ because its job is configured to stay alive (KeepAlive). Quitting only stops the current instance.\n\nTo stop it until the next login, unload the launchd job. To stop it permanently, also disable auto-start in Manage Startup.": {
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@은(는) 항상 실행되도록(KeepAlive) 설정되어 있어 launchd가 다시 실행했습니다. 종료는 지금 실행 중인 것만 멈춥니다.\n\n다음 로그인 전까지 멈추려면 launchd 작업을 내리세요. 계속 멈추려면 자동 실행 관리에서 자동 실행도 끄세요."
+          }
+        }
+      }
+    },
+    "loaded": {
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "로드됨"
+          }
+        }
+      }
+    },
+    "loaded, running": {
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "로드됨, 실행 중"
+          }
+        }
+      }
+    },
+    "login keychain": {
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "로그인 키체인"
+          }
+        }
+      }
+    },
+    "macOS will ask for your password. GuraKilla never sees or stores it, and the action is recorded in the audit log.": {
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "macOS가 암호를 묻습니다. GuraKilla는 암호를 보거나 저장하지 않으며, 이 작업은 감사 로그에 기록됩니다."
+          }
+        }
+      }
+    },
+    "needs administrator": {
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "관리자 필요"
+          }
+        }
+      }
+    },
+    "not loaded": {
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "로드되지 않음"
+          }
+        }
+      }
+    },
+    "not running": {
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "실행 중 아님"
+          }
+        }
+      }
+    },
+    "running": {
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "실행 중"
+          }
+        }
+      }
+    },
+    "vendor certs": {
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "제조사 인증서"
+          }
+        }
+      }
+    },
+    "waiting": {
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "대기 중"
+          }
+        }
+      }
+    },
+    "· administrator": {
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "· 관리자"
+          }
+        }
+      }
+    },
+    "· also used by %@": {
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "· %@도 사용 중"
+          }
+        }
+      }
+    },
+    "· backed up, restorable": {
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "· 백업됨, 복원 가능"
+          }
+        }
+      }
+    },
+    "· not reversible": {
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "· 되돌릴 수 없음"
+          }
+        }
+      }
+    },
+    "—": {
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "—"
+          }
+        }
+      }
+    },
+    "• %@ (PID %d, owner %@)": {
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "• %1$@ (PID %2$d, 소유자 %3$@)"
+          }
+        }
+      }
+    }
+  },
+  "version": "1.0"
+}

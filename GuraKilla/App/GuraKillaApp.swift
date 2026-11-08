@@ -10,9 +10,10 @@ struct GuraKillaApp: App {
         Window("GuraKilla", id: "main") {
             ContentView()
                 .environment(model)
-                .frame(minWidth: 860, minHeight: 540)
+                .frame(minWidth: 940, minHeight: 600)
                 .task { model.start() }
         }
+        .defaultSize(width: 1240, height: 760)
         .windowToolbarStyle(.unified)
         .commands {
             CommandGroup(after: .newItem) {

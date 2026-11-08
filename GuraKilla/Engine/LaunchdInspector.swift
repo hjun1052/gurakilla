@@ -13,7 +13,7 @@ enum LaunchDomain: Codable, Hashable, Sendable {
 
     /// Changing the system domain always needs administrator rights.
     var requiresAdmin: Bool { self == .system }
-    var displayName: String { self == .system ? "System daemon" : "User agent" }
+    var displayName: String { self == .system ? String(localized: "System daemon") : String(localized: "User agent") }
 }
 
 struct LaunchJob: Identifiable, Hashable, Sendable {

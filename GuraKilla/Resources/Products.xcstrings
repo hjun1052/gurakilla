@@ -1,0 +1,435 @@
+{
+  "sourceLanguage": "en",
+  "strings": {
+    "A per-user trusted root named \"Root\" (OU=MangoWire). The installing component is not identified yet.": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "사용자별로 신뢰된 \"Root\"라는 루트 인증서입니다(OU=MangoWire). 설치한 구성 요소는 아직 확인되지 않았습니다."
+          }
+        }
+      }
+    },
+    "A per-user trusted root named \"Root\" (OU=SignKorea NA). The installing component is not identified yet.": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "사용자별로 신뢰된 \"Root\"라는 루트 인증서입니다(OU=SignKorea NA). 설치한 구성 요소는 아직 확인되지 않았습니다."
+          }
+        }
+      }
+    },
+    "Adds the Initech root and a localhost certificate as trusted. The vendor script misspells NativeMessagingHosts, so its Firefox host manifest is never removed by the vendor uninstaller.": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Initech 루트 인증서와 localhost 인증서를 신뢰된 상태로 추가합니다. 제조사 스크립트에 NativeMessagingHosts 철자 오류가 있어 제조사 제거 프로그램은 Firefox 호스트 매니페스트를 지우지 못합니다."
+          }
+        }
+      }
+    },
+    "AhnLab": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "안랩"
+          }
+        }
+      }
+    },
+    "Anti-keylogging / firewall": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "키로깅 방지 / 방화벽"
+          }
+        }
+      }
+    },
+    "Browser extension bridge": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "브라우저 확장 연동"
+          }
+        }
+      }
+    },
+    "Certificate relay": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "인증서 중계"
+          }
+        }
+      }
+    },
+    "Device fingerprinting": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "단말기 정보 수집"
+          }
+        }
+      }
+    },
+    "Digital certificate signing": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "공동인증서 전자서명"
+          }
+        }
+      }
+    },
+    "DreamSecurity": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "드림시큐리티"
+          }
+        }
+      }
+    },
+    "File transfer agent": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "파일 전송 에이전트"
+          }
+        }
+      }
+    },
+    "Hancom WITH (SoftForum)": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "한컴위드(소프트포럼)"
+          }
+        }
+      }
+    },
+    "INCA Internet": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "잉카인터넷"
+          }
+        }
+      }
+    },
+    "INNORIX": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "이노릭스"
+          }
+        }
+      }
+    },
+    "Initech": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "이니텍"
+          }
+        }
+      }
+    },
+    "Installed as a dependency of TouchEn nxKey and CrossWeb EX. Removing it may break those products.": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "TouchEn nxKey와 CrossWeb EX가 의존하는 구성 요소로 설치됩니다. 제거하면 이 제품들이 동작하지 않을 수 있습니다."
+          }
+        }
+      }
+    },
+    "Installs a network system extension (com.nprotect.nosfw) and a kernel-extension package. GuraKilla reports these but never removes them — use the vendor uninstaller.": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "네트워크 시스템 확장(com.nprotect.nosfw)과 커널 확장 패키지를 설치합니다. GuraKilla는 이를 보여 주기만 하고 제거하지 않습니다. 제조사 제거 프로그램을 쓰세요."
+          }
+        }
+      }
+    },
+    "Installs into /tmp/INNORIX-EX, which macOS clears on restart. What usually remains is package receipts and a trusted INNORIX.CA root.": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "macOS가 재시동할 때 비우는 /tmp/INNORIX-EX에 설치됩니다. 보통 패키지 영수증과 신뢰된 INNORIX.CA 루트 인증서가 남습니다."
+          }
+        }
+      }
+    },
+    "Installs kernel extensions (TKVHD/TKUKMD) and runs the nested CrossEX installers, so CrossEX Service arrives with it. GuraKilla never unloads or deletes kernel extensions — use the vendor uninstaller for those.": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "커널 확장(TKVHD/TKUKMD)을 설치하고 내부의 CrossEX 설치 프로그램도 실행하므로 CrossEX Service가 함께 설치됩니다. GuraKilla는 커널 확장을 내리거나 삭제하지 않습니다. 커널 확장은 제조사 제거 프로그램으로 지우세요."
+          }
+        }
+      }
+    },
+    "Interezen": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "인터리젠"
+          }
+        }
+      }
+    },
+    "Keyboard protection": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "키보드보안"
+          }
+        }
+      }
+    },
+    "Known from Wizvera's own uninstaller script (keysharpnxbiz.sh). Not observed on a test Mac yet.": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "위즈베라 제거 스크립트(keysharpnxbiz.sh)에서 확인한 제품입니다. 아직 테스트 Mac에서 관찰되지 않았습니다."
+          }
+        }
+      }
+    },
+    "MangoWire": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "망고와이어"
+          }
+        }
+      }
+    },
+    "Only the trusted RAON K root CA was found. The component that installed it is not present.": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "신뢰된 RAON K 루트 인증서만 발견되었습니다. 이를 설치한 구성 요소는 없습니다."
+          }
+        }
+      }
+    },
+    "RAONWIZ": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "라온위즈"
+          }
+        }
+      }
+    },
+    "RaonSecure": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "라온시큐어"
+          }
+        }
+      }
+    },
+    "Runs a root LaunchDaemon (KeepAlive). The installer also sets security.enterprise_roots.enabled in every user's Firefox prefs.js; GuraKilla does not edit browser preferences.": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "root LaunchDaemon(KeepAlive)으로 실행됩니다. 설치 프로그램은 모든 사용자의 Firefox prefs.js에 security.enterprise_roots.enabled도 설정합니다. GuraKilla는 브라우저 설정을 수정하지 않습니다."
+          }
+        }
+      }
+    },
+    "Runs as a root LaunchDaemon with KeepAlive. There is no separate uninstaller: per Woori Bank's official Mac removal guide, opening IPinside from Applications offers to remove it.": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "KeepAlive가 설정된 root LaunchDaemon으로 실행됩니다. 별도 제거 프로그램은 없습니다. 우리은행 공식 Mac 삭제 안내에 따르면 응용 프로그램에서 IPinside를 열면 제거할 수 있습니다."
+          }
+        }
+      }
+    },
+    "Security module": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "보안 모듈"
+          }
+        }
+      }
+    },
+    "Security module installer": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "보안프로그램 통합설치"
+          }
+        }
+      }
+    },
+    "SignKorea (KOSCOM)": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "사인코리아(코스콤)"
+          }
+        }
+      }
+    },
+    "The installer adds a DELFINO-CA root and a 127.0.0.1 certificate as trusted, and quits Firefox (killall firefox) to update its certificate store.": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "설치 프로그램이 DELFINO-CA 루트 인증서와 127.0.0.1 인증서를 신뢰된 상태로 추가하고, 인증서 저장소를 갱신하려고 Firefox를 강제 종료(killall firefox)합니다."
+          }
+        }
+      }
+    },
+    "The installer adds a per-install VERAPORT-CA root and a 127.0.0.1 certificate to the System keychain as trusted. The vendor uninstaller script only removes the launchd plist; the app folder, receipt and certificates stay behind.": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "설치할 때마다 새 VERAPORT-CA 루트 인증서와 127.0.0.1 인증서를 시스템 키체인에 신뢰된 상태로 추가합니다. 제조사 제거 스크립트는 launchd plist만 지우고 앱 폴더, 패키지 영수증, 인증서는 남깁니다."
+          }
+        }
+      }
+    },
+    "The root daemon's launchd plist sets argv[0] to /tmp/astxd, so ps and Activity Monitor show a path that does not exist; the real executable is /Applications/AhnLab/ASTx/astxd. Other AhnLab products (such as V3) are never touched.": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "root 데몬의 launchd plist가 argv[0]을 /tmp/astxd로 지정하므로 ps와 활성 상태 보기에는 존재하지 않는 경로가 보입니다. 실제 실행 파일은 /Applications/AhnLab/ASTx/astxd입니다. V3 같은 다른 안랩 제품은 건드리지 않습니다."
+          }
+        }
+      }
+    },
+    "The vendor uninstaller removes the app and launchd plists but not the package receipt or the Dreamsecurity root certificate.": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "제조사 제거 프로그램은 앱과 launchd plist는 지우지만 패키지 영수증과 Dreamsecurity 루트 인증서는 남깁니다."
+          }
+        }
+      }
+    },
+    "Transaction protection": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "통합보안(안전거래)"
+          }
+        }
+      }
+    },
+    "Web upload/editor component": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "웹 업로드/편집기 구성 요소"
+          }
+        }
+      }
+    },
+    "Wizvera": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "위즈베라"
+          }
+        }
+      }
+    },
+    "iniLINE": {
+      "extractionState": "manual",
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "이니라인"
+          }
+        }
+      }
+    }
+  },
+  "version": "1.0"
+}

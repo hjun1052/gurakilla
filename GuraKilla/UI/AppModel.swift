@@ -123,7 +123,7 @@ final class AppModel {
     func quit(_ targets: [DetectedProduct]) {
         let procs = targets.flatMap(\.processes)
         guard !procs.isEmpty else {
-            notice = Notice(title: "Nothing to quit", message: "None of the selected software is running.")
+            notice = Notice(title: String(localized: "Nothing to quit"), message: String(localized: "None of the selected software is running."))
             return
         }
         let names = Dictionary(targets.flatMap { p in p.processes.map { ($0.pid, p.definition.name) } }, uniquingKeysWith: { a, _ in a })
@@ -133,9 +133,9 @@ final class AppModel {
             if report.needsPrivilege.isEmpty {
                 await finishQuit(procs)
             } else {
-                let list = report.needsPrivilege.map { "• \($0.name) (PID \($0.pid), owner \($0.owner))" }.joined(separator: "\n")
-                authorize(title: "Quit processes owned by another user",
-                          explanation: "These processes run as another user (usually root) and can only be asked to quit with administrator rights:\n\(list)",
+                let list = report.needsPrivilege.map { String(localized: "• \($0.name) (PID \($0.pid), owner \($0.owner))") }.joined(separator: "\n")
+                authorize(title: String(localized: "Quit processes owned by another user"),
+                          explanation: String(localized: "These processes run as another user (usually root) and can only be asked to quit with administrator rights:\n\(list)"),
                           lines: ProcessController.privilegedSignalLines(report.needsPrivilege, signal: "TERM")) { _ in
                     Task { await self.finishQuit(procs) }
                 }
@@ -154,18 +154,20 @@ final class AppModel {
         var lines: [String] = []
         var actions: [Notice.Action] = []
         if !alive.isEmpty {
-            lines.append("\(alive.count) process(es) did not respond to a graceful quit request: " + alive.map(\.name).joined(separator: ", ") + ".")
-            actions.append(.init(title: "Force Quit", destructive: true) { self.forceQuit(alive) })
+            let names = alive.map(\.name).joined(separator: ", ")
+            lines.append(String(localized: "\(alive.count) process(es) did not respond to a graceful quit request: \(names)."))
+            actions.append(.init(title: String(localized: "Force Quit"), destructive: true) { self.forceQuit(alive) })
         }
         if !keepAliveJobs.isEmpty {
-            lines.append("launchd restarted " + respawned.map(\.definition.name).joined(separator: ", ") + " because its job is configured to stay alive (KeepAlive). Quitting only stops the current instance.\n\nTo stop it until the next login, unload the launchd job. To stop it permanently, also disable auto-start in Manage Startup.")
-            actions.append(.init(title: "Unload Job Now") { self.unload(keepAliveJobs) })
-            actions.append(.init(title: "Manage Startup…") { self.showStartupManager = true })
+            let names = respawned.map(\.definition.name).joined(separator: ", ")
+            lines.append(String(localized: "launchd restarted \(names) because its job is configured to stay alive (KeepAlive). Quitting only stops the current instance.\n\nTo stop it until the next login, unload the launchd job. To stop it permanently, also disable auto-start in Manage Startup."))
+            actions.append(.init(title: String(localized: "Unload Job Now")) { self.unload(keepAliveJobs) })
+            actions.append(.init(title: String(localized: "Manage Startup…")) { self.showStartupManager = true })
         }
         if lines.isEmpty {
-            notice = Notice(title: "Quit complete", message: "\(procs.count) process(es) quit. Software set to start automatically will launch again at next login or restart.")
+            notice = Notice(title: String(localized: "Quit complete"), message: String(localized: "\(procs.count) process(es) quit. Software set to start automatically will launch again at next login or restart."))
         } else {
-            notice = Notice(title: "Some software is still running", message: lines.joined(separator: "\n\n"), actions: actions)
+            notice = Notice(title: String(localized: "Some software is still running"), message: lines.joined(separator: "\n\n"), actions: actions)
         }
     }
 
@@ -174,8 +176,8 @@ final class AppModel {
             let report = await Task.detached { ProcessController.forceKill(procs) }.value
             report.signalled.forEach { AuditLog.record("FORCE_QUIT", "\($0.path) pid \($0.pid)") }
             if report.needsPrivilege.isEmpty { await scan(); return }
-            authorize(title: "Force quit processes",
-                      explanation: "Force quitting (SIGKILL) stops the process immediately without letting it save state. These processes belong to another user and need administrator rights.",
+            authorize(title: String(localized: "Force quit processes"),
+                      explanation: String(localized: "Force quitting (SIGKILL) stops the process immediately without letting it save state. These processes belong to another user and need administrator rights."),
                       lines: ProcessController.privilegedSignalLines(report.needsPrivilege, signal: "KILL")) { _ in
                 Task { await self.scan() }
             }
@@ -186,8 +188,8 @@ final class AppModel {
 
     func unload(_ jobs: [LaunchJob]) {
         runLaunchctl(jobs.map { ($0, [StartupManager.unloadCommand($0)]) },
-                     title: "Unload launchd jobs",
-                     explanation: "Unloading stops these jobs now. They will start again at next login or restart unless auto-start is disabled.",
+                     title: String(localized: "Unload launchd jobs"),
+                     explanation: String(localized: "Unloading stops these jobs now. They will start again at next login or restart unless auto-start is disabled."),
                      auditAction: "UNLOAD") { _ in }
     }
 
@@ -208,8 +210,8 @@ final class AppModel {
             }
         }
         guard !steps.isEmpty else { return }
-        runLaunchctl(steps, title: "Change automatic startup",
-                     explanation: "launchd keeps its own enable/disable list; vendor files are not modified. Every change can be undone from Restore Settings.",
+        runLaunchctl(steps, title: String(localized: "Change automatic startup"),
+                     explanation: String(localized: "launchd keeps its own enable/disable list; vendor files are not modified. Every change can be undone from Restore Settings."),
                      auditAction: "STARTUP") { succeeded in
             let recs = succeeded.compactMap { newRecords[$0] }
             if !recs.isEmpty { self.changes.append(contentsOf: recs); ChangeStore.save(self.changes) }
@@ -237,14 +239,14 @@ final class AppModel {
             guard !escalate.isEmpty else { completion(done); await scan(); return }
             let lines = escalate.flatMap { $0.1.map(Shell.commandLine) }
             authorize(title: title,
-                      explanation: explanation + "\n\nThese jobs belong to the system domain and need administrator rights.",
+                      explanation: explanation + "\n\n" + String(localized: "These jobs belong to the system domain and need administrator rights."),
                       lines: lines) { outcome in
                 var all = done
                 if case .success = outcome {
                     all += escalate.map(\.0.id)
                     lines.forEach { AuditLog.record(auditAction, $0) }
                 } else if case .failed(let msg) = outcome {
-                    self.notice = Notice(title: "Could not change all jobs", message: msg)
+                    self.notice = Notice(title: String(localized: "Could not change all jobs"), message: msg)
                 }
                 completion(all)
                 Task { await self.scan() }
@@ -272,10 +274,10 @@ final class AppModel {
                     let res = Uninstaller.restoreMove(original: original, destination: destination)
                     if res.ok { restored.append(r.id); AuditLog.record("RESTORE", "\(destination) -> \(original)") }
                     else if let line = res.privilegedLine { privileged.append(line); privilegedIDs.append(r.id) }
-                    else { problems.append("\(original): item is no longer in the Trash, or the original location is occupied.") }
+                    else { problems.append(String(localized: "\(original): item is no longer in the Trash, or the original location is occupied.")) }
                 case let .certificateRemoved(_, cn, keychain, backup, wasAdmin, wasUser, selfSigned):
                     guard FileManager.default.fileExists(atPath: backup) else {
-                        problems.append("\(cn): certificate backup is missing (\(backup))."); continue
+                        problems.append(String(localized: "\(cn): certificate backup is missing (\(backup)).")) ; continue
                     }
                     let (argv, admin) = CertificateInspector.restoreCommand(
                         backupPath: backup, keychain: keychain, adminTrusted: wasAdmin, userTrusted: wasUser, selfSigned: selfSigned)
@@ -292,8 +294,8 @@ final class AppModel {
             if privileged.isEmpty {
                 finishRestore(problems)
             } else {
-                authorize(title: "Restore previous settings",
-                          explanation: "Some changes were made in system locations and need administrator rights to undo.",
+                authorize(title: String(localized: "Restore previous settings"),
+                          explanation: String(localized: "Some changes were made in system locations and need administrator rights to undo."),
                           lines: privileged) { outcome in
                     if case .success = outcome {
                         self.markRestored(privilegedIDs)
@@ -313,7 +315,7 @@ final class AppModel {
 
     private func finishRestore(_ problems: [String]) {
         if !problems.isEmpty {
-            notice = Notice(title: "Some items could not be restored", message: problems.joined(separator: "\n"))
+            notice = Notice(title: String(localized: "Some items could not be restored"), message: problems.joined(separator: "\n"))
         }
         Task { await scan() }
     }
@@ -324,7 +326,7 @@ final class AppModel {
         AuditLog.record("VENDOR_UNINSTALL", "\(product): \(path)")
         NSWorkspace.shared.openApplication(at: URL(fileURLWithPath: path), configuration: .init()) { _, error in
             if let error {
-                Task { @MainActor in self.notice = Notice(title: "Could not open uninstaller", message: error.localizedDescription) }
+                Task { @MainActor in self.notice = Notice(title: String(localized: "Could not open uninstaller"), message: error.localizedDescription) }
             }
         }
         uninstallTarget = nil
@@ -339,10 +341,10 @@ final class AppModel {
             if !ex.completed.isEmpty { changes += ex.completed; ChangeStore.save(changes) }
             guard !ex.privilegedLines.isEmpty else { finishRemoval(name, log: ex.log, failed: nil); return }
             let trustNote = ex.privilegedLines.contains { $0.contains("remove-trusted-cert") }
-                ? " Clearing certificate trust is guarded by macOS, which may ask for your password once more; the certificate is already deleted by then."
+                ? " " + String(localized: "Clearing certificate trust is guarded by macOS, which may ask for your password once more; the certificate is already deleted by then.")
                 : ""
-            authorize(title: "Remove \(name)",
-                      explanation: "The remaining steps touch files or processes owned by the system. Files are moved to your Trash (in a “GuraKilla …” folder), not deleted, and can be put back from Restore Settings." + trustNote,
+            authorize(title: String(localized: "Remove \(name)"),
+                      explanation: String(localized: "The remaining steps touch files or processes owned by the system. Files are moved to your Trash (in a “GuraKilla …” folder), not deleted, and can be put back from Restore Settings.") + trustNote,
                       lines: ex.privilegedLines) { outcome in
                 switch outcome {
                 case .success:
@@ -351,7 +353,7 @@ final class AppModel {
                     ex.pendingPrivileged.forEach { AuditLog.record("REMOVE", $0.summary) }
                     self.finishRemoval(name, log: ex.log, failed: nil)
                 case .cancelled:
-                    self.finishRemoval(name, log: ex.log, failed: "Administrator steps were cancelled; only user-owned items were handled.")
+                    self.finishRemoval(name, log: ex.log, failed: String(localized: "Administrator steps were cancelled; only user-owned items were handled."))
                 case .failed(let msg):
                     // Record moves that actually happened so they stay restorable.
                     let done = ex.pendingPrivileged.filter {
@@ -368,8 +370,8 @@ final class AppModel {
 
     private func finishRemoval(_ name: String, log: [String], failed: String?) {
         AuditLog.record("REMOVAL_END", "\(name)\(failed.map { ": \($0)" } ?? "")")
-        notice = Notice(title: failed == nil ? "\(name) removed" : "\(name) partly removed",
-                        message: (failed.map { $0 + "\n\n" } ?? "") + "Removed items are in your Trash and can be restored from Restore Settings. Restart your Mac to clear anything still loaded in memory.")
+        notice = Notice(title: failed == nil ? String(localized: "\(name) removed") : String(localized: "\(name) partly removed"),
+                        message: (failed.map { $0 + "\n\n" } ?? "") + String(localized: "Removed items are in your Trash and can be restored from Restore Settings. Restart your Mac to clear anything still loaded in memory."))
         Task { await scan() }
     }
 }

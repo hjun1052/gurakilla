@@ -54,6 +54,17 @@ struct ChangeRecord: Codable, Identifiable, Hashable, Sendable {
             return "Certificate removed: \(cn) (\((keychain as NSString).lastPathComponent))"
         }
     }
+
+    /// `summary` goes to the audit log in English; the Restore sheet shows this.
+    var localizedSummary: String {
+        switch kind {
+        case let .startupDisabled(label, domain, _, _, _): return String(localized: "Auto-start disabled: \(domain.target)/\(label)")
+        case let .moved(original, _): return String(localized: "Moved to Trash: \(original)")
+        case let .receiptForgotten(id): return String(localized: "Package receipt forgotten: \(id)")
+        case let .certificateRemoved(_, cn, keychain, _, _, _, _):
+            return String(localized: "Certificate removed: \(cn) (\((keychain as NSString).lastPathComponent))")
+        }
+    }
 }
 
 enum ChangeStore {

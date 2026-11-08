@@ -38,6 +38,12 @@ struct RemovalExecution: Sendable {
 }
 
 enum Uninstaller {
+    /// Reasons shown for items left out of a plan. English here (CLI); the UI looks them up in Localizable.
+    static let kextReason = "Kernel extension — use the vendor uninstaller. GuraKilla never removes kernel extensions."
+    static let systemExtensionReason = "System extension — only the app that installed it can remove it. Use the vendor uninstaller, or System Settings › General › Login Items & Extensions."
+    static let protectedReason = "Protected system location"
+    static let excludedReasons = [kextReason, systemExtensionReason, protectedReason]
+
     /// Generic folders where a package drops individual items that belong to it.
     /// Items are taken one level below these, never the folder itself.
     static let fileContainers = [
@@ -146,17 +152,17 @@ enum Uninstaller {
         var items: [RemovalItem] = []
         let kexts = mine.kexts.filter { fm.fileExists(atPath: $0) }.union(product.kernelExtensions)
         var excluded: [ExcludedItem] = kexts.sorted().map {
-            ExcludedItem(path: $0, reason: "Kernel extension — use the vendor uninstaller. GuraKilla never removes kernel extensions.")
+            ExcludedItem(path: $0, reason: kextReason)
         }
         excluded += product.systemExtensions.map {
             ExcludedItem(path: "\($0.bundleID) (\($0.teamID)) — \($0.state)",
-                         reason: "System extension — only the app that installed it can remove it. Use the vendor uninstaller, or System Settings › General › Login Items & Extensions.")
+                         reason: systemExtensionReason)
         }
 
         for path in mine.paths.sorted() {
             guard fm.fileExists(atPath: path) || isSymlink(path) else { continue }
             guard isSafeToRemove(path) else {
-                excluded.append(ExcludedItem(path: path, reason: "Protected system location"))
+                excluded.append(ExcludedItem(path: path, reason: protectedReason))
                 continue
             }
             // Skip items nested inside another item we already remove.
@@ -174,7 +180,7 @@ enum Uninstaller {
         for c in product.certificates {
             let shared = all.filter { $0.id != product.id && $0.certificates.contains(c) }.map(\.definition.name)
             let where_ = c.inSystemKeychain ? "System keychain" : "login keychain"
-            items.append(RemovalItem(path: "\(c.commonName) — \(where_), \(c.trustLabel.lowercased())", kind: .certificate,
+            items.append(RemovalItem(path: "\(c.commonName) — \(where_), \(c.trustLabelEnglish.lowercased())", kind: .certificate,
                                      certificate: c, sharedWith: shared, requiresAdmin: c.inSystemKeychain || c.adminTrusted))
         }
         return RemovalPlan(product: product, items: items, excluded: excluded)

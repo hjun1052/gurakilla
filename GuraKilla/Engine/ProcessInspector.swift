@@ -72,6 +72,13 @@ struct SigningInfo: Hashable, Sendable {
         guard let teamID else { return valid ? "Signed (no team)" : "Invalid signature" }
         return valid ? "Team \(teamID)" : "Team \(teamID) — invalid"
     }
+
+    /// `label` is also written to JSON output, so the UI uses this copy.
+    var localizedLabel: String {
+        if !signed { return String(localized: "Unsigned") }
+        guard let teamID else { return valid ? String(localized: "Signed (no team)") : String(localized: "Invalid signature") }
+        return valid ? String(localized: "Team \(teamID)") : String(localized: "Team \(teamID) — invalid")
+    }
 }
 
 /// Reads and validates code signatures. Results are cached per path.

@@ -8,7 +8,7 @@ struct ProductDetailView: View {
         ScrollView {
             VStack(alignment: .leading, spacing: 14) {
                 header
-                if let notes = product.definition.notes {
+                if let notes = product.definition.localizedNotes {
                     Label(notes, systemImage: "info.circle")
                         .font(.callout).foregroundStyle(.secondary)
                         .fixedSize(horizontal: false, vertical: true)
@@ -30,10 +30,10 @@ struct ProductDetailView: View {
             ProductIcon(product: product).scaleEffect(1.6).frame(width: 40, height: 40)
             VStack(alignment: .leading, spacing: 2) {
                 Text(product.definition.name).font(.title3.weight(.semibold))
-                Text([product.definition.publisher, product.definition.category].compactMap { $0 }.joined(separator: " · "))
+                Text([product.definition.localizedPublisher, product.definition.localizedCategory].compactMap { $0 }.joined(separator: " · "))
                     .font(.callout).foregroundStyle(.secondary)
                 if !product.observedTeams.isEmpty {
-                    Label("Signed by team " + product.observedTeams.joined(separator: ", "), systemImage: "checkmark.seal")
+                    Label(String(localized: "Signed by team \(product.observedTeams.joined(separator: ", "))"), systemImage: "checkmark.seal")
                         .font(.caption).foregroundStyle(.green)
                 }
             }
@@ -65,7 +65,7 @@ struct ProductDetailView: View {
                         Text(String(format: "%.1f%%", p.cpu)).monospacedDigit()
                         Text(Format.memory(p.rssKB)).monospacedDigit().foregroundStyle(.secondary)
                     }
-                    Text("PID \(p.pid) · \(p.owner) · \(CodeSigning.info(path: p.path).label)")
+                    Text(verbatim: "PID \(p.pid) · \(p.owner) · \(CodeSigning.info(path: p.path).localizedLabel)")
                         .font(.caption).foregroundStyle(.secondary)
                     PathText(path: p.path)
                 }
@@ -83,11 +83,14 @@ struct ProductDetailView: View {
                         HStack {
                             Text(job.label).font(.callout.weight(.medium)).lineLimit(1).truncationMode(.middle)
                             Spacer()
-                            Text(job.autoStarts ? "Auto-start on" : "Auto-start off")
+                            Text(job.autoStarts ? LocalizedStringKey("Auto-start on") : "Auto-start off")
                                 .font(.caption.weight(.medium))
                                 .foregroundStyle(job.autoStarts ? .pink : .secondary)
                         }
-                        Text("\(job.domain.displayName) · \(job.isLoaded ? (job.state ?? "loaded") : "not loaded")\(job.keepAlive ? " · KeepAlive" : "")\(job.pid.map { " · PID \($0)" } ?? "")")
+                        Text(verbatim: [job.domain.displayName,
+                                       job.isLoaded ? Self.stateText(job.state) : String(localized: "not loaded"),
+                                       job.keepAlive ? "KeepAlive" : nil,
+                                       job.pid.map { "PID \($0)" }].compactMap { $0 }.joined(separator: " · "))
                             .font(.caption).foregroundStyle(.secondary)
                         PathText(path: job.plistPath)
                     }
@@ -106,11 +109,11 @@ struct ProductDetailView: View {
                         HStack {
                             Text(c.commonName).fontWeight(.medium).lineLimit(1)
                             Spacer()
-                            Text(c.isSelfSigned ? "Root CA" : "Leaf").font(.caption).foregroundStyle(.secondary)
+                            Text(c.isSelfSigned ? LocalizedStringKey("Root CA") : "Leaf").font(.caption).foregroundStyle(.secondary)
                         }
-                        Text("\(c.trustLabel) · \(c.inSystemKeychain ? "System" : "login") keychain · expires \(c.notAfter)")
+                        Text("\(c.trustLabel) · \(c.inSystemKeychain ? String(localized: "System keychain") : String(localized: "login keychain")) · expires \(Format.certificateDate(c.notAfter))")
                             .font(.caption).foregroundStyle(c.isTrusted ? .orange : .secondary)
-                        Text("SHA-256 \(c.sha256)").font(.caption2.monospaced()).foregroundStyle(.tertiary)
+                        Text(verbatim: "SHA-256 \(c.sha256)").font(.caption2.monospaced()).foregroundStyle(.tertiary)
                             .lineLimit(1).truncationMode(.middle).textSelection(.enabled)
                     }
                     .padding(10)
@@ -126,9 +129,9 @@ struct ProductDetailView: View {
         if !product.systemExtensions.isEmpty || !product.kernelExtensions.isEmpty {
             Section {
                 ForEach(product.systemExtensions) { e in
-                    PathRow(path: e.bundleID, symbol: "puzzlepiece.extension", detail: "System extension · team \(e.teamID) · \(e.state)")
+                    PathRow(path: e.bundleID, symbol: "puzzlepiece.extension", detail: String(localized: "System extension · team \(e.teamID) · \(e.state)"))
                 }
-                ForEach(product.kernelExtensions, id: \.self) { PathRow(path: $0, symbol: "cpu", detail: "Kernel extension · never removed by GuraKilla") }
+                ForEach(product.kernelExtensions, id: \.self) { PathRow(path: $0, symbol: "cpu", detail: String(localized: "Kernel extension · never removed by GuraKilla")) }
             } header: { SectionHeader("Extensions", symbol: "puzzlepiece.extension") }
         }
     }
@@ -140,8 +143,8 @@ struct ProductDetailView: View {
                 ForEach(product.bundles) { b in
                     PathRow(path: b.path, symbol: "app", detail: [b.bundleID, b.version.map { "v\($0)" }, b.signing.label].compactMap { $0 }.joined(separator: " · "))
                 }
-                ForEach(product.extraPaths, id: \.self) { PathRow(path: $0, symbol: "doc", detail: "Installed by the product's scripts") }
-                ForEach(product.uninstallers, id: \.self) { PathRow(path: $0, symbol: "trash", detail: "Vendor uninstaller") }
+                ForEach(product.extraPaths, id: \.self) { PathRow(path: $0, symbol: "doc", detail: String(localized: "Installed by the product's scripts")) }
+                ForEach(product.uninstallers, id: \.self) { PathRow(path: $0, symbol: "trash", detail: String(localized: "Vendor uninstaller")) }
             } header: { SectionHeader("Files", symbol: "folder") }
         }
     }
@@ -157,10 +160,23 @@ struct ProductDetailView: View {
     }
 }
 
+extension ProductDetailView {
+    /// launchctl prints states in English; translate the common ones.
+    static func stateText(_ state: String?) -> String {
+        switch state {
+        case "running"?: String(localized: "running")
+        case "waiting"?: String(localized: "waiting")
+        case "not running"?: String(localized: "not running")
+        case let other?: other
+        case nil: String(localized: "loaded")
+        }
+    }
+}
+
 struct SectionHeader: View {
-    let title: String
+    let title: LocalizedStringKey
     let symbol: String
-    init(_ title: String, symbol: String) { self.title = title; self.symbol = symbol }
+    init(_ title: LocalizedStringKey, symbol: String) { self.title = title; self.symbol = symbol }
     var body: some View {
         Label(title, systemImage: symbol)
             .font(.subheadline.weight(.semibold))

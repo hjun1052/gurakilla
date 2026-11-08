@@ -23,7 +23,7 @@ struct ContentView: View {
                                            description: Text("Select software to see processes, startup jobs and files."))
                 }
             }
-            .inspectorColumnWidth(min: 300, ideal: 360, max: 520)
+            .inspectorColumnWidth(min: 280, ideal: 330, max: 520)
         }
         .toolbar { toolbar }
         .navigationTitle("GuraKilla")
@@ -44,9 +44,9 @@ struct ContentView: View {
     }
 
     private var subtitle: String {
-        if model.isScanning { return "Scanning…" }
+        if model.isScanning { return String(localized: "Scanning…") }
         guard let t = model.lastScan else { return "" }
-        return "Scanned " + t.formatted(date: .omitted, time: .shortened)
+        return String(localized: "Scanned \(t.formatted(date: .omitted, time: .shortened))")
     }
 
     @ViewBuilder private var productTable: some View {
@@ -65,25 +65,20 @@ struct ContentView: View {
                         ProductIcon(product: p)
                         VStack(alignment: .leading, spacing: 1) {
                             Text(p.definition.name).fontWeight(.medium)
-                            Text(p.definition.publisher).font(.caption).foregroundStyle(.secondary)
+                            Text(p.definition.localizedPublisher).font(.caption).foregroundStyle(.secondary)
                         }
                     }
                 }
-                .width(min: 180, ideal: 230)
+                .width(min: 170, ideal: 220)
                 TableColumn("Status") { p in RunningBadge(product: p) }
-                    .width(min: 90, ideal: 110)
+                    .width(min: 80, ideal: 95)
                 TableColumn("Auto-start") { p in StartupBadge(state: p.startupState) }
-                    .width(min: 90, ideal: 110)
-                TableColumn("Trusted CAs") { p in
+                    .width(min: 80, ideal: 95)
+                TableColumn("CAs") { p in
                     let n = p.trustedCertificates.count
                     Text(n == 0 ? "—" : "\(n)").foregroundStyle(n == 0 ? Color.secondary : Color.orange).monospacedDigit()
                 }
-                .width(min: 60, ideal: 80)
-                TableColumn("PID") { p in
-                    Text(p.processes.map { String($0.pid) }.joined(separator: ", "))
-                        .monospacedDigit().foregroundStyle(.secondary).lineLimit(1)
-                }
-                .width(min: 50, ideal: 80)
+                .width(min: 40, ideal: 50)
                 TableColumn("CPU") { p in
                     Text(p.isRunning ? String(format: "%.1f%%", p.totalCPU) : "—").monospacedDigit()
                 }
@@ -148,27 +143,42 @@ struct DashboardView: View {
 
     var body: some View {
         GlassEffectContainer(spacing: 10) {
-            HStack(spacing: 10) {
-                StatTile(title: "Detected", value: "\(model.products.count)", symbol: "shield.lefthalf.filled",
-                         tint: .accentColor)
-                StatTile(title: "Running", value: "\(model.runningCount)",
-                         detail: "\(model.processCount) process\(model.processCount == 1 ? "" : "es")",
-                         symbol: "bolt.fill", tint: model.runningCount > 0 ? .orange : .secondary)
-                StatTile(title: "Auto-start", value: "\(model.autoStartJobCount)", detail: "launchd jobs",
-                         symbol: "power", tint: model.autoStartJobCount > 0 ? .pink : .green)
-                StatTile(title: "Trusted roots", value: "\(model.trustedCertificateCount)", detail: "vendor certs",
-                         symbol: "checkmark.seal", tint: model.trustedCertificateCount > 0 ? .orange : .green)
-                StatTile(title: "CPU", value: String(format: "%.1f%%", model.totalCPU), symbol: "cpu", tint: .blue)
-                StatTile(title: "Memory", value: Format.memory(model.totalMemoryKB), symbol: "memorychip", tint: .purple)
+            // One row of 6 when it fits, else 3 × 2. Never an orphan tile.
+            ViewThatFits(in: .horizontal) {
+                HStack(spacing: 10) { tiles.frame(minWidth: 150) }
+                Grid(horizontalSpacing: 10, verticalSpacing: 10) {
+                    GridRow { tiles(0..<3) }
+                    GridRow { tiles(3..<6) }
+                }
+            }
+        }
+    }
+
+    @ViewBuilder private var tiles: some View { tiles(0..<6) }
+
+    @ViewBuilder private func tiles(_ range: Range<Int>) -> some View {
+        ForEach(range, id: \.self) { i in
+            switch i {
+            case 0: StatTile(title: "Detected", value: "\(model.products.count)", symbol: "shield.lefthalf.filled",
+                             tint: .accentColor)
+            case 1: StatTile(title: "Running", value: "\(model.runningCount)",
+                             detail: model.processCount == 1 ? "1 process" : "\(model.processCount) processes",
+                             symbol: "bolt.fill", tint: model.runningCount > 0 ? .orange : .secondary)
+            case 2: StatTile(title: "Auto-start", value: "\(model.autoStartJobCount)", detail: "launchd jobs",
+                             symbol: "power", tint: model.autoStartJobCount > 0 ? .pink : .green)
+            case 3: StatTile(title: "Trusted roots", value: "\(model.trustedCertificateCount)", detail: "vendor certs",
+                             symbol: "checkmark.seal", tint: model.trustedCertificateCount > 0 ? .orange : .green)
+            case 4: StatTile(title: "CPU", value: String(format: "%.1f%%", model.totalCPU), symbol: "cpu", tint: .blue)
+            default: StatTile(title: "Memory", value: Format.memory(model.totalMemoryKB), symbol: "memorychip", tint: .purple)
             }
         }
     }
 }
 
 struct StatTile: View {
-    let title: String
+    let title: LocalizedStringKey
     let value: String
-    var detail: String? = nil
+    var detail: LocalizedStringKey? = nil
     let symbol: String
     let tint: Color
 
@@ -179,9 +189,10 @@ struct StatTile: View {
                 .foregroundStyle(tint)
                 .frame(width: 22)
             VStack(alignment: .leading, spacing: 0) {
-                Text(title).font(.caption).foregroundStyle(.secondary)
+                Text(title).font(.caption).foregroundStyle(.secondary).lineLimit(1)
                 HStack(alignment: .firstTextBaseline, spacing: 4) {
                     Text(value).font(.system(.title3, design: .rounded, weight: .semibold)).monospacedDigit()
+                        .lineLimit(1).fixedSize()
                         .contentTransition(.numericText())
                     if let detail { Text(detail).font(.caption2).foregroundStyle(.tertiary).lineLimit(1) }
                 }
@@ -213,12 +224,12 @@ struct ProductIcon: View {
 
 struct RunningBadge: View {
     let product: DetectedProduct
+    private var status: LocalizedStringKey { product.isRunning ? "Running" : (product.isLeftover ? "Leftover" : "Stopped") }
     var body: some View {
         HStack(spacing: 5) {
             Circle().fill(product.isRunning ? Color.green : Color.secondary.opacity(0.35))
                 .frame(width: 7, height: 7)
-            Text(product.isRunning ? "Running" : (product.isLeftover ? "Leftover" : "Stopped"))
-                .foregroundStyle(product.isRunning ? .primary : .secondary)
+            Text(status).foregroundStyle(product.isRunning ? .primary : .secondary)
         }
     }
 }
@@ -230,7 +241,7 @@ struct StartupBadge: View {
         case .none:
             Text("—").foregroundStyle(.tertiary)
         case .enabled(let n):
-            Label(n == 1 ? "On" : "On (\(n))", systemImage: "power")
+            Label(n == 1 ? LocalizedStringKey("On") : "On (\(n))", systemImage: "power")
                 .labelStyle(.titleAndIcon).foregroundStyle(.pink)
         case .disabled:
             Label("Off", systemImage: "power").foregroundStyle(.secondary)
@@ -239,7 +250,21 @@ struct StartupBadge: View {
 }
 
 enum Format {
-    static func memory(_ kb: Int) -> String {
-        ByteCountFormatter.string(fromByteCount: Int64(kb) * 1024, countStyle: .memory)
+    private static let bytes: ByteCountFormatter = {
+        let f = ByteCountFormatter()
+        f.countStyle = .memory
+        f.allowsNonnumericFormatting = false  // "0 KB", not "Zero KB"
+        return f
+    }()
+
+    static func memory(_ kb: Int) -> String { bytes.string(fromByteCount: Int64(kb) * 1024) }
+
+    /// OpenSSL's `notAfter` ("Dec 31 00:00:00 2099 GMT") as a localized date; raw text if it doesn't parse.
+    static func certificateDate(_ raw: String) -> String {
+        let f = DateFormatter()
+        f.locale = Locale(identifier: "en_US_POSIX")
+        f.dateFormat = "MMM d HH:mm:ss yyyy zzz"
+        let squeezed = raw.split(separator: " ").joined(separator: " ")
+        return f.date(from: squeezed)?.formatted(date: .abbreviated, time: .omitted) ?? raw
     }
 }

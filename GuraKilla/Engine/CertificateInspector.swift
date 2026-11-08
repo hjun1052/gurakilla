@@ -22,12 +22,21 @@ struct InstalledCertificate: Identifiable, Hashable, Sendable {
     var isSelfSigned: Bool { subject == issuer }
     var inSystemKeychain: Bool { keychain == CertificateInspector.systemKeychain }
     var isTrusted: Bool { adminTrusted || userTrusted }
-    var trustLabel: String {
+    /// English copy for CLI output and plan item IDs.
+    var trustLabelEnglish: String {
         switch (adminTrusted, userTrusted) {
         case (true, true): return "Trusted (system + user)"
         case (true, false): return "Trusted system-wide"
         case (false, true): return "Trusted for this user"
         default: return "Not explicitly trusted"
+        }
+    }
+    var trustLabel: String {
+        switch (adminTrusted, userTrusted) {
+        case (true, true): return String(localized: "Trusted (system + user)")
+        case (true, false): return String(localized: "Trusted system-wide")
+        case (false, true): return String(localized: "Trusted for this user")
+        default: return String(localized: "Not explicitly trusted")
         }
     }
 }

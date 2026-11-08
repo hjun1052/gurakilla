@@ -62,6 +62,15 @@ struct ProductDefinition: Codable, Identifiable, Hashable, Sendable {
         notes = try c.decodeIfPresent(String.self, forKey: .notes)
     }
 
+    /// Publisher, category and notes in the user's language (Products.xcstrings).
+    /// Product names stay as the vendor wrote them. Unknown text (user registry) is shown as is.
+    var localizedPublisher: String { Self.localized(publisher) }
+    var localizedCategory: String? { category.map(Self.localized) }
+    var localizedNotes: String? { notes.map(Self.localized) }
+    private static func localized(_ s: String) -> String {
+        Bundle.main.localizedString(forKey: s, value: s, table: "Products")
+    }
+
     var expandedInstallPaths: [String] { installPaths.map(Paths.expand) }
     var expandedUninstallers: [String] { uninstallers.map(Paths.expand) }
     var expandedExtraPaths: [String] { extraPaths.map(Paths.expand) }
