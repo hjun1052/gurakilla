@@ -4,10 +4,9 @@
 
 [한국어](README.md) | **English**
 
-A native macOS utility for finding, inspecting, quitting, disabling and removing
-Korean banking and government security software (TouchEn nxKey, Veraport,
-Delfino, INISAFE CrossWeb EX, CrossEX, AhnLab Safe Transaction, IPinside,
-MagicLine4NX, nProtect, AnySign4PC, and their leftovers) on your own Mac.
+A macOS app for checking and cleaning up the security software that Korean banking and government
+sites install: TouchEn nxKey, Veraport, Delfino, INISAFE CrossWeb EX, CrossEX, AhnLab Safe Transaction,
+IPinside, MagicLine4NX, nProtect, AnySign4PC, and the files they leave behind.
 
 Swift + SwiftUI, macOS 26, Apple silicon and Intel. No dependencies.
 
@@ -49,22 +48,24 @@ build/Build/Products/Release/GuraKilla.app/Contents/MacOS/GuraKilla --remove wiz
 
 ## What it does
 
-- **Detects** products only by exact, verified identifiers: code-signing Team IDs, vendor install folders,
-  launchd labels, package receipts, certificate subjects and system-extension IDs. No name guessing.
+- **Detects** products by code-signing Team ID, vendor install folder, launchd label, package receipt,
+  certificate subject and system extension ID. It does not match on names alone.
 - **Shows** running processes (CPU, memory, PID, owner, real executable path), launchd jobs, auto-start state,
   trusted root certificates, kernel/system extensions, files and receipts.
-- **Quit**: graceful first, PID re-verified to avoid touching the wrong process. Root-owned processes go through a
-  reviewed admin prompt. It explains when launchd relaunches a KeepAlive job.
-- **Manage Startup**: `launchctl disable/enable` (launchd's own override list; vendor files untouched). Separate from quitting.
-- **Uninstall**: recommends the vendor uninstaller, or builds a reviewable plan. Files move to the Trash, vendor
-  certificates are backed up before removal, shared items are unchecked, and kernel/system extensions are never touched.
+- **Quit**: asks the process to quit first and re-checks the PID before acting. Root-owned processes need admin
+  approval. KeepAlive jobs that launchd restarts right away are marked as such.
+- **Manage Startup**: uses `launchctl disable/enable`. Vendor plist files are not modified.
+- **Uninstall**: recommends the vendor uninstaller if there is one; otherwise shows a list of items to pick from.
+  Files go to the Trash and certificates are backed up before deletion. Items shared with other software start
+  unchecked. Kernel and system extensions are not removed.
 - **Restore Settings**: undoes startup changes, moved files and removed certificates.
-- **Audit log** at `~/Library/Logs/GuraKilla/audit.log`.
+- **Audit log**: every action is written to `~/Library/Logs/GuraKilla/audit.log`.
 
-Admin actions always show the exact commands first, then use the standard macOS password prompt. Clearing a
-certificate's system-wide trust is guarded by macOS itself, so it may ask once more; the certificate is deleted
-before that step, so cancelling it leaves no trusted root behind.
-GuraKilla never sees your password, and never touches SIP, Endpoint Security, MDM or Apple components.
+Admin actions show the commands first, then use the standard macOS password prompt. The app does not see the
+password. macOS may ask again when clearing a certificate's system-wide trust. The certificate is already deleted
+by then, so cancelling at that point does not leave a trusted root behind.
+
+GuraKilla does not modify SIP, Endpoint Security, MDM or Apple components.
 
 ## Languages
 
@@ -81,6 +82,6 @@ same fields as `ProductDefinition` in `GuraKilla/Engine/Registry.swift` (an entr
 
 ## Research
 
-`research/` holds the evidence behind the registry: system baseline, official installer analysis, uninstaller
+`research/` has the notes behind the registry: system baseline, official installer analysis, uninstaller
 behaviour, cleanup verification, a compatibility matrix and install → remove tests of six products in throwaway
 macOS VMs (`research/vm-test/`). Start with `research/README.md`.

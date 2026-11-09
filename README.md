@@ -4,19 +4,22 @@
 
 **한국어** | [English](README.en.md)
 
-내 Mac에 깔린 은행·공공기관 보안 프로그램(TouchEn nxKey, Veraport, Delfino, INISAFE CrossWeb EX, CrossEX,
-AhnLab Safe Transaction, IPinside, MagicLine4NX, nProtect, AnySign4PC와 그 잔여물)을 찾아내고, 들여다보고,
-종료하고, 자동 실행을 끄고, 제거하는 macOS 네이티브 유틸리티입니다.
+은행·공공기관 웹사이트 이용 시 설치되는 보안 프로그램을 확인하고 정리하는 macOS 앱.
 
-Swift + SwiftUI, macOS 26, Apple 실리콘과 Intel 지원. 외부 의존성 없음.
+대상: TouchEn nxKey, Veraport, Delfino, INISAFE CrossWeb EX, CrossEX, AhnLab Safe Transaction, IPinside,
+MagicLine4NX, nProtect, AnySign4PC 및 제거 후 남은 파일.
+
+- macOS 26 이상, Apple 실리콘 / Intel
+- Swift, SwiftUI. 외부 라이브러리 없음
 
 ![GuraKilla 메인 화면](Design/screenshots/main-ko.png)
 
 ## 다운로드
 
-[Releases](https://github.com/hjun1052/gurakilla/releases/latest)에서 최신 `.dmg`를 받으세요. macOS 26 이상이
-필요합니다(유니버설). 앱은 ad-hoc 서명만 되어 있고 공증(notarization)을 받지 않았습니다. 처음 열 때는 오른쪽 클릭 → 열기,
-또는 시스템 설정 → 개인정보 보호 및 보안 → 그래도 열기를 사용하세요.
+[Releases](https://github.com/hjun1052/gurakilla/releases/latest)에서 `.dmg` 파일을 내려받음.
+
+공증을 받지 않은 앱이므로 첫 실행 시 macOS가 실행을 차단함. 오른쪽 클릭 → 열기로 실행하거나,
+시스템 설정 → 개인정보 보호 및 보안 → 그래도 열기를 선택함.
 
 ## 빌드
 
@@ -26,57 +29,61 @@ xcodebuild -project GuraKilla.xcodeproj -scheme GuraKilla -configuration Release
 open build/Build/Products/Release/GuraKilla.app
 ```
 
-테스트(단위 테스트 + 지원 제품마다 회귀 테스트 1개):
+테스트 (단위 테스트 및 제품별 회귀 테스트):
 
 ```sh
 xcodebuild -project GuraKilla.xcodeproj -scheme GuraKilla -destination 'platform=macOS,arch=arm64' -derivedDataPath build test
 ```
 
-명령줄에서 읽기 전용 검사(JSON):
+명령줄 검사 (JSON 출력, 읽기 전용):
 
 ```sh
 build/Build/Products/Release/GuraKilla.app/Contents/MacOS/GuraKilla --scan-json
 ```
 
-명령줄에서 제거하기. 제거 시트와 같은 계획을 출력하며, `--yes`를 붙이지 않으면 실제로는 아무것도 하지 않습니다(dry run).
-관리자 권한이 필요한 단계는 macOS 암호 입력 창을 쓰거나, `--sudo`를 주면 `sudo -n`을 씁니다(sudo 인증이 이미 되어 있지 않으면 묻지 않고 실패):
+명령줄 제거. 기본 동작은 제거 계획 출력이며, `--yes` 옵션을 지정해야 실제로 제거함.
+관리자 권한이 필요한 단계에서는 macOS 암호 입력 창을 표시함. `--sudo` 옵션 지정 시 `sudo -n`을 사용하며,
+sudo 인증이 되어 있지 않으면 암호를 묻지 않고 실패함.
 
 ```sh
-build/Build/Products/Release/GuraKilla.app/Contents/MacOS/GuraKilla --remove wizvera-veraport          # 계획만 보기
+build/Build/Products/Release/GuraKilla.app/Contents/MacOS/GuraKilla --remove wizvera-veraport          # 계획 출력
 build/Build/Products/Release/GuraKilla.app/Contents/MacOS/GuraKilla --remove wizvera-veraport --yes    # 실행
 ```
 
-## 하는 일
+## 기능
 
-- **감지**: 정확하고 검증된 식별자로만 제품을 찾습니다. 코드 서명 Team ID, 제조사 설치 폴더, launchd 레이블,
-  패키지 영수증, 인증서 주체, 시스템 확장 ID. 이름으로 추측하지 않습니다.
-- **표시**: 실행 중인 프로세스(CPU, 메모리, PID, 소유자, 실제 실행 파일 경로), launchd 작업, 자동 실행 상태,
-  신뢰된 루트 인증서, 커널/시스템 확장, 파일과 영수증.
-- **종료**: 먼저 정상 종료를 시도하고, 엉뚱한 프로세스를 건드리지 않도록 PID를 다시 확인합니다. root 소유 프로세스는
-  검토할 수 있는 관리자 확인 창을 거칩니다. KeepAlive 작업을 launchd가 다시 띄우는 경우 그 사실을 알려 줍니다.
-- **자동 실행 관리**: `launchctl disable/enable`(launchd 자체의 override 목록, 제조사 파일은 건드리지 않음). 종료와는 별개입니다.
-- **제거**: 제조사 제거 프로그램을 우선 권하고, 없으면 검토 가능한 제거 계획을 만듭니다. 파일은 휴지통으로 옮기고,
-  제조사 인증서는 지우기 전에 백업하며, 다른 프로그램과 공유하는 항목은 체크 해제되어 있고, 커널/시스템 확장은 절대 건드리지 않습니다.
-- **설정 복원**: 자동 실행 변경, 옮긴 파일, 삭제한 인증서를 되돌립니다.
-- **감사 로그**: `~/Library/Logs/GuraKilla/audit.log`.
+- **검사**: 코드 서명 Team ID, 설치 폴더, launchd 레이블, 패키지 영수증, 인증서, 시스템 확장 ID로 제품을 식별함. 이름만으로 판단하지 않음.
+- **상세 정보**: 프로세스(CPU, 메모리, PID, 소유자, 실행 파일 경로), launchd 작업, 자동 실행 여부, 루트 인증서, 커널/시스템 확장, 파일, 패키지 영수증을 표시함.
+- **종료**: 정상 종료를 먼저 시도하고, 종료 전 PID를 다시 확인함. root 프로세스는 관리자 확인을 거침. launchd가 즉시 재실행하는 작업(KeepAlive)은 별도로 표시함.
+- **자동 실행 관리**: `launchctl disable/enable`을 사용함. 제조사 plist 파일은 수정하지 않음.
+- **제거**: 제조사 제거 프로그램이 있으면 이를 우선 권장함. 없으면 제거 목록을 표시하고 항목을 선택하게 함. 파일은 휴지통으로 이동하고, 인증서는 백업 후 삭제함. 다른 프로그램과 공유하는 항목은 기본적으로 선택 해제됨. 커널/시스템 확장은 제거하지 않음.
+- **설정 복원**: 자동 실행 변경, 이동한 파일, 삭제한 인증서를 원래대로 되돌림.
+- **감사 로그**: `~/Library/Logs/GuraKilla/audit.log`에 모든 작업을 기록함.
 
-관리자 작업은 항상 실행할 명령을 먼저 보여 준 뒤 macOS 표준 암호 입력 창을 띄웁니다. 인증서의 시스템 전체 신뢰를 해제하는 단계는
-macOS가 직접 보호하므로 한 번 더 물어볼 수 있습니다. 인증서는 그 단계 전에 이미 삭제되므로, 거기서 취소해도 신뢰된 루트 인증서가 남지 않습니다.
-GuraKilla는 암호를 볼 수 없으며 SIP, Endpoint Security, MDM, Apple 구성 요소를 절대 건드리지 않습니다.
+관리자 작업은 실행할 명령을 먼저 표시한 뒤 macOS 기본 암호 입력 창을 사용함. 앱은 암호에 접근하지 않음.
+인증서 신뢰 해제 단계에서 macOS가 한 번 더 확인을 요청할 수 있음. 인증서는 이 단계 이전에 삭제되므로, 이 단계에서 취소하더라도 신뢰된 루트 인증서는 남지 않음.
+
+SIP, Endpoint Security, MDM, Apple 구성 요소는 변경하지 않음.
 
 ## 언어
 
-한국어와 영어. 앱은 macOS 언어 순서를 따릅니다. GuraKilla만 한국어로 쓰려면 시스템 설정 › 일반 › 언어 및 지역 › 응용 프로그램에서
-지정하세요. UI 문자열은 `GuraKilla/Resources/Localizable.xcstrings`, 제조사·분류·설명은 `Products.xcstrings`에 있습니다.
-제품 이름은 제조사 표기(은행 사이트에 나오는 이름) 그대로 둡니다. `--scan-json`과 `--remove` 계획 출력은 영어이고,
-감사 로그의 동작 코드는 영어, 세부 내용은 앱을 실행한 언어로 기록됩니다. 한국어 번역이 빠진 문자열이 있으면 `LocalizationTests`가 실패합니다.
+한국어와 영어를 지원하며 macOS 언어 설정을 따름. 이 앱에만 한국어를 적용하려면
+시스템 설정 › 일반 › 언어 및 지역 › 응용 프로그램에서 지정함.
 
-## 레지스트리 확장
+- UI 문자열: `GuraKilla/Resources/Localizable.xcstrings`
+- 제조사, 분류, 설명: `Products.xcstrings`
+- 제품 이름은 제조사 표기(은행 사이트에 표시되는 이름)를 그대로 사용함
+- `--scan-json`, `--remove` 출력은 영어로 표시함
+- 감사 로그의 동작 코드는 영어, 세부 내용은 실행 당시 앱 언어로 기록함
+- 한국어 번역이 누락된 문자열이 있으면 `LocalizationTests`가 실패함
 
-다시 빌드하지 않고 제품을 추가할 수 있습니다. `~/Library/Application Support/GuraKilla/registry.json`에
-`GuraKilla/Engine/Registry.swift`의 `ProductDefinition`과 같은 필드를 가진 JSON 배열을 두세요(기존 `id`와 같은 항목은 그것을 대체합니다).
+## 제품 추가
+
+다시 빌드하지 않고 제품을 추가할 수 있음. `~/Library/Application Support/GuraKilla/registry.json`에 JSON 배열로 작성함.
+필드 구성은 `GuraKilla/Engine/Registry.swift`의 `ProductDefinition`과 같음. `id`가 같은 항목은 기존 항목을 대체함.
 
 ## 조사 자료
 
-`research/`에는 레지스트리의 근거가 들어 있습니다. 시스템 기준선, 공식 설치 프로그램 분석, 제거 프로그램 동작, 정리 검증,
-호환성 매트릭스, 그리고 일회용 macOS VM에서 6개 제품을 설치 → 제거해 본 테스트(`research/vm-test/`). `research/README.md`부터 보세요(영어).
+`research/`: 레지스트리 작성 근거 자료. 시스템 기준선, 공식 설치 파일 분석, 제조사 제거 프로그램의 실제 동작,
+정리 결과 검증, 호환성 표, 일회용 macOS VM에서 진행한 6개 제품 설치·제거 테스트(`research/vm-test/`)를 포함함.
+`research/README.md`부터 참고 (영문).
