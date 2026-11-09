@@ -87,7 +87,7 @@ final class AppModel {
             do {
                 let from = Updater.currentVersion
                 let url = try await Updater.install(release)
-                AuditLog.record("update", "\(from) -> \(release.version)")
+                AuditLog.record("UPDATE", "\(from) -> \(release.version)")
                 Updater.relaunch(url)
                 NSApp.terminate(nil)
             } catch {

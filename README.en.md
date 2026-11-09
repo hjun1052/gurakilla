@@ -18,6 +18,17 @@ Get the latest `.dmg` from [Releases](https://github.com/hjun1052/gurakilla/rele
 (universal). The app is ad-hoc signed and not notarized: open it the first time with right-click → Open, or
 System Settings → Privacy & Security → Open Anyway.
 
+## Updates
+
+From 1.0.2 the app checks for a new version once a day and shows a banner when one is out. Update downloads it,
+replaces the app and relaunches. You can also check from the app menu → Check for Updates….
+
+- Release zips are signed with an Ed25519 key, and the app installs an update only if the signature matches the
+  public key built into it.
+- In-place replacement needs the app in a writable location such as Applications; otherwise it sends you to the
+  release page.
+- 1.0.1 and earlier have no updater, so install 1.0.2 or later by hand once.
+
 ## Build
 
 ```sh
@@ -44,6 +55,13 @@ Admin steps use the macOS password dialog, or `sudo -n` with `--sudo` (fails ins
 ```sh
 build/Build/Products/Release/GuraKilla.app/Contents/MacOS/GuraKilla --remove wizvera-veraport          # show plan
 build/Build/Products/Release/GuraKilla.app/Contents/MacOS/GuraKilla --remove wizvera-veraport --yes    # do it
+```
+
+Releasing (maintainer). Bump `MARKETING_VERSION` in `project.yml`, commit, then:
+
+```sh
+swift scripts/update-key.swift genkey   # once: stores the signing key in the login Keychain
+scripts/release.sh 1.0.3 notes.md       # build, package dmg/zip, sign the zip, publish the GitHub release
 ```
 
 ## What it does

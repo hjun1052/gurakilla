@@ -21,6 +21,15 @@ MagicLine4NX, nProtect, AnySign4PC 및 제거 후 남은 파일.
 공증을 받지 않은 앱이므로 첫 실행 시 macOS가 실행을 차단함. 오른쪽 클릭 → 열기로 실행하거나,
 시스템 설정 → 개인정보 보호 및 보안 → 그래도 열기를 선택함.
 
+## 업데이트
+
+1.0.2부터 앱이 하루 한 번 새 버전을 확인하고, 새 버전이 있으면 창 상단에 알림을 표시함. 업데이트 버튼을 누르면
+새 버전을 내려받아 교체한 뒤 다시 실행함. 앱 메뉴 → 업데이트 확인…으로 직접 확인할 수도 있음.
+
+- 릴리스 zip은 Ed25519 키로 서명되며, 앱에 포함된 공개 키로 서명을 확인한 뒤에만 설치함. 서명이 맞지 않으면 설치하지 않음.
+- 앱이 응용 프로그램 폴더처럼 쓰기 가능한 위치에 있어야 자동 교체가 가능함. 그렇지 않으면 릴리스 페이지를 안내함.
+- 1.0.1 이하 버전은 업데이트 기능이 없으므로 한 번은 직접 설치해야 함.
+
 ## 빌드
 
 ```sh
@@ -48,6 +57,13 @@ sudo 인증이 되어 있지 않으면 암호를 묻지 않고 실패함.
 ```sh
 build/Build/Products/Release/GuraKilla.app/Contents/MacOS/GuraKilla --remove wizvera-veraport          # 계획 출력
 build/Build/Products/Release/GuraKilla.app/Contents/MacOS/GuraKilla --remove wizvera-veraport --yes    # 실행
+```
+
+릴리스 (관리자용). `project.yml`의 `MARKETING_VERSION`을 먼저 올리고 커밋한 뒤 실행함:
+
+```sh
+swift scripts/update-key.swift genkey   # 최초 1회. 서명용 개인 키를 로그인 키체인에 저장
+scripts/release.sh 1.0.3 notes.md       # 빌드, dmg/zip 생성, zip 서명, GitHub 릴리스 게시
 ```
 
 ## 기능
