@@ -8,13 +8,13 @@ A macOS app for checking and cleaning up the security software that Korean banki
 sites install: TouchEn nxKey, Veraport, Delfino, INISAFE CrossWeb EX, CrossEX, AhnLab Safe Transaction,
 IPinside, MagicLine4NX, nProtect, AnySign4PC, and the files they leave behind.
 
-Swift + SwiftUI, macOS 26, Apple silicon and Intel. No dependencies.
+Swift + SwiftUI, macOS 14 or later, Apple silicon and Intel. No dependencies.
 
 ![GuraKilla main window](Design/screenshots/main-en.png)
 
 ## Download
 
-Get the latest `.dmg` from [Releases](https://github.com/hjun1052/gurakilla/releases/latest). Requires macOS 26 or later
+Get the latest `.dmg` from [Releases](https://github.com/hjun1052/gurakilla/releases/latest). Requires macOS 14 or later
 (universal). The app is ad-hoc signed and not notarized: open it the first time with right-click → Open, or
 System Settings → Privacy & Security → Open Anyway.
 

@@ -48,7 +48,7 @@ struct ProductDetailView: View {
                 .disabled(product.launchJobs.isEmpty)
             Button("Uninstall…", role: .destructive) { model.uninstallTarget = product }
         }
-        .buttonStyle(.glass)
+        .glassButton()
         .controlSize(.small)
     }
 

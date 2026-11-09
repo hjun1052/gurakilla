@@ -147,7 +147,7 @@ struct DashboardView: View {
     @Environment(AppModel.self) private var model
 
     var body: some View {
-        GlassEffectContainer(spacing: 10) {
+        GlassContainer(spacing: 10) {
             // One row of 6 when it fits, else 3 × 2. Never an orphan tile.
             ViewThatFits(in: .horizontal) {
                 HStack(spacing: 10) { tiles.frame(minWidth: 150) }
@@ -207,7 +207,7 @@ struct StatTile: View {
         .padding(.horizontal, 12)
         .padding(.vertical, 9)
         .frame(maxWidth: .infinity)
-        .glassEffect(.regular, in: .rect(cornerRadius: 14))
+        .glassCard(cornerRadius: 14)
     }
 }
 
@@ -295,5 +295,38 @@ struct UpdateBanner: View {
         .padding(.horizontal, 12)
         .padding(.vertical, 8)
         .background(.blue.opacity(0.1), in: RoundedRectangle(cornerRadius: 10))
+    }
+}
+
+// MARK: - Liquid Glass with pre-26 fallbacks
+
+struct GlassContainer<Content: View>: View {
+    var spacing: CGFloat
+    @ViewBuilder var content: Content
+
+    var body: some View {
+        if #available(macOS 26, *) {
+            GlassEffectContainer(spacing: spacing) { content }
+        } else {
+            content
+        }
+    }
+}
+
+extension View {
+    @ViewBuilder func glassCard(cornerRadius: CGFloat) -> some View {
+        if #available(macOS 26, *) {
+            glassEffect(.regular, in: .rect(cornerRadius: cornerRadius))
+        } else {
+            background(.regularMaterial, in: .rect(cornerRadius: cornerRadius))
+        }
+    }
+
+    @ViewBuilder func glassButton() -> some View {
+        if #available(macOS 26, *) { buttonStyle(.glass) } else { buttonStyle(.bordered) }
+    }
+
+    @ViewBuilder func prominentGlassButton() -> some View {
+        if #available(macOS 26, *) { buttonStyle(.glassProminent) } else { buttonStyle(.borderedProminent) }
     }
 }

@@ -34,7 +34,7 @@ struct AuthorizationSheet: View {
                     .keyboardShortcut(.cancelAction)
                 Button("Continue…") { model.runPendingAuthorization() }
                     .keyboardShortcut(.defaultAction)
-                    .buttonStyle(.glassProminent)
+                    .prominentGlassButton()
             }
         }
         .padding(20)
@@ -100,7 +100,7 @@ struct StartupManagerSheet: View {
                     dismiss()
                 }
                 .keyboardShortcut(.defaultAction)
-                .buttonStyle(.glassProminent)
+                .prominentGlassButton()
                 .disabled(changedCount == 0)
             }
             .padding(16)
@@ -161,7 +161,7 @@ struct RestoreSheet: View {
                 Spacer()
                 Button("Done") { dismiss() }.keyboardShortcut(.cancelAction)
                 Button("Restore All") { model.restore(model.pendingRestores) }
-                    .buttonStyle(.glassProminent)
+                    .prominentGlassButton()
                     .disabled(model.pendingRestores.isEmpty)
             }
             .padding(16)
@@ -234,12 +234,12 @@ struct UninstallSheet: View {
                         Button("Open \((path as NSString).lastPathComponent)") {
                             model.openVendorUninstaller(path, product: product.definition.name)
                         }
-                        .buttonStyle(.glassProminent)
+                        .prominentGlassButton()
                     }
                 }
                 .padding(12)
                 .frame(maxWidth: .infinity, alignment: .leading)
-                .glassEffect(.regular, in: .rect(cornerRadius: 12))
+                .glassCard(cornerRadius: 12)
             }
 
             Text(product.uninstallers.isEmpty ? LocalizedStringKey("Removal plan") : "Or remove manually")

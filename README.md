@@ -9,7 +9,7 @@
 대상: TouchEn nxKey, Veraport, Delfino, INISAFE CrossWeb EX, CrossEX, AhnLab Safe Transaction, IPinside,
 MagicLine4NX, nProtect, AnySign4PC 및 제거 후 남은 파일.
 
-- macOS 26 이상, Apple 실리콘 / Intel
+- macOS 14 이상, Apple 실리콘 / Intel
 - Swift, SwiftUI. 외부 라이브러리 없음
 
 ![GuraKilla 메인 화면](Design/screenshots/main-ko.png)
