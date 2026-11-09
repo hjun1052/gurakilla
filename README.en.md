@@ -15,12 +15,12 @@ Swift + SwiftUI, macOS 14 or later, Apple silicon and Intel. No dependencies.
 ## Download
 
 Get the latest `.dmg` from [Releases](https://github.com/hjun1052/gurakilla/releases/latest). Requires macOS 14 or later
-(universal). The app is ad-hoc signed and not notarized: open it the first time with right-click → Open, or
-System Settings → Privacy & Security → Open Anyway.
+(universal). The app is ad-hoc signed and not notarized: allow the first launch in System Settings →
+Privacy & Security → Open Anyway. On macOS 14, right-click → Open also works.
 
 ## Updates
 
-From 1.0.2 the app checks for a new version once a day and shows a banner when one is out. Update downloads it,
+From 1.0.2 the app updates itself. It checks for a new version at launch and shows a banner when one is out. Update downloads it,
 replaces the app and relaunches. You can also check from the app menu → Check for Updates….
 
 - Release zips are signed with an Ed25519 key, and the app installs an update only if the signature matches the

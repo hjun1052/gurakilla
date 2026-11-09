@@ -17,7 +17,7 @@ grep -q "MARKETING_VERSION: \"$version\"" project.yml || { echo "project.yml is 
 [[ -z $(git status --porcelain) ]] || { echo "working tree not clean" >&2; exit 1; }
 
 out=$(mktemp -d)/release
-mkdir -p "$out/dmgroot"
+mkdir -p "$out"
 xcodegen generate >/dev/null
 xcodebuild -project GuraKilla.xcodeproj -scheme GuraKilla -configuration Release \
   -derivedDataPath "$out/dd" ARCHS="arm64 x86_64" ONLY_ACTIVE_ARCH=NO clean build -quiet
@@ -27,8 +27,7 @@ codesign -v --strict "$app"
 cd "$out"
 zip="GuraKilla-$version.zip"; dmg="GuraKilla-$version.dmg"
 ditto -c -k --keepParent "$app" "$zip"
-cp -R "$app" dmgroot/ && ln -s /Applications dmgroot/Applications
-hdiutil create -quiet -volname GuraKilla -srcfolder dmgroot -format UDZO "$dmg"
+"$root/scripts/make-dmg.sh" "$app" "$dmg" >/dev/null
 swift "$root/scripts/update-key.swift" sign "$zip" >/dev/null
 shasum -a 256 "$dmg" "$zip" > SHA256SUMS.txt
 

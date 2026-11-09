@@ -56,15 +56,11 @@ final class AppModel {
 
     // MARK: Updates
 
-    /// Background checks run at most once a day; the menu command always checks.
+    /// Runs at every launch, and from the menu command. Only the menu command reports "up to date" or errors.
     func checkForUpdates(userInitiated: Bool) {
-        let key = "lastUpdateCheck"
-        if !userInitiated, let last = UserDefaults.standard.object(forKey: key) as? Date,
-           Date().timeIntervalSince(last) < 24 * 3600 { return }
         Task {
             do {
                 let release = try await Updater.latest()
-                UserDefaults.standard.set(Date(), forKey: key)
                 availableUpdate = release
                 if userInitiated && release == nil {
                     notice = Notice(title: String(localized: "GuraKilla is up to date."),
