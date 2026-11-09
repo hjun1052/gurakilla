@@ -20,6 +20,7 @@
 		6512B1F1AA34189010796A70 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = E760F06B80E83EF5EAAE0C48 /* Localizable.xcstrings */; };
 		8148D37866EFC492094CA652 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2622D27F172907F2561E233A /* ContentView.swift */; };
 		83057E7627422B48C6431AD1 /* Sheets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CADE3AC1C75C828D3230A6C /* Sheets.swift */; };
+		848D39B53C9594D102B571EF /* Updater.swift in Sources */ = {isa = PBXBuildFile; fileRef = E56D3BDCEA21C3C496C61162 /* Updater.swift */; };
 		8B4A615F35D8F3EEFE734F79 /* Detector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1571BEC672FA879695612037 /* Detector.swift */; };
 		8E14F58D86EB01DEE7DD649B /* LocalizationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 426D51B9A75199030465577F /* LocalizationTests.swift */; };
 		95B3F1232D23E060B65C24F1 /* EngineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B4917B3451BA06399DB5519 /* EngineTests.swift */; };
@@ -27,6 +28,7 @@
 		CAD98809683577722B6F878D /* AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 909C16E3D28371F74747244B /* AppModel.swift */; };
 		CF582FFBF8465E7E71CA52AB /* Products.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = C77602ACE73124C0B8629C32 /* Products.xcstrings */; };
 		E22CD9197E10E674FFAF46C8 /* ProductRegressionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED32380474500400D70625B0 /* ProductRegressionTests.swift */; };
+		E27DC00BF7C43C6A34489A70 /* UpdaterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B74236461F582F5C74FE361 /* UpdaterTests.swift */; };
 		F5A53B2071B38E160D962C57 /* Shell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98CEDB3DF31D4A9A2DE40299 /* Shell.swift */; };
 /* End PBXBuildFile section */
 
@@ -55,11 +57,13 @@
 		698792F91EF5F6586436D569 /* GuraKilla.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GuraKilla.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A511340F4B1132CE81EF327 /* GuraKillaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GuraKillaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		787CAE6250C5592F28B81845 /* ProcessController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcessController.swift; sourceTree = "<group>"; };
+		7B74236461F582F5C74FE361 /* UpdaterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdaterTests.swift; sourceTree = "<group>"; };
 		909C16E3D28371F74747244B /* AppModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppModel.swift; sourceTree = "<group>"; };
 		98CEDB3DF31D4A9A2DE40299 /* Shell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shell.swift; sourceTree = "<group>"; };
 		BCCF7E3C9EBB862AD49B7683 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C77602ACE73124C0B8629C32 /* Products.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Products.xcstrings; sourceTree = "<group>"; };
 		D0DE2B1D71D93DC5FB319F5A /* Registry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Registry.swift; sourceTree = "<group>"; };
+		E56D3BDCEA21C3C496C61162 /* Updater.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Updater.swift; sourceTree = "<group>"; };
 		E760F06B80E83EF5EAAE0C48 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		ED32380474500400D70625B0 /* ProductRegressionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductRegressionTests.swift; sourceTree = "<group>"; };
 		EEA6ABE02EA4D5AC6F52074D /* Uninstaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Uninstaller.swift; sourceTree = "<group>"; };
@@ -84,6 +88,7 @@
 				5B4917B3451BA06399DB5519 /* EngineTests.swift */,
 				426D51B9A75199030465577F /* LocalizationTests.swift */,
 				ED32380474500400D70625B0 /* ProductRegressionTests.swift */,
+				7B74236461F582F5C74FE361 /* UpdaterTests.swift */,
 			);
 			path = GuraKillaTests;
 			sourceTree = "<group>";
@@ -140,6 +145,7 @@
 				4D49C735F47A10B0BCDED834 /* ScanReport.swift */,
 				98CEDB3DF31D4A9A2DE40299 /* Shell.swift */,
 				EEA6ABE02EA4D5AC6F52074D /* Uninstaller.swift */,
+				E56D3BDCEA21C3C496C61162 /* Updater.swift */,
 			);
 			path = Engine;
 			sourceTree = "<group>";
@@ -262,6 +268,7 @@
 				83057E7627422B48C6431AD1 /* Sheets.swift in Sources */,
 				F5A53B2071B38E160D962C57 /* Shell.swift in Sources */,
 				624845A8A325B4DB8D7AAEDC /* Uninstaller.swift in Sources */,
+				848D39B53C9594D102B571EF /* Updater.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,6 +279,7 @@
 				95B3F1232D23E060B65C24F1 /* EngineTests.swift in Sources */,
 				8E14F58D86EB01DEE7DD649B /* LocalizationTests.swift in Sources */,
 				E22CD9197E10E674FFAF46C8 /* ProductRegressionTests.swift in Sources */,
+				E27DC00BF7C43C6A34489A70 /* UpdaterTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,7 +299,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 3;
 				ENABLE_APP_SANDBOX = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = GuraKilla;
@@ -301,7 +309,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MARKETING_VERSION = 1.0.1;
+				MARKETING_VERSION = 1.0.2;
 				PRODUCT_BUNDLE_IDENTIFIER = dev.hjun.GuraKilla;
 				PRODUCT_NAME = GuraKilla;
 				SDKROOT = macosx;
@@ -397,7 +405,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 3;
 				ENABLE_APP_SANDBOX = NO;
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -408,7 +416,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MARKETING_VERSION = 1.0.1;
+				MARKETING_VERSION = 1.0.2;
 				PRODUCT_BUNDLE_IDENTIFIER = dev.hjun.GuraKilla;
 				PRODUCT_NAME = GuraKilla;
 				SDKROOT = macosx;

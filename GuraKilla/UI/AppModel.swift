@@ -39,6 +39,8 @@ final class AppModel {
     var showRestore = false
     var showAuditLog = false
     var uninstallTarget: DetectedProduct?
+    var availableUpdate: AppRelease?
+    var isUpdating = false
 
     let definitions = ProductRegistry.load()
     private var refreshTask: Task<Void, Never>?
@@ -52,11 +54,58 @@ final class AppModel {
     var trustedCertificateCount: Int { Set(products.flatMap { $0.trustedCertificates.map(\.id) }).count }
     var pendingRestores: [ChangeRecord] { changes.filter { $0.restoredAt == nil && $0.isReversible } }
 
+    // MARK: Updates
+
+    /// Background checks run at most once a day; the menu command always checks.
+    func checkForUpdates(userInitiated: Bool) {
+        let key = "lastUpdateCheck"
+        if !userInitiated, let last = UserDefaults.standard.object(forKey: key) as? Date,
+           Date().timeIntervalSince(last) < 24 * 3600 { return }
+        Task {
+            do {
+                let release = try await Updater.latest()
+                UserDefaults.standard.set(Date(), forKey: key)
+                availableUpdate = release
+                if userInitiated && release == nil {
+                    notice = Notice(title: String(localized: "GuraKilla is up to date."),
+                                    message: String(localized: "You have version \(Updater.currentVersion)."))
+                }
+            } catch {
+                if userInitiated {
+                    notice = Notice(title: String(localized: "Couldn't check for updates."),
+                                    message: error.localizedDescription)
+                }
+            }
+        }
+    }
+
+    func installUpdate() {
+        guard let release = availableUpdate, !isUpdating else { return }
+        guard release.canInstall else { NSWorkspace.shared.open(release.pageURL); return }
+        isUpdating = true
+        Task {
+            do {
+                let from = Updater.currentVersion
+                let url = try await Updater.install(release)
+                AuditLog.record("update", "\(from) -> \(release.version)")
+                Updater.relaunch(url)
+                NSApp.terminate(nil)
+            } catch {
+                isUpdating = false
+                notice = Notice(title: String(localized: "Update failed"), message: error.localizedDescription,
+                                actions: [.init(title: String(localized: "Open Release Page")) {
+                                    NSWorkspace.shared.open(release.pageURL)
+                                }])
+            }
+        }
+    }
+
     // MARK: Scanning
 
     func start() {
         guard refreshTask == nil else { return }
         Task { await scan() }
+        checkForUpdates(userInitiated: false)
         refreshTask = Task { [weak self] in
             while !Task.isCancelled {
                 try? await Task.sleep(for: .seconds(3))

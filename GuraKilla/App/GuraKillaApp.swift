@@ -16,6 +16,9 @@ struct GuraKillaApp: App {
         .defaultSize(width: 1240, height: 760)
         .windowToolbarStyle(.unified)
         .commands {
+            CommandGroup(after: .appInfo) {
+                Button("Check for Updates…") { model.checkForUpdates(userInitiated: true) }
+            }
             CommandGroup(after: .newItem) {
                 Button("Rescan") { Task { await model.scan() } }
                     .keyboardShortcut("r")

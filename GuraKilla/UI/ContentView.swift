@@ -7,6 +7,11 @@ struct ContentView: View {
     var body: some View {
         @Bindable var model = model
         VStack(spacing: 0) {
+            if let release = model.availableUpdate {
+                UpdateBanner(release: release)
+                    .padding(.horizontal, 16)
+                    .padding(.top, 12)
+            }
             DashboardView()
                 .padding(.horizontal, 16)
                 .padding(.top, 12)
@@ -266,5 +271,29 @@ enum Format {
         f.dateFormat = "MMM d HH:mm:ss yyyy zzz"
         let squeezed = raw.split(separator: " ").joined(separator: " ")
         return f.date(from: squeezed)?.formatted(date: .abbreviated, time: .omitted) ?? raw
+    }
+}
+
+struct UpdateBanner: View {
+    @Environment(AppModel.self) private var model
+    let release: AppRelease
+
+    var body: some View {
+        HStack(spacing: 10) {
+            Image(systemName: "arrow.down.circle.fill").foregroundStyle(.blue).font(.title3)
+            Text("GuraKilla \(release.version) is available.").fontWeight(.medium)
+            Spacer()
+            Link("Release Notes", destination: release.pageURL)
+            Button(model.isUpdating ? "Updating…" : "Update") { model.installUpdate() }
+                .buttonStyle(.borderedProminent)
+                .disabled(model.isUpdating)
+            Button { model.availableUpdate = nil } label: { Image(systemName: "xmark") }
+                .buttonStyle(.borderless)
+                .accessibilityLabel("Dismiss")
+                .disabled(model.isUpdating)
+        }
+        .padding(.horizontal, 12)
+        .padding(.vertical, 8)
+        .background(.blue.opacity(0.1), in: RoundedRectangle(cornerRadius: 10))
     }
 }

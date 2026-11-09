@@ -351,6 +351,16 @@
         }
       }
     },
+    "Check for Updates…": {
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "업데이트 확인…"
+          }
+        }
+      }
+    },
     "Choose what launches automatically": {
       "localizations": {
         "ko": {
@@ -421,12 +431,32 @@
         }
       }
     },
+    "Couldn't check for updates.": {
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "업데이트를 확인할 수 없습니다."
+          }
+        }
+      }
+    },
     "Detected": {
       "localizations": {
         "ko": {
           "stringUnit": {
             "state": "translated",
             "value": "감지됨"
+          }
+        }
+      }
+    },
+    "Dismiss": {
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "닫기"
           }
         }
       }
@@ -511,12 +541,42 @@
         }
       }
     },
+    "GuraKilla %@ is available.": {
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "GuraKilla %@ 버전을 사용할 수 있습니다."
+          }
+        }
+      }
+    },
+    "GuraKilla can't replace itself in this location. Move it to the Applications folder, or download the update from the release page.": {
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "현재 위치에서는 GuraKilla를 교체할 수 없습니다. 응용 프로그램 폴더로 옮기거나 릴리스 페이지에서 업데이트를 내려받으세요."
+          }
+        }
+      }
+    },
     "GuraKilla hasn't changed anything yet.": {
       "localizations": {
         "ko": {
           "stringUnit": {
             "state": "translated",
             "value": "GuraKilla가 아직 아무것도 바꾸지 않았습니다."
+          }
+        }
+      }
+    },
+    "GuraKilla is up to date.": {
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "최신 버전입니다."
           }
         }
       }
@@ -862,6 +922,16 @@
         }
       }
     },
+    "Open Release Page": {
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "릴리스 페이지 열기"
+          }
+        }
+      }
+    },
     "Open Trash": {
       "localizations": {
         "ko": {
@@ -1009,6 +1079,16 @@
           "stringUnit": {
             "state": "translated",
             "value": "권장: 제조사 제거 프로그램 사용"
+          }
+        }
+      }
+    },
+    "Release Notes": {
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "릴리스 노트"
           }
         }
       }
@@ -1384,6 +1464,16 @@
         }
       }
     },
+    "The downloaded update is not a valid GuraKilla build.": {
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "내려받은 파일이 올바른 GuraKilla 빌드가 아닙니다."
+          }
+        }
+      }
+    },
     "The following commands will run as root:": {
       "localizations": {
         "ko": {
@@ -1404,6 +1494,16 @@
         }
       }
     },
+    "The update's signature is not valid, so it was not installed.": {
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "업데이트 서명이 올바르지 않아 설치하지 않았습니다."
+          }
+        }
+      }
+    },
     "These jobs belong to the system domain and need administrator rights.": {
       "localizations": {
         "ko": {
@@ -1420,6 +1520,16 @@
           "stringUnit": {
             "state": "translated",
             "value": "이 프로세스는 다른 사용자(보통 root)로 실행 중이라 관리자 권한이 있어야 종료를 요청할 수 있습니다:\n%@"
+          }
+        }
+      }
+    },
+    "This release has no signed update file.": {
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "이 릴리스에는 서명된 업데이트 파일이 없습니다."
           }
         }
       }
@@ -1564,6 +1674,36 @@
         }
       }
     },
+    "Update": {
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "업데이트"
+          }
+        }
+      }
+    },
+    "Update failed": {
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "업데이트 실패"
+          }
+        }
+      }
+    },
+    "Updating…": {
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "업데이트 중…"
+          }
+        }
+      }
+    },
     "User agent": {
       "localizations": {
         "ko": {
@@ -1590,6 +1730,16 @@
           "stringUnit": {
             "state": "translated",
             "value": "제거할 항목"
+          }
+        }
+      }
+    },
+    "You have version %@.": {
+      "localizations": {
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "현재 버전: %@"
           }
         }
       }
